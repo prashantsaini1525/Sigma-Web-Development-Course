@@ -1,0 +1,85 @@
+Cheat Codes and many more things that can be help you in vs code .
+
+
+@ : Use for Finding Tags,Attributes and Symbols.
+
+Ctrl+/ // Alt+/ : With  this you can do Comment out the selected words.
+
+Ctrl+G : With the You can go to the specific line simple put the number of line and then hit enter.
+
+SHIFT+TAB: It uses for to to remove intend, means whenever you want to move you code or remove the space from the right side you can select the code and then press the "shift+tab".
+
+CTRL+F2/ Or you right click on which occurence you want to change.: Select all occurrences of current word.
+Change all occurences is used for when you want to change all occurences of the code and then press the "CTRL+F2" EXAMPLE: <,> etc.
+
+Alt+ ↑ / ↓ (Up aarow/ down aarow) : Move line up/down
+
+Alt+ Left Click of Mouse: Insert cursor where you want to add.
+
+Ctrl+ U / D (Up/Down): Copy line Up/down
+
+Ctrl+ "+ / -" : Zome In / Zome Out
+
+Ctrl+ ← / → : With this You can go starting of the word and ending of the word.
+
+Ctrl+Backspace: Delete Whole Word or Sentence 
+
+Shift+End / Shift+Home : Select Whole Sentence
+
+Ctrl+Shift+F : Find data in Particult file
+
+Ctrl+Shift+Z : Find data in Folder or entire folder
+
+Ctrl+Shift+Z / Ctrl+Y : To Redo the Data
+
+Ctrl+Z : To Undo the Data
+
+Ctrl+O : Open the Vs code Left Sidebar 
+
+Ctrl+L : Wherever you put the text cursor that will select the whole words or whole sentences at the starting of the sentences or word and you can copy or remove that line.
+
+Ctrl+Shift+ ↑ / ↓ (Up aarow/ down aarow) : Wherever you put the text cursor and then press the "Ctrl+Shift+ ↑ / ↓" if you want to select sentences from the upside of the text cursor you have to click the "Ctrl+Shift+↑". same for the down selection.
+
+Ctrl+Shift+N : Open New Terminal in VS Code.{
+    Esc : Used for Clear selection
+    Ctrl+C : Copy Selection
+}
+
+
+Use for Terminal and in Command plate (Change Language Selection): 
+
+Ctrl+Alt+J : With this you Can run Your code, in which you want to run your code with the selection of language.
+
+Ctrl+Alt+N: Run Your Code
+
+Ctrl+Alt+M : Stop Run Your Code
+
+Ctrl+Alt+K: Run Custom Commands
+
+Ctrl+Shift+C : Open New Terminal in Windows.
+
+IF you want to see changes in your code :
+
+Alt+F3 : Show Next Changes
+
+Shift+Alt+F3 : Show Previous Changes
+
+
+Window+V : Used for see copied data in the clipboard.
+
+Window+ -→ : Adjust the Window Sizes of any folder or app in pc.
+
+Window+D : Used for Minimize all the windows of your pc.
+
+Window+Tab // Alt+Tab : Switches Desktops
+
+Window+P : With this You can Change your monitor Screens
+
+Window+L : Lock Screen
+
+
+
+
+
+
+

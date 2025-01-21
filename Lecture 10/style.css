@@ -1,0 +1,76 @@
+.same {
+    border: 5px solid black;
+}
+
+#video {
+    border: 8px solid yellowgreen;
+    /*width: 50%;
+    height: 50%;*/
+    margin-bottom: 50px;
+}
+#first{
+    background-color: aqua;
+}
+
+#second{
+    background-color: blue;
+}
+
+#third{
+    background-color: green;
+}
+
+#fourth{
+    background-color: greenyellow;
+}
+
+#fifth{
+    background-color: grey;
+}
+
+#sixth{
+    background-color: purple;
+}
+#note {
+    background-color: red;
+}
+
+#audio{
+    border: 8px solid orange;
+    /*width: 50%;
+    height: 50%;*/
+    margin-bottom: 10px;
+}
+
+#seventh{
+    background-color: pink;
+}
+
+#eighth{
+    background-color: yellow;
+}
+
+#ninth{
+    background-color: blueviolet;
+}
+
+#tenth{
+    background-color: darkgreen;
+}
+
+#eleventh{
+    background-color: lightblue;
+}
+
+#twelfth{
+    background-color: darkorchid;
+}
+
+#thirteenth{
+    background-color: darkgoldenrod;
+}
+
+#fourteenth{
+    background-color: lightcoral;
+}
+

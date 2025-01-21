@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Tags in HTML</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Our Home Page</h1>
+            <img height="200" src="./Assests/image.jpg" alt="tea" />
+            <p>
+                We offer <mark>Full Stack development</mark>, Software Development,
+                Web Development, and SEO services.
+            </p>
+        </section>
+
+        <section id="about">
+            <h1>About Us</h1>
+            <article>
+                <h3>Article 0: Lorem</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
+                    maxime eum? Nemo maxime ratione eaque aliquam vero aperiam quas
+                    laudantium dolor iusto voluptate error voluptatum neque distinctio
+                    itaque placeat praesentium, quos perferendis pariatur minus soluta
+                    commodi? Alias laboriosam fugiat, eius itaque consequatur earum
+                    exercitationem, quidem repudiandae inventore nesciunt reprehenderit
+                    sapiente aut quasi architecto repellendus perferendis quaerat
+                    corrupti voluptas iste voluptates et? Sit debitis fugit ratione
+                    facere nisi impedit temporibus ab voluptas non laborum ullam
+                    mollitia ut odit deserunt, est provident nulla quos amet sint,
+                    commodi, culpa assumenda obcaecati dolor! Delectus quis ullam minima
+                    ducimus, sunt facilis laboriosam doloribus earum blanditiis.
+                </p>
+            </article>
+        </section>
+
+        <section id="services">
+            <h1>Services</h1>
+            <p>Web Development</p>
+            <p>Software Development</p>
+            <p>Full Stack Development</p>
+            <p>Search Engine Optimization Services</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <br /><br />
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+
+        <section id="blog">
+            <article>
+                <h2>Article 1: Understanding HTML5 Semantic Tags</h2>
+                <section id="one">
+                    <h3>Section 1: What Are Semantic Tags?</h3>
+                    <p>Semantic tags provide meaning to the structure of a webpage.</p>
+                </section>
+                <section id="two">
+                    <h3>Section 2: Why Use Semantic Tags?</h3>
+                    <p>They improve SEO, accessibility, and code readability.</p>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Aside Tag: Related Articles</h3>
+        <ul>
+            <li><a href="#">How to build a website</a></li>
+            <li><a href="#">Best design practices</a></li>
+        </ul>
+    </aside>
+
+    <footer>Copyright CWP | 2025. All rights reserved</footer>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Text Properties</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Playwrite+VN:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /* #playwrite-vn h1 {
+            font-family: "Playwrite VN", serif;
+        } */
+
+        /* #macondo p {
+            font-family: "Macondo", serif;
+        } */
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="fonts">
+        <h2><a href="https://codepen.io/web-dot-dev/pen/yLojraG" target="_blank">Learn More Fonts</a></h2>
+        <table>
+            <caption style="font-weight: bold; font-size: 40px">Fonts Details</caption>
+
+            <thead>
+                <tr>
+                    <th>Font Name</th>
+                    <th>Font Style</th>
+                    <th>Font Weight</th>
+                    <th>How will Font See</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>100</td>
+                    <td id="one">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>200</td>
+                    <td id="two">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>300</td>
+                    <td id="three">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>400</td>
+                    <td id="four">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>500</td>
+                    <td id="five">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>600</td>
+                    <td id="six">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>700</td>
+                    <td id="seven">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>800</td>
+                    <td id="eight">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Normal</td>
+                    <td>900</td>
+                    <td id="nine">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>100</td>
+                    <td id="ten">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>200</td>
+                    <td id="eleven">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>300</td>
+                    <td id="twelve">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>400</td>
+                    <td id="thirteen">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>500</td>
+                    <td id="fourteen">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>600</td>
+                    <td id="fifteen">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>700</td>
+                    <td id="sixteen">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>800</td>
+                    <td id="seventeen">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Poppins</td>
+                    <td>Italic</td>
+                    <td>900</td>
+                    <td id="eighteen">Poppins family</td>
+                </tr>
+
+                <tr>
+                    <td>Playwrite VN</td>
+                    <td>Normal</td>
+                    <td>100</td>
+                    <td id="nineteen">Playwrite VN family</td>
+                </tr>
+
+                <tr>
+                    <td>Playwrite VN</td>
+                    <td>Normal</td>
+                    <td>200</td>
+                    <td id="twenty">Playwrite VN family</td>
+                </tr>
+
+                <tr>
+                    <td>Playwrite VN</td>
+                    <td>Normal</td>
+                    <td>300</td>
+                    <td id="twentyone">Playwrite VN family</td>
+                </tr>
+
+                <tr>
+                    <td>Playwrite VN</td>
+                    <td>Normal</td>
+                    <td>400</td>
+                    <td id="twentytwo">Playwrite VN family</td>
+                </tr>
+
+                <tr>
+                    <td>Macondo</td>
+                    <td>Normal</td>
+                    <td>400</td>
+                    <td id="twentythree">Macondo family</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="fontprop">
+        <h1>Font Size Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis libero, rerum ducimus fugit
+            dolorem, eius facere voluptates nobis est ratione eveniet totam officia modi assumenda saepe nihil
+            cupiditate velit! Ratione ipsum deserunt eligendi, voluptates itaque repellat enim quae facere.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vel dolore? Consequuntur illo sint
+            magni aspernatur ducimus. Tempora sed a dolorum ipsa laborum dolorem exercitationem eaque adipisci, modi
+            odio animi ut doloribus explicabo sint assumenda tenetur! Quia sapiente architecto natus sunt nostrum
+            quibusdam. Libero, explicabo?</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rerum itaque nisi placeat neque
+            ducimus debitis at earum magni laudantium. Molestias qui itaque mollitia eveniet ex laboriosam
+            necessitatibus nobis, corporis at praesentium, inventore voluptatem possimus officia consectetur
+            perspiciatis ipsum eaque facere iure provident! Quisquam, voluptatum?</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur, voluptatum
+            perferendis dolor ex quos? Cum aliquam amet, ipsam alias fugiat reiciendis nobis officiis dignissimos magni
+            odit, possimus mollitia eveniet blanditiis reprehenderit nisi error quis consequuntur assumenda. Officiis
+            accusamus laborum hic suscipit consequatur nulla. Quos!</p>
+        <p id="e">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia necessitatibus quidem fugit ea
+            inventore deserunt fugiat illum unde dolorum ducimus consectetur pariatur quibusdam nulla commodi, officiis
+            incidunt accusamus culpa perspiciatis molestias fuga aliquam dicta sunt. Ut ex consequuntur ea atque ipsa
+            reiciendis perferendis totam quia?</p>
+    </div>
+
+    <div id="lineheight">
+        <h1>Line Height Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis libero, rerum ducimus fugit
+            dolorem, eius facere voluptates nobis est ratione eveniet totam officia modi assumenda saepe nihil
+            cupiditate velit! Ratione ipsum deserunt eligendi, voluptates itaque repellat enim quae facere.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vel dolore? Consequuntur illo sint
+            magni aspernatur ducimus. Tempora sed a dolorum ipsa laborum dolorem exercitationem eaque adipisci, modi
+            odio animi ut doloribus explicabo sint assumenda tenetur! Quia sapiente architecto natus sunt nostrum
+            quibusdam. Libero, explicabo?</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rerum itaque nisi placeat neque
+            ducimus debitis at earum magni laudantium. Molestias qui itaque mollitia eveniet ex laboriosam
+            necessitatibus nobis, corporis at praesentium, inventore voluptatem possimus officia consectetur
+            perspiciatis ipsum eaque facere iure provident! Quisquam, voluptatum?</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur, voluptatum
+            perferendis dolor ex quos? Cum aliquam amet, ipsam alias fugiat reiciendis nobis officiis dignissimos magni
+            odit, possimus mollitia eveniet blanditiis reprehenderit nisi error quis consequuntur assumenda. Officiis
+            accusamus laborum hic suscipit consequatur nulla. Quos!</p>
+        <p id="e">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia necessitatibus quidem fugit ea
+            inventore deserunt fugiat illum unde dolorum ducimus consectetur pariatur quibusdam nulla commodi, officiis
+            incidunt accusamus culpa perspiciatis molestias fuga aliquam dicta sunt. Ut ex consequuntur ea atque ipsa
+            reiciendis perferendis totam quia?</p>
+    </div>\
+
+    <div id="letterspacing">
+        <h1>Letter Spacing Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="textdecoration">
+        <h1>Text Decoration Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="f">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="g">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="textcol">
+        <h1>Text Decoration Line Color Change Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="f">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="g">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="textdeco">
+        <h1>Text Decoration Line Style Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="f">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="g">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="h">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="i">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="textlinethick">
+        <h1>Text Decoration Line Style Thickness Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="f">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="texttransform">
+        <h1>Text Transform Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="f">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="textalign">
+        <h1>Text Align Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="textindent">
+        <h1>Text Indent Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, maxime!</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, maxime!</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, maxime!</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, maxime!</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, maxime!</p>
+    </div>
+
+    <div id="textshadow">
+        <h1>Text Shadow Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="b">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="d">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div id="textoverflow">
+        <h1>Text Overflow Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="e">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+    </div>
+
+    <div id="break">
+        <h1>Word Break Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam.</p>
+        <p id="e">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam.</p>
+        <p id="f">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="g">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+    </div>
+
+    <div id="textlinebreak">
+        <h1>Text Line Break Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="e">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+    </div>
+
+    <div id="textemphasis">
+        <h1>Text Emphasis Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolor obcaecati earum rerum aliquam,
+            corporis dicta laborum assumenda deleniti alias quia quibusdam, fuga non, labore at molestiae voluptas
+            tenetur dolores.</p>
+        <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="e">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur tenetur quaerat quas
+            necessitatibus nemo earum.</p>
+    </div>
+
+
+
+    <div id="textjustify">
+        <h1>Text Justify Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="e">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+    </div>
+
+    <div id="textorientation">
+        <h1>Text Orientation Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p><br>
+        <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p><br>
+        <p id="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p><br>
+        <p id="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p><br>
+        <p id="e">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+    </div>
+
+    <div id="textdirection">
+        <h1>Text Direction Properties</h1>
+        <p id="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque
+            ea. Voluptatem, magnam.</p>
+        <p id="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem,
+            magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem,
+            magnam.</p>
+        <p id="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem,
+            magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem,
+            magnam.</p>
+        <p id="e">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem,
+            magnam. Quisquam, magnam! Eius, cumque ea. Voluptatem, magnam. Quisquam, magnam! Eius, cumque ea.
+            Voluptatem,
+            magnam.</p>
+    </div>
+
+</body>
+
+</html>

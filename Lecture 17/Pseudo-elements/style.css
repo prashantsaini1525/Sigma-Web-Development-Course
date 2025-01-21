@@ -1,0 +1,51 @@
+/* Descendant Selector: Styles all <p> elements inside a <div> */
+div {
+    min-height: 100vh;
+    border: 4px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* So below we use group property(,) to seperate each heading beacause in descendant you can only target element or tags which have relations between parent and child or nested childs. */
+#elements h1, h2, h3 { 
+    color: darkblue;
+    background-color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#elements p {
+    background-color: lightblue;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+div p strong {
+    font-weight: bold;
+    color: darkred;
+    /* text-decoration: underline; */
+}
+
+div p mark strong {
+    font-weight: bold;
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+span p::before {
+    content: "Property💡(This is before property.) : ";
+    color: darkgreen;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: antiquewhite;
+}
+
+span p::after {
+    content: "✨ (This is after property.) ";
+    color: darkorange;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: lightyellow;
+}

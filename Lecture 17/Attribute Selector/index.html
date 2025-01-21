@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="attribute">
+        <h1>HI, THIS IS PRASHANT SAINI</h1>
+        <p>I'm a upcoming developer</p>
+        <h2>HI, If you are here so you are on right platform.</h2>
+        <p>Welocme back hero!!</p>
+        <h3>I'm also a Software Developer and learning or enhancing my skills everyday.</h3>
+        <p>We use the Attribute Selector to style specific elements based on their attributes. It helps us target only
+            the elements we need without adding extra classes or IDs.</p>
+        <h2>So, Why we use Attribue Selector?</h2>
+        <p><strong>Saves time:</strong> No need to write extra classes for styling.</p>
+        <p><strong>Flexible: </strong> Targets elements with specific properties like type, href, src, etc.</p>
+        <p><strong>Clean code:</strong> Keeps HTML simple and easy to read.</p>
+        <p>So, As you see this page here i applied <strong>Attribute Selector</strong> <mark><strong> (e.g.,
+                    [type="text"])</strong></mark> properties which are applicable for which input elements and text
+            elements we select and target in stylesheet.</p>
+    </div>
+
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" pattern="^[A-Za-z\s]+$" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender :</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth :</label>
+                <input type="text" id="dob" name="dob" placeholder="Enter Your Date of Birth" min="2000-01-01" max="2020-01-01" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter Your Phone Number" pattern="[0-9]{10}" required>
+            </div>
+            
+            <div>
+                <label for="address">Address :</label>
+                <textarea id="address" name="address" placeholder="Enter Your Address" pattern="^[A-Za-z0-9\s,.-/]+$" required></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to newsletter</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+div > h1 {
+    text-align: center;
+    background-color: red;
+}
+
+div > h2 {
+    text-align: left;
+    background-color: green;
+}
+div > h3 {
+    color: black;
+    background-color: yellow;
+}
+
+div > p {
+    color: white;
+    background-color: blueviolet;
+}
+
+.center {
+    text-align: center;
+    color: aqua;
+    background-color: darkred;
+    
+}

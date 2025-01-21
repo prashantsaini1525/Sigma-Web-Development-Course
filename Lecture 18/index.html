@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - Margin,Padding & Borders</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="big">
+        <div class="box box1">
+            <h1>This is a box 1</h1>
+        </div>
+
+        <div class="box box2">
+            <h1>This is a box 2</h1>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="css-box">
+        <h1>CSS Box Model</h1>
+        <p>The CSS Box model defines how elements are rendered and how their dimensions are calculated.</p>
+        <p>It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.</p>
+        <p>The box model consists of four main components, which are</p>
+
+        <ol>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#padding">Padding</a></li>
+            <li><a href="#border">Border</a></li>
+            <li><a href="#margin">Margin</a></li>
+        </ol>
+
+        <section id="content">
+            <h2><Strong>Content :</Strong></h2>
+            <p>The innermost component of the box model is the actual content of the element. It can be text, image, video, etc.</p>
+            <p>The content area is defined by the <strong>width</strong> and <strong>height</strong> properties.</p>
+        </section>
+
+        <section id="padding">
+            <h2><Strong> Padding :</Strong></h2>
+            <p>The space between the actual content and the border of the element is the padding.</p>
+            <p>The padding area is defined by the property <strong>padding</strong>. For more details, follow the <strong><a href="https://www.codewithharry.com/tutorial/css-padding/" target="_blank">CSS Padding</a></strong> tutorial.</p>
+        </section>
+
+        <section id="border">
+            <h2><Strong> Border :</Strong></h2>
+            <p>The border surrounds the content and padding and gives the visual border of the element.</p>
+            <p>The border properties can be controlled using the <strong>border</strong> keyword. For more details, follow the  <strong><a href="https://www.codewithharry.com/tutorial/css-borders/" target="_blank">CSS Borders</a></strong> tutorial.</p>
+        </section>
+
+        <section id="margin">
+            <h2><Strong> Margin :</Strong></h2>
+            <p>The margin is the space outside the element that separates it from other elements in the layout.</p>
+            <p>The margin of the element is controlled by the <strong>margin</strong> property. For more details, follow the  <strong><a href="https://www.codewithharry.com/tutorial/css-margin/" target="_blank">CSS Margin</a></strong> tutorial.</p>
+        </section>
+
+        <section id="margin">
+            <h2><Strong> Margin Collapse:</Strong></h2><br>
+            <img height="300" src="./images.png" alt="collapse">
+            <p>Margin collapse is a behavior in CSS where the vertical margins of adjacent elements (top and bottom) combine or "collapse" into a single margin instead of stacking on top of each other.</p>
+            <p>Here’s an easy way to understand it:</p><br>
+            <h3><strong>Key Points:</strong></h3>
+            <ol>
+                <strong><li>When it happens:</li></strong><br>
+                <p><strong>Between adjacent elements</strong> : If one element has a bottom margin and the next element has a top margin, the larger of the two margins will be used instead of adding them together.</p>
+                <p><strong>For nested elements</strong> : If a parent element and its child both have vertical margins, they can collapse.</p>
+                <p><strong>For empty elements</strong> : If an element has no content, its top and bottom margins can collapse.</p><br>
+                <strong><li>Why it happens:</li></strong><br>
+                <p>To prevent unnecessarily large gaps in your layout when multiple vertical margins meet.</p>
+            </ol>
+            <h2><strong>Example :</strong></h2><br>
+            <h3>Without Margin Collapse :</h3><br>
+            <h3>Imagine two boxes :</h3><br>
+            <ul>
+                <li>The first box has a <mark><strong>margin-bottom: 20px</strong></mark>.</li>
+                <li>The second box has a <mark><strong>margin-bottom: 30px</strong></mark>.</li>
+                <p>If margins did not collapse, the space between the boxes would be 20px + 30px = 50px.</p><br>
+                <h3>With Margin Collapse :</h3><br>
+                <li>In reality, with margin collapse, the space between the boxes will be the larger of the two margins: 30px.</li><br>
+            </ul>
+        </section>
+
+        <section id="dimension">
+            <h2>Calculating the total dimension of the element :</h2>
+            <p>The total width and height of the element is calculated with the formula :</p>
+            <p><strong>Total Width</strong> =  Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin</p>
+            <p><strong>Total Height</strong> =  Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin</p>
+            <h3>Example :</h3>
+            <pre>
+                <code>
+                    &lt;head&gt;
+                        &lt;style&gt;
+                            p{
+                                width: 200px;
+                                height: 300px;
+                                padding: 15px;
+                                border: 10px solid red;
+                                margin: 5px;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;p&gt;CodeWithHarry&lt;/p&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            <p>Here, the total height and width will be represented as</p>
+            <p><strong>Total Width</strong> =  200px (width) + 15px (left padding) + 15px (right padding) + 10px (left border) + 10px (right border) + 5px (left margin) + 5px (right margin) = 260px</p>
+            <p><strong>Total Width</strong> =  300px (Height) + 15px (Top Padding) + 15px (Bottom Padding) + 10px (Top Border) + 10px (Bottom Border) + 5px (Top Margin) + 5px (Bottom Margin) = 360px</p>
+        </section>
+    </div>
+</body>
+</html>

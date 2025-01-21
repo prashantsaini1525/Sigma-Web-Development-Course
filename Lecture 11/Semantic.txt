@@ -1,0 +1,53 @@
+
+When to Use Each Semantic Tag?
+Here’s a logical order for using semantic tags in a webpage:
+
+Start with <header>: Add the title, logo, and navigation.
+Use <main>: Structure the core content with <section> and <article>.
+Include <aside>: Add sidebars or related links.
+Add <footer>: Include closing details like copyright or contact info.
+Use <nav> and <figure> inside appropriate sections.
+Use <details>, <mark>, <time>, etc., as needed.
+
+
+What are Semantic Tags?
+Semantic tags add meaning to your HTML. They tell both the browser and the developer what kind of content is being presented.
+
+Here are some of the key semantic tags you must know about:
+
+<header>: Used to represent the top section of a web page, often containing headings, logos, and navigation.
+
+<nav>: Signifies a navigation menu on a web page.
+
+<article>: Indicates a self-contained piece of content, such as a blog post or news article.
+
+<section>: Represents a thematic grouping of content on a web page.
+
+<aside>: Typically used for sidebars or content that is tangentially related to the main content.
+
+<footer>: Represents the footer of a web page, usually containing copyright information and contact details.
+
+<figure> and <figcaption>: Used for embedding images, diagrams, or charts, along with a caption.
+
+<main>: Signifies the main content area of a web page.
+
+<time>: Used to represent time-related information, like dates and times.
+
+Key Points to Remember
+<section> is for grouping related content within a page or article.
+<article> is for self-contained content that can stand on its own.
+Use <article> inside <section> for multiple independent pieces grouped together.
+Use <section> inside <article> for dividing a single topic into subsections.
+Conclusion
+There’s no absolute “best” approach—it depends on your content. However:
+
+For news feeds or archives: <article> inside <section> is more common.
+For detailed single articles: <section> inside <article> makes more sense.
+
+
+Easy language to understand:
+Maan lo ki koi ek humne "article" tag use kiya hai toh hum uss artical tag ko tabhi use krenge jab woh ek independent article ho example : blog, post, tutorial.
+
+but hum "section" tag ko artical tag ke andar uss artical k sections banane mein kar sakte hain jaise ki ek blog hai toh uss block mein hum section bna sakte hain example: section 1-morning, section 2-afternoon section 3-Evening.
+
+aise hi hum section ke andar artical use kr sakte hain jaise ki humne ek section bnaya section-1 morning toh hum usme "artical" tag use krke ussko describe kar sakte hain.

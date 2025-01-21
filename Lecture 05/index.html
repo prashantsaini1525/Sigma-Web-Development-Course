@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img height="200" src="Squid Game.png" alt="Squid"><br> <!--Alt is used for image errors
+    Ann agar aapne height and width mein se koi bhi ek chiz set krie toh suri automatically set ho jaati hai -->
+        <table>
+            <caption>Employee Details</caption>
+            
+            <thead> <!-- thead is basically a way to get set header for employee details. basically if we want to made a table in which evrything look good or easy to implement css.-->
+                    <!--tr Stands for table description, th stands for table heading and td is stands for table data-->
+                <tr> 
+                    <th>Header Name</th>
+                    <th>Passion</th>
+                    <th>Fav Things</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Prashant</td>
+                    <td>Programmer</td>
+                    <td>CodeWithPrashant</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Shubham</td>
+                    <td rowspan="2">GK Studio</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">Shubham</td>
+                </tr>
+            </tbody>
+            
+            <tfoot> <!-- tfoot work like theader in this we add data to the footer in table 
+                so why we use thead and tfoot basically it is used for target css styling which is helps to implement css easily-->
+                <tr>
+                    <td>Prashant</td>
+                    <td>Programmer</td>
+                    <td>Footer Name </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1>Unorderd List Example</h1>
+        <ul>
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ul>
+
+        <ul type="square">
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ul>
+
+        <ul type="circle">
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ul>
+        <!--Customizing Bullet Points with 'type' Attribute
+You can specify the style of bullet points using the type attribute. It supports three values:
+disc - default bullet style
+square
+circle-->
+        <h1>Ordered List Example</h1>
+        <ol>
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ol>
+
+        <ol type="i">
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ol>
+
+        <ol type="I">
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ol>
+
+        <ol type="a">
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ol>
+
+        <ol type="A">
+            <li>Prashant</li>
+            <li>Shubham</li>
+            <li>Amit</li>
+            <li>Viphul</li>
+        </ol>
+        <!--Setting the 'type' Attribute
+The type attribute specifies the style of numbering. You have several options:
+Uppercase Roman Numerals: Use type="I"
+Lowercase Roman Numerals: Use type="i"
+Arabic Numerals: Use type="1" (This is the default if the type attribute is not specified)
+Lowercase Alphabetical Letters: Use type="a"
+Uppercase Alphabetical Letters: Use type="A"-->
+
+        <a href="https://www.codewithharry.com/tutorial/html-lists/">
+            <img height="100" src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-lists/unordered-list-example.png" alt="Description of Image">
+        </a>
+
+        <h1>Definition List Example</h1> <!-- Definition list is a list where each term (dt) is followed by a definition (dd). -->
+        <dl> <!-- dl stands for defination list, dt stands for defination term and dd stand for defination defination -->
+            <h1>Definations List</h1>
+            <dt>HTML</dt>
+            <dd>HTML (HyperText Markup Language) is the standard language used to create the structure and content of web pages.</dd>
+
+            <dt>CSS</dt>
+            <dd>CSS (Cascading Style Sheets) is used to define the visual appearance and layout of a webpage, such as colors, fonts, and spacing.</dd>
+
+            <dt>Javascript</dt>
+            <dd>JavaScript is a programming language that enables interactivity on web pages, such as responding to user actions or modifying content dynamically.</dd>
+        </dl>
+
+        <a href="https://www.codewithharry.com/tutorial/html-lists/">
+            <img height="100" src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-lists/definition-list-html.png" alt="Description of Image">
+        </a>
+
+
+</body>
+</html>

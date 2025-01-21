@@ -1,0 +1,34 @@
+.red {
+    background-color: bisque;
+}
+
+.one {
+    background-color: red;
+    text-align: center;
+}
+
+.two {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.three {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+.four {
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.fifth {
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}

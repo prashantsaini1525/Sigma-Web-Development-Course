@@ -1,0 +1,27 @@
+.red {
+    color: red;
+    border: 5px solid purple;
+    /*border-radius: ;*/
+}
+#firstdiv{
+    background-color:antiquewhite;
+}
+#seconddiv {
+    background-color: green;
+}
+
+#thirddiv {
+    margin-top: 5px;
+}
+.black {
+    color: blue;
+    border: 5px solid black;
+    
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.bg-green {
+    background-color: aqua;
+}
+

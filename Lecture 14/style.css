@@ -1,0 +1,18 @@
+div {
+    color: blueviolet;
+    background-color: lightcoral !important;
+    padding: 20px;
+}
+
+span {
+    color: bisque;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: aliceblue;
+    background-color:darkgoldenrod;
+    text-align: center;
+}

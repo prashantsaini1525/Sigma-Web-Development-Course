@@ -1,0 +1,18 @@
+#video {
+    margin-bottom: 50px ;
+    border: 3px solid blue;
+    background-color: antiquewhite;
+}
+#audio {
+    margin-bottom: 50px;
+    border: 3px solid orangered;
+    background-color: bisque;
+}
+.headline{
+    background-color: skyblue;
+    color: red;
+}
+.subheadline {
+    background-color: aquamarine;
+    color : purple;
+}

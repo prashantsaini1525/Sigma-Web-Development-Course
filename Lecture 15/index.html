@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline, Internal & External CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        #internal h1 {
+            color: skyblue;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Three Ways to Add CSS in HTML</h1>
+    <table>
+        <ol>
+            <li>
+                <a href="#inline">Inline CSS</a> [<mark>Not recommandable</mark>]
+            </li>
+            <li><a href="#internal">Internal CSS</a></li>
+            <li><a href="#external">External CSS</a></li>
+        </ol>
+    </table>
+
+    <div id="inline">
+        <h2>Inline CSS:</h2>
+        <p>
+            Inline CSS is used to add custom properties to specific elements. The
+            added style will only reflect on that particular element only.
+        </p>
+        <p>
+            To use inline CSS, Insert the "style" attribute within the HTML
+            element's opening tag.
+        </p>
+        <h3>
+            As you can see in the example below heading <mark>About Me</mark> which
+            is in maroon color:
+        </h3>
+        <pre><code>&lt;h2 style="color:antiquewhite; background-color: brown;"&gt; About Me &lt;/h2&gt;</code></pre>
+        <p>
+            In the below <mark>About ME</mark> heading we can see this css applied
+            style.
+        </p>
+        <h2 style="color: antiquewhite; background-color: brown">About Me</h2>
+        <p>
+            <mark>My Short Note</mark>: In Above &lt;h2&gt; tag we are using "Inline
+            CSS" but this is not so considered as a good practice. Why? because
+            inline is not recommandable to use for big projects. This technique is
+            very time consuming process because whenever you want to add some
+            changes in your project you have to change all the inline css in every
+            individual attributes or tags.
+        </p>
+        <p>
+            Note: The downside of using inline CSS is, that once the project
+            complexity increases, it will become difficult to manage the styles of
+            each and individual elements.
+        </p>
+    </div>
+
+    <div id="internal">
+        <h2>Internal CSS:</h2>
+        <p>
+            Internal CSS is used to apply custom style to the multiple elements on
+            the same page. The style can be used throughout the HTML page.
+        </p>
+        <p>
+            Internal CSS is defined in a style block, which will be inside the head
+            section.
+        </p>
+        <h3>
+            As you can see in the example below heading <mark>About Me</mark> which
+            is in darkcyan color:
+        </h3>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                    <mark>&lt;style&gt;
+                        #internal h1 {
+                        color: skyblue; 
+                        background-color: darkcyan;
+                        }</mark>
+                        &lt;/style&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;header&gt;&lt;/header&gt;
+                        &lt;main&gt;&lt;/main&gt;
+                        &lt;footer&gt;&lt;footer&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                </code>
+            </pre>
+        <p>
+            In the below <mark>About ME</mark> heading we can see this css applied
+            style.
+        </p>
+        <h1>About Me</h1>
+        <h2>
+            Note: The &lt;style&gt; block should always be in the &lt;head&gt;
+            section.
+        </h2>
+        <p>
+            <mark>My Short Note</mark>: In Above &lt;h1&gt; tag we are using
+            "Internal CSS" basically it is used in html pages under the &lt;head&gt;
+            section. Why? because internal CSS is a style, and in html, styles and
+            important scripts are only used in &lt;head&gt; section. This technique
+            is very usefult for save time because whenever you want to add some
+            changes in your project you have to changes only in specific styles in
+            css instead of changing all the css styles in Inline CSS.
+        </p>
+    </div>
+
+    <div id="external">
+        <h2>Exterenal CSS:</h2>
+        <p>
+            External CSS works similarly to internal CSS but with a twist. Instead
+            of adding the styles within the HTML file, we create a separate file
+            with .css extension. This file will hold all the styling details. Then,
+            we link this file to the HTML page, giving it the instructions on how to
+            look.
+        </p>
+        <p>
+            There is a new <strong>&lt;link&gt;</strong> tag in the
+            <strong>head section</strong>, and this
+            <strong>&lt;link&gt;</strong> tag has <strong>rel</strong> and
+            <strong>href</strong> properties.
+        </p>
+        <p>The following points will explain each keyword's meaning:</p>
+        <ol>
+            <li>
+                <strong>&lt;link&gt;</strong>: This tag is used to create links
+                between different resources, like stylesheets, fonts, and more. In our
+                case, we are using a link tag to link the <strong>CSS</strong> file
+                with the <strong>HTML</strong> file.
+            </li>
+            <li>
+                <strong>rel="stylesheet"</strong>: <strong> rel</strong> stands for
+                relationship, this defines the type of
+                <strong>relationship</strong> between the HTML document and the linked
+                resource. When set to "stylesheet", it specifies that the linked
+                resource is a stylesheet that will be used to style the HTML content.
+            </li>
+            <li>
+                <strong>href="style.css"</strong>: The <strong>href</strong> attribute
+                stands for "<strong>hypertext reference.</strong>" It specifies the
+                path or URL to the external resource we want to link. In this case,
+                it's the path to the external CSS file called "style.css".
+            </li>
+        </ol>
+        <h3>
+            As you can see in the example below heading <mark>About Me</mark> which
+            is in darkcyan color:
+        </h3>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Document&lt;/title&gt;
+                    <mark>&lt;link rel="stylesheet" href="./style.css"/&gt;</mark>
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;header&gt;&lt;/header&gt;
+                    &lt;main&gt;&lt;/main&gt;
+                    &lt;footer&gt;&lt;footer&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+            </code>
+            <code>
+                    #external h1 {
+                        color: red;
+                        background-color: blue;
+                    }
+            </code><h3>This above css code are from serpertad file which is called <mark>style.css</mark>.</h3>
+        </pre>
+
+        <p>
+            In the below <mark>About ME</mark> heading we can see this css applied
+            style.
+        </p>
+        <h1>About Me</h1>
+        <p>This approach enables to use of the same CSS to multiple HTML files, wherever the same custom style is required.</p>
+        <p>This is helpful when we have to maintain consistency on our web pages and want to use the same CSS styles across multiple pages.</p>
+        <h2>
+            Note: The precedence is Inline CSS > Internal CSS > External CSS. If we define the same property with different property values in three different ways, the element will have the property value of inline CSS.
+        </h2>
+        <p>
+            <mark>My Short Note</mark>: In Above &lt;h1&gt; tag we are using
+            "External CSS" basically it is used in multiple html pages with only one <strong>style.css</strong> and we can use multiple stylesheets for multiple html pages, under the &lt;head&gt tag with the help of <strong>&lt;link&gt;</strong> tag. Why? because external CSS is a style, and in html, styles and
+            important scripts are only used in &lt;head&gt; section. This technique
+            is very usefult for save time and want to changes in bulk because whenever you want to add some
+            changes in your project you have to changes only in specific styles in
+            css instead of changing all the css styles in Inline CSS.
+        </p>
+    </div>
+</body>
+
+</html>

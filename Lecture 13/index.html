@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities, Code tag and more on HTML</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div id="entity" class="same">
+                <h1>Entities in HTML</h1>
+                <p>
+                    HTML entities are special characters that represent characters that are not
+                    directly printable, such as the copyright symbol (&copy;), the registered
+                    trademark symbol (&reg;), the degree symbol (&deg;), and so on. To insert an
+                    HTML entity in an HTML document, you use the format &#xXXXX; where XXXX is the
+                    hexadecimal code for the character.
+                </p>
+            </div>
+
+            <div id="html" class="same">
+                <h2>How to use Entities</h2>
+                <p>&amp;lt; for &lt;</p>
+                <p>&amp;gt; for &gt;</p>
+                <p>&amp;amp; for &amp;</p>
+                <p>&amp;nbsp; for a non-breaking space</p>
+                <p>&amp;copy; for &copy;</p>
+            </div>
+
+            <div id="code" class="same">
+                <h2>Code tag in HTML</h2>
+                <p>
+                    The <code>code</code> tag is used to display computer code. It is typically
+                    displayed in a monospaced font.
+                </p>
+                <p>
+                    Example:
+                    <code>&lt;html&gt;&lt;body&gt;Hello, World!&lt;/body&gt;&lt;/html&gt;</code>
+                </p>
+            </div>
+
+
+            <div id="pre" class="same">
+                <h2>Pre tag in HTML</h2>
+                <pre>
+                    <p>A preformatted text is displayed in a fixed-width font, and it preserves
+                        all spaces and line breaks. It is commonly used for displaying source code,
+                        configuration files, and other text that should not be interpreted as
+                        HTML.
+                    </p>
+                </pre>
+            </div>
+
+            <div id="precode" class="same">
+                <h2>Pre tag with Code tag</h2>
+                <pre>
+                    <code>
+                        &lt;html&gt;
+                        &lt;body&gt;
+                        Hello, World!
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                        &lt;  for <
+                        &gt;  for >
+                        &amp; for &
+                        &nbsp; for a non-breaking space
+                        &copy; for ©
+                    </code>
+                </pre>
+            </div>
+
+            <div id="boiler" class="same">
+                <h2>Here is HTML Boilerplate Code</h2>
+                <pre>
+                    <code>&lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Document&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;header&gt;&lt;/header&gt;
+                        &lt;main&gt;&lt;/main&gt;
+                        &lt;footer&gt;&lt;footer&gt;
+                        &lt;h1&gt;&lt;/h1&gt;
+                        &lt;h2&gt;&lt;/h2&gt;
+                        &lt;h3&gt;&lt;/h3&gt;
+                        &lt;h4&gt;&lt;/h4&gt;
+                        &lt;h5&gt;&lt;/h5&gt;
+                        &lt;h6&gt;&lt;/h6&gt;
+                        &lt;p&gt;&lt/p&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
+                <h2>Want to Learn more about Miscellaneous Tags Go there:</h2>
+                <h1>
+                    <a href="https://www.codewithharry.com/tutorial/html-code-tags/" target="_blank">Code Tag (click me)</a>
+                </h1><br>
+                <h1>
+                    <a href="https://www.codewithharry.com/tutorial/html-global-attributes/" target="_blank">Global Attributes (click me)</a>
+                </h1><br>
+                <h1>
+                    <a href="https://www.codewithharry.com/tutorial/html-obselete-tags/" target="_blank">Obsolete HTML Tags (click me)</a>
+                </h1><br>
+                <h1>
+                    <a href="https://www.codewithharry.com/tutorial/html-charcter-sets/" target="_blank">Character Sets (click me)</a>
+                </h1><br>
+                <h1>
+                    <a href="https://www.codewithharry.com/tutorial/html-semantic-tags/" target="_blank">Many More Tags (click me)</a>
+                </h1><br>
+            </div>
+            <div id="canva">
+                <h2>Why Use Canvas?</h2>
+                <p>
+                    Here are some reasons why you might use the canvas element:
+                <p>
+                <h3>Graphics:</h3>For drawing shapes, graphs, and other visual representations.</p>
+                <p>
+                <h3>Dynamic Content:</h3> To dynamically update visual elements.</p>
+                <p>
+                <h3>Interactivity:</h3> Though this involves JavaScript, the canvas element is the foundation for
+                interactive graphical content.</p>
+                </p>
+                <canvas id="myCanvas" width="200" height="100"></canvas>
+            </div>
+
+            <div id="quotation">
+                <h2>HTML Quotation Tag</h2>
+                <p>The use of quotations is common in textual content. HTML provides specific tags to handle this:
+                    &lt;blockquote&gt; for block quotations and &lt;q&gt; for inline quotations. In this blog, we'll
+                    explore these tags, their attributes, and how to style them.</p><br>
+
+                <h1>What Are &lt;blockquote&gt; and &lt;q&gt; Tags?</h1><br>
+                <p>The &lt;blockquote&gt; and &lt;q&gt; tags serve to define quotations in HTML. While
+                    &lt;blockquote&gt; is used for longer, block-level quotes, &lt;q&gt; is used for shorter, inline
+                    quotes.</p><br>
+
+                <h1>Why Use These Tags?</h1><br>
+                <p>They provide semantic meaning to your quotations, making it easier for search engines to understand
+                    the context and relevance of the content.</p><br>
+
+                <h1>Basic Syntax</h1><br>
+                <h3> &lt;blockquote&gt;</h3>
+                <blockquote cite="source-url">
+                    Quotation text here.
+                </blockquote><br>
+                <h3> &lt;q&gt;</h3>
+                <q cite="source-url">Quotation text here.</q>
+
+                <br><br><h1>Attributes</h1><br>
+                <p>Both &lt;blockquote&gt; and &lt;q&gt; tags support the cite attribute: <br>
+                cite: Specifies the URL of the quote's source.</p><br>
+
+                <h1>Practical Example</h1><br>
+                <h3>Using &lt;blockquote&gt; for long Quotes</h3><br>
+                <blockquote cite="https://example.com">
+                    This is a long quote from an external source. This quote can span multiple lines and paragraphs.
+                </blockquote><br>
+                <h3>Using &lt;q&gt; for Short, Inline Quotes</h3><br>
+                The philosopher said, <q cite="https://example.com">The unexamined life is not worth living.</q><br><br>
+
+                <h1>Styling with CSS</h1><br>
+                <p>You can style these tags using CSS to better match the aesthetics of your website.</p><br>
+
+                <h1>Conclusion</h1><br>
+                <p>The &lt;blockquote&gt; and &lt;q&gt;tags are essential for semantically marking up quotations in HTML. They provide both readability and SEO benefits. Understanding how to use these tags effectively can add more depth and clarity to your web content.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 My Website. All rights reserved. <br> Created by <a href="https://prashant-saini-22.vercel.app/"
+                target="_blank">Prashant Saini</a></p>
+    </footer>
+
+</body>
+
+</html>

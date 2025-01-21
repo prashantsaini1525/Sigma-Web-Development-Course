@@ -1,0 +1,16 @@
+div {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: lightblue;
+    border: 5px solid black;
+    font-size: 24px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+section {
+    min-height: 100vh;
+    margin-bottom: 50px;
+    background-color: aqua;
+    border: 5px solid black;
+    padding: 10px;
+}

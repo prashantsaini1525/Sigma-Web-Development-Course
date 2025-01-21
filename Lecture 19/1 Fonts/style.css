@@ -1,0 +1,967 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Playwrite+VN:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+body {
+    color: #495057;
+}
+
+div {
+    min-height: 100vh;
+    margin-top: 10px;
+}
+
+#fonts {
+    min-height: 100vh;
+    /* padding: 10px; */
+    border: 3px solid black;  
+}
+
+#fonts > h2 {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    background-color: #495057;
+    border: 4px solid darkmagenta;
+    /* padding: 10px; */
+}
+
+caption {
+    color: black;
+    background-color: red;
+}
+
+thead {
+    background-color: aqua;
+    font-size: 25px;
+}
+
+tbody {
+    background-color: greenyellow;
+    text-align: center;
+    /* height: 25%;  */
+}
+
+#one {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#two {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#three {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#four {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#five {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#six {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#seven {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#eight {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#nine {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#ten {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#eleven {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+#twelve {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#thirteen {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#fourteen {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#fifteen {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#sixteen { 
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#seventeen {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#eighteen {
+    font-family: "Poppins", serif;  
+    font-weight: 900;
+    font-style: italic;
+}
+
+#nineteen {
+    font-family: "Playwrite VN", serif;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#twenty {
+    font-family: "Playwrite VN", serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#twentyone {
+    font-family: "Playwrite VN", serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#twentytwo {
+    font-family: "Playwrite VN", serif;
+    font-weight: 600;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#twentythree {
+    font-family: "Macondo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div > h1 {
+    text-align: center;
+    background-color:aquamarine;
+}
+
+div > p {
+    background-color:bisque;
+}
+
+/* Font Properties */
+#fontprop {
+    border: 2px solid black;
+}
+
+#fontprop #a {
+    font-size: 18px;
+    color: red;
+}
+
+#fontprop #b {
+    font-size: 20px;
+    color: blue;
+}
+
+#fontprop #c {
+    font-size: 22px;
+    color: green;
+}
+
+#fontprop #d {
+    font-size: 24px;
+    color: purple;
+}
+
+#fontprop #e {
+    font-size: 26px;
+    color: orange;
+}
+
+/* Line Height Properties */
+#lineheight {
+    border: 2px solid black;
+}
+
+#lineheight #a {
+    font-size: 18px;
+    color:blueviolet;
+    line-height: 1.5;
+}
+
+#lineheight #b {
+    font-size: 20px;
+    color:brown;
+    line-height: 1.7;
+}
+
+#lineheight #c {
+    font-size: 22px;
+    color:cadetblue;
+    line-height: 1.9;
+}
+
+#lineheight #d {
+    font-size: 24px;
+    color:darkgreen;
+    line-height: 2.1;
+}
+
+#lineheight #e {
+    font-size: 26px;
+    color:darkgoldenrod;
+    line-height: 2.3;
+}
+
+/* Letter Spacing Properties */
+#letterspacing {
+    border: 2px solid black;
+}
+
+#letterspacing #a {
+    font-size: 18px;
+    color: red;
+    letter-spacing: 1px;
+}
+
+#letterspacing #b {
+    font-size: 20px;
+    color: blue;
+    letter-spacing: 2px;
+}
+
+#letterspacing #c {
+    font-size: 22px;
+    color: green;
+    letter-spacing: 3px;
+}
+
+#letterspacing #d {
+    font-size: 24px;
+    color: purple;
+    letter-spacing: 4px;
+}
+
+#letterspacing #e {
+    font-size: 26px;
+    color: orange;
+    letter-spacing: 5px;
+}
+
+/* Text Decoration Properties */
+#textdecoration {
+    border: 2px solid black;
+}
+
+#textdecoration #a {
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+}
+
+#textdecoration #b {
+    font-size: 20px;
+    color: blue;
+    text-decoration: overline;
+}
+
+#textdecoration #c {
+    font-size: 22px;
+    color: green;
+    text-decoration: line-through;
+}
+
+#textdecoration #d {
+    font-size: 24px;
+    color: purple;
+    text-decoration: underline overline;
+}
+
+#textdecoration #e {
+    font-size: 26px;
+    color: orange;
+    text-decoration: underline line-through;
+}
+
+#textdecoration #f {
+    text-decoration: underline line-through;
+    color: blue;
+    font-size: 28px;
+}
+
+#textdecoration #g {
+    text-decoration: underline overline line-through;
+    color: aqua;
+    font-size: 30px;
+}
+
+/* Text decoration color properties */
+
+#textcol {
+    border: 2px solid black;
+}
+
+#textcol #a {
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+#textcol #b {
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 20px;
+}
+
+#textcol #c {
+    text-decoration: overline;
+    text-decoration-color: blue;
+    font-size: 22px;
+}
+
+#textcol #d {
+    text-decoration: line-through;
+    text-decoration-color: green;
+    font-size: 24px;
+}
+
+#textcol #e {
+    text-decoration: underline overline;
+    text-decoration-color: purple;
+    font-size: 26px;
+}
+
+#textcol #f {
+    text-decoration: underline line-through;
+    text-decoration-color: orange;
+    font-size: 28px;
+}
+
+#textcol #g {
+    text-decoration: underline overline line-through;
+    text-decoration-color: blue;
+    font-size: 30px;
+}
+
+/* Text Decoration Line Style Properties */
+
+#textdeco {
+    border: 2px solid black;
+}
+
+#textdeco #a {
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+#textdeco #b {
+    font-size: 20px;
+    color: darkblue;
+    text-decoration: underline;
+    text-decoration-style:none;
+}
+
+#textdeco #c {
+    font-size: 22px;
+    color: blue;
+    text-decoration: underline; 
+    text-decoration-style: double;
+}
+
+#textdeco #d {
+    font-size: 24px;
+    color: green;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+#textdeco #e {
+    font-size: 25px;
+    color: purple;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+#textdeco #f {
+    font-size: 26px;
+    color: orange;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+#textdeco #g {
+    font-size: 27px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-style: inherit;
+}
+
+#textdeco #h {
+    font-size: 28px;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-style: initial;
+}
+
+#textdeco #i {
+    font-size: 29px;
+    color: darkblue;
+    text-decoration: overline;
+    text-decoration-style: double;
+}
+
+/* Text Decoration Line Thickness Properties */
+
+#textlinethick {
+    border: 2px solid black;
+}
+
+#textlinethick #a {
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color:blueviolet;
+    text-decoration-thickness: 1px;
+}
+
+#textlinethick #b {
+    font-size: 20px;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color:brown;
+    text-decoration-thickness: 2px;
+}
+
+#textlinethick #c {
+    font-size: 22px;
+    color: green;
+    text-decoration: underline;
+    text-decoration-color:cadetblue;
+    text-decoration-thickness: 3px;
+}
+
+#textlinethick #d {
+    font-size: 24px;
+    color: purple;
+    text-decoration: underline;
+    text-decoration-color:darkgreen;
+    text-decoration-thickness: 4px;
+}
+
+#textlinethick #e {
+    font-size: 26px;
+    color: orange;
+    text-decoration: underline;
+    text-decoration-color:darkgoldenrod;
+    text-decoration-thickness: 5px;
+}
+
+#textlinethick #f {
+    font-size: 28px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color:blueviolet;
+    text-decoration-thickness: 6px;
+}
+
+/* Text Transform Properties */
+#texttransform {
+    border: 2px solid black;
+}
+
+#texttransform #a {
+    font-size: 18px;
+    color: red;
+    text-transform: uppercase;
+}
+
+#texttransform #b {
+    font-size: 20px;
+    color: blue;
+    text-transform: lowercase;
+}
+
+#texttransform #c {
+    font-size: 22px;
+    color: green;
+    text-transform: capitalize;
+}
+
+#texttransform #d {
+    font-size: 24px;
+    color: purple;
+    text-transform: none;
+}
+
+#texttransform #e {
+    font-size: 26px;
+    color: orange;
+    text-transform: full-width;
+}
+
+#texttransform #f {
+    font-size: 28px;
+    color: darkblue;
+    text-transform: full-size-kana;
+}
+
+/* Text Align Properties */
+#textalign {
+    border: 2px solid black;
+}
+
+#textalign #a {
+    font-size: 18px;
+    color: red;
+    text-align: left;
+}
+
+#textalign #b {
+    font-size: 20px;
+    color: blue;
+    text-align: right;
+}
+
+#textalign #c { 
+    font-size: 22px;
+    color: green;
+    text-align: center;
+}
+
+#textalign #d {
+    font-size: 24px;
+    color: purple;
+    text-align: justify;
+}
+
+#textalign #e {
+    font-size: 26px;
+    color: orange;
+    text-align: start;
+}
+
+/* Text Indent Properties */
+
+#textindent {
+    border: 2px solid black;
+}
+
+#textindent #a {
+    font-size: 18px;
+    color: red;
+    text-indent: 50px;
+}
+
+#textindent #b {
+    font-size: 20px;
+    color: blue;
+    text-indent: 100px;
+}
+
+#textindent #c {
+    font-size: 22px;
+    color: green;
+    text-indent: 150px;
+}
+
+#textindent #d {
+    font-size: 24px;
+    color: purple;
+    text-indent: 200px;
+}
+
+#textindent #e {    
+    font-size: 26px;
+    color: orange;
+    text-indent: 250px;
+}
+
+/* Text Shadow Properties */
+#textshadow {
+    border: 2px solid black;
+}
+
+#textshadow #a {
+    font-size: 18px;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}   
+
+#textshadow #b {
+    font-size: 20px;
+    color: blue;
+    text-shadow: 2px 2px 2px black;
+}
+
+#textshadow #c {
+    font-size: 22px;
+    color: green;
+    text-shadow: 3px 3px 3px black;
+}
+
+#textshadow #d {
+    font-size: 24px;
+    color: purple;
+    text-shadow: 4px 4px 4px black;
+}
+
+#textshadow #e {
+    font-size: 26px;
+    color: orange;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* Text Overflow Properties */
+
+#textoverflow {
+    border: 2px solid black;
+}
+
+#textoverflow #a {
+    font-size: 20px;
+    color: red;
+    width: 45px;
+    border: 2px solid darkblue;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#textoverflow #b {
+    font-size: 20px;
+    color: blue;
+    width: 45px;
+    border: 2px solid darkblue;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+#textoverflow #c {
+    font-size: 20px;
+    color: green;
+    width: 45px;
+    border: 2px solid darkblue;
+    text-overflow: initial;
+    /* overflow: hidden; */
+}
+
+#textoverflow #d {
+    font-size: 20px;
+    color: purple;
+    width: 45px;
+    border: 2px solid darkblue;
+    text-overflow: break-word;
+    /* overflow: hidden; */
+}
+
+#textoverflow #e {
+    font-size: 20px;
+    color: orange;
+    width: 45px;
+    border: 2px solid darkblue;
+    text-overflow: unset;
+    /* overflow: hidden; */
+}
+
+/* Text break Properties */
+
+#break {
+    border: 2px solid black;
+}  
+
+#break #a {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: red;
+    word-break: normal;
+}
+
+#break #b {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: blue;
+    word-break: break-word;
+}
+
+#break #c {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: green;
+    word-break: keep-all;
+}
+
+#break #d {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: purple;
+    word-break: break-all;
+}
+
+#break #e {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: orange;
+    word-break: inherit;
+}
+
+#break #f {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: blue;
+    word-break: initial;
+}
+
+#break #g {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: green;
+    word-break: unset;
+}
+
+/* Text Line Break Properties */
+
+#textlinebreak {
+    border: 2px solid black;
+}
+
+#textlinebreak #a {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: red;
+    line-break: normal;
+}
+
+#textlinebreak #b {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: blue;
+    line-break: strict;
+}
+
+#textlinebreak #c {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: green;
+    line-break: anywhere;
+}
+
+#textlinebreak #d {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: purple;
+    line-break: loose;
+}
+
+#textlinebreak #e {
+    border: 2px solid red;
+    width: 150px;
+    font-size: 20px;
+    color: orange;
+    line-break: unset;
+}
+
+/* Text Emphasis Properties */
+
+#textemphasis {
+    border: 2px solid black;
+}
+
+#textemphasis #a {
+    font-size: 18px;
+    color: red;
+    text-emphasis: underline;
+    text-emphasis-color: yellow;
+}
+
+#textemphasis #b {
+    font-size: 20px;
+    color: blue;
+    text-emphasis: overline;
+}
+
+#textemphasis #c {
+    font-size: 22px;
+    color: green;
+    text-emphasis: line-through;
+}
+
+#textemphasis #d {
+    font-size: 24px;
+    color: purple;
+    text-emphasis: none;
+}
+
+#textemphasis #e {
+    font-size: 26px;
+    color: orange;
+    text-emphasis: filled;
+}
+
+/* Text Justify Properties */
+
+#textjustify {
+    border: 2px solid black;
+}
+
+#textjustify #a {
+    font-size: 18px;
+    color: red;
+    text-justify: left;
+}
+
+#textjustify #b {
+    font-size: 20px;
+    color: blue;
+    text-justify: right;
+}
+
+#textjustify #c {
+    font-size: 22px;
+    color: green;
+    text-justify: center;
+}
+
+#textjustify #d {
+    font-size: 24px;
+    color: purple;
+    text-justify: justify;
+}
+
+#textjustify #e {
+    font-size: 26px;
+    color: orange;
+    text-justify: distribute;
+}
+
+
+/* Text Orientation Properties */
+
+#textorientation {
+    border: 2px solid black;
+}
+
+#textorientation #a {
+    font-size: 18px;
+    color: red;
+    writing-mode: horizontal-tb;
+}
+
+#textorientation #b {
+    font-size: 20px;
+    color: blue;
+    writing-mode: vertical-rl;
+}
+
+#textorientation #c {
+    font-size: 22px;
+    color: green;
+    writing-mode: vertical-lr;
+}
+
+#textorientation #d {
+    font-size: 24px;
+    color: purple;
+    writing-mode: sideways-rl;
+}
+
+#textorientation #e {
+    font-size: 26px;
+    color: orange;
+    writing-mode: sideways-lr;
+}
+
+/* Text Writing Direction Properties */
+
+#textdirection {
+    border: 2px solid black;
+}
+
+#textdirection #a {
+    font-size: 18px;
+    color: red;
+    direction: ltr;
+}
+
+#textdirection #b {
+    font-size: 20px;
+    color: blue;
+    direction: rtl;
+}
+
+#textdirection #c {
+    font-size: 22px;
+    color: green;
+    direction: lro;
+}
+
+#textdirection #d {
+    font-size: 24px;
+    color: purple;
+    direction: rlo;
+}
+
+#textdirection #e {
+    font-size: 26px;
+    color: orange;
+    direction: ttb;
+}
+
+

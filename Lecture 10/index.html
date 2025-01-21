@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video,Audio & Media in HTML</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="video">
+        <div id="first" class="same">
+            <h2>
+                This is the simple "src" attribute which allows to link video on the html
+                page.
+            </h2>
+            <video src="./Assests/video.mp4" height="300" controls></video>
+        </div>
+
+        <div id="second" class="same">
+            <h2>
+                This is the "controls" attribute which is helps to add functioality of
+                controls in the video.
+            </h2>
+            <video src="./Assests/video.mp4" height="300" controls></video>
+        </div>
+
+        <div id="third" class="same">
+            <h2>
+                This is the "autoplay" attribute which is used for when the user refresh the
+                page that video play automatically. And here we used "muted" for mute
+                the video becuase whenever i changes on this page this video play
+                automatically which are very fraustrating.
+            </h2>
+            <video src="./Assests/video.mp4" height="300" autoplay muted controls></video>
+        </div>
+
+        <div id="fourth" class="same">
+            <h2>
+                As you see the name of this attribute "loop" means whenever the video will
+                finished it will play automatically play and play like a loop.
+            </h2>
+            <video src="./Assests/video.mp4" height="300" loop controls></video>
+        </div>
+
+        <div id="fifth" class="same">
+            <h2>
+                This is the simple "muted" attribute which allows to muted video on the html
+                page.
+            </h2>
+            <video src="./Assests/video.mp4" height="300" muted controls></video>
+        </div>
+
+        <div id="sixth" class="same">
+            <h2>
+                This is the simple "poster" attribute which allows to link an image or
+                poster in video which shows before playing the video on the html page.
+            </h2>
+            <video src="./Assests/video.mp4" height="300" poster="./Assests/image.jpg" controls></video>
+        </div>
+
+        <div id="note" class="same">
+            <h1>Note 1:</h1>
+            <h2>
+                And the final thing which i have added in all the videos i added
+                controls functioality for test the videos. basically we used controls
+                attribute because without conrtols attribute some videos does not play with simple
+                attribute like src,muted,poster,loop except autoplay.
+            </h2>
+        </div>
+    </div>
+
+    <div id="audio">
+        <div id="seventh" class="same">
+            <h2>
+                This is the simple "src" attribute which allows to link audio on the html
+                page.
+            </h2>
+            <audio src="./Assests/audio.mp3" controls></audio>
+        </div>
+
+        <div id="eighth" class="same">
+            <h2>
+                This is the "controls" attribute which is helps to add functionality of
+                controls in the audio.
+            </h2>
+            <audio src="./Assests/audio.mp3" controls></audio>
+        </div>
+
+        <div id="ninth" class="same">
+            <h2>
+                This is the "autoplay" attribute which is used for when the user refresh the
+                page that audio play automatically.
+            </h2>
+            <audio src="./Assests/audio.mp3" autoplay controls muted></audio>
+        </div>
+
+        <div id="tenth" class="same">
+            <h2>
+                This is the simple "muted" attribute which allows to muted audio on the html
+                page.
+            </h2>
+            <audio src="./Assests/audio.mp3" muted controls></audio>
+        </div>
+
+        <div id="eleventh" class="same">
+            <h2>
+                No Preload (preload="none"): The browser doesn’t load the file until you press play on the html page.
+            </h2>
+            <audio src="./Assests/audio.mp3" preload="none" controls></audio>
+        </div>
+
+        <div id="twelfth" class="same">
+            <h2>
+                Some Preload (preload="metadata"): The browser loads only the basic details (like length or size) but not the content on the html page.
+            </h2>
+            <audio src="./Assests/audio.mp3" preload="metadata" controls></audio>
+        </div>
+
+        <div id="thirteenth" class="same">
+            <h2>
+                Full Preload (preload="auto"): The browser loads the whole file, ready to play it immediately. on the html page.
+            </h2>
+            <audio src="./Assests/audio.mp3" preload="auto" controls></audio>
+        </div>
+
+        <div id="fourteenth" class="same">
+            <h2>
+                This is the simple "controlsList" attribute which allows to define
+                controls to be displayed.
+            </h2>
+            <audio src="./Assests/audio.mp3" controlsList="nodownload" controls></audio>
+        </div>
+
+        <div id="note" class="same">
+            <h1>Note 2:</h1>
+            <h2>
+                And the final thing which i have added in all the audios i added
+                controls functioality for test the audio. basically we used controls
+                attribute because without conrtols attribute some audios does not play with simple
+                attribute like src,muted,poster,loop except autoplay.
+            </h2>
+            <h1>Note 3:</h1>
+            <h2>If you want to learn more about the media like preload attribute you can go to the documentation here: <a style="text-decoration: none; color: blue;" href="https://www.codewithharry.com/tutorial/html-audio-video-tags/" target="_blank">Media</a>
+            </h2>
+        </div>
+    </div>
+</body>
+</html>

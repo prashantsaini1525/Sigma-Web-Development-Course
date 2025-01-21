@@ -1,0 +1,32 @@
+p {
+    background-color: rebeccapurple;
+}
+
+a {
+    background-color: aqua;
+}
+
+div {
+    background-color:burlywood;
+}
+
+span {
+    background-color: yellow;
+}
+
+abbr {
+    background-color: yellowgreen;
+}
+img {
+    background-color: red;
+    border: 5px solid red;
+}
+label {
+    background-color: orange;
+}
+input {
+    background-color: brown;
+}
+main {
+    background-color: green;
+}

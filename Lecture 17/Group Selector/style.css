@@ -1,0 +1,36 @@
+div p {
+    background-color: red;
+    text-align: center;
+    font-size: 25px;
+}
+
+#one h1 {
+    font-size: 45px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+#two h2, h3 {
+    color: darkslategray;
+    font-size: 30px;
+    text-align: center;
+    background-color: aqua;
+}
+
+#three p {
+    font-size: 20px;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+#three mark, strong {
+    font-size: 20px;
+    color: darkmagenta;
+    text-decoration: underline;
+}
+
+#four mark, strong {
+    font-size: 20px;
+    color: darkcyan;
+    text-decoration: underline;
+}
