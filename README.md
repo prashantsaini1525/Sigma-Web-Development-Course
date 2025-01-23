@@ -33,29 +33,30 @@ Feel free to explore the repository, provide feedback, and learn with me as I bu
 
 Below is the detailed record of the lectures and exercises I have completed:
 
-| **Date**   | **Lecture No.** | **Title**                                 |
-| ---------- | --------------- | ----------------------------------------- |
-| 08/01/2025 | Lecture 01      | Installing VS Code & How Websites Work    |
-| 08/01/2025 | Lecture 02      | Your First HTML Website                   |
-| 08/01/2025 | Lecture 03      | Basic Structure of an HTML Website        |
-| 08/01/2025 | Lecture 04      | Heading, Paragraphs, and Links            |
-| 14/01/2025 | Lecture 05      | Images, Lists, and Tables in HTML         |
-| 14/01/2025 | Lecture 06      | SEO and Core Web Vitals in HTML           |
-| 14/01/2025 | Lecture 07      | Forms and Input Tags in HTML              |
-| 14/01/2025 | Lecture 08      | Inline and Block Elements in HTML         |
-| 14/01/2025 | Lecture 09      | Id & Classes in HTML                      |
-| 15/01/2025 | Lecture 10      | Video, Audio & Media in HTML              |
-| 16/01/2025 | Lecture 11      | Semantic Tags in HTML                     |
-| 16/01/2025 | Lecture 12      | Exercise 1 - Pure HTML Media Player       |
-| 16/01/2025 | Lecture 13      | Entities, Code Tag, and More on HTML      |
-| 17/01/2025 | Lecture 14      | Introduction to CSS                       |
-| 17/01/2025 | Lecture 15      | Inline, Internal & External CSS           |
-| 17/01/2025 | Lecture 16      | Exercise 1 - Solution & Shoutouts         |
-| 17/01/2025 | Lecture 17      | CSS Selectors Masterclass                 |
-| 18/01/2025 | Lecture 18      | CSS Box Model - Margin, Padding & Borders |
-| 19/01/2025 | Lecture 19      | CSS Fonts, Text & Color Properties        |
-| 20/01/2025 | Lecture 20      | Exercise 2 - CSS Challenge                |
-| 21/01/2025 | Lecture 21      | CSS Specificity & Cascade                 |
+| **Date**   | **Lecture No.** | **Title**                                                |
+| ---------- | --------------- | -----------------------------------------                |
+| 08/01/2025 | Lecture 01      | Installing VS Code & How Websites Work                   |
+| 08/01/2025 | Lecture 02      | Your First HTML Website                                  |
+| 08/01/2025 | Lecture 03      | Basic Structure of an HTML Website                       |
+| 08/01/2025 | Lecture 04      | Heading, Paragraphs, and Links                           |
+| 14/01/2025 | Lecture 05      | Images, Lists, and Tables in HTML                        |
+| 14/01/2025 | Lecture 06      | SEO and Core Web Vitals in HTML                          |
+| 14/01/2025 | Lecture 07      | Forms and Input Tags in HTML                             |
+| 14/01/2025 | Lecture 08      | Inline and Block Elements in HTML                        |
+| 14/01/2025 | Lecture 09      | Id & Classes in HTML                                     |
+| 15/01/2025 | Lecture 10      | Video, Audio & Media in HTML                             |
+| 16/01/2025 | Lecture 11      | Semantic Tags in HTML                                    |
+| 16/01/2025 | Lecture 12      | Exercise 1 - Pure HTML Media Player                      |
+| 16/01/2025 | Lecture 13      | Entities, Code Tag, and More on HTML                     |
+| 17/01/2025 | Lecture 14      | Introduction to CSS                                      |
+| 17/01/2025 | Lecture 15      | Inline, Internal & External CSS                          |
+| 17/01/2025 | Lecture 16      | Exercise 1 - Solution & Shoutouts                        |
+| 17/01/2025 | Lecture 17      | CSS Selectors Masterclass                                |
+| 18/01/2025 | Lecture 18      | CSS Box Model - Margin, Padding & Borders                |
+| 19/01/2025 | Lecture 19      | CSS Fonts, Text & Color Properties                       |
+| 20/01/2025 | Lecture 20      | Exercise 2 - CSS Challenge                               |
+| 21/01/2025 | Lecture 21      | CSS Specificity & Cascade                                |
+| 23/01/2025 | Lecture 22      | CSS Sizing Units - px,rem,em,vh,vw,% & more              |
 
 ---
 

@@ -1,15 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    min-height: 100vh;
+    background-color: aqua;
+}
+
 h1 {
-    color: aqua;
+    color: maroon;
+    text-align: center;
+    padding: 25px;
+    background-color: antiquewhite;
 }
 
-.yellow {
-    color: yellow;
+h2 {
+    color: blue;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: azure;
 }
 
-.cred {
+p {
+    font-size: 20px;
+    color: green;
+    padding: 20px;
+}
+
+ol, ul {
+    color: blue;
+    font-size: 20px;
+}
+
+strong {
     color: red;
 }
 
-.cpurple {
-    color: purple;
+li {
+    margin: 20px;
+}
+
+pre, code {
+    color: red;
+    font-size: 20px;
 }

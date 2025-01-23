@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="cascade">
+        <h1>The Cascade Algorithm</h1>
+        <p>CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS
+            rules apply to an HTML element. It's the reason that the text of the button styled with the above CSS will
+            be purple.</p>
+        <p>Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The
+            cascade algorithm has 4 distinct stages.</p>
+        <ol>
+            <li><strong>Position and order of appearance:</strong> the order in which your CSS rules appear</li>
+            <li><strong>Specificity:</strong> algorithm that determines which CSS selector has the strongest match </li>
+            <li><strong>Source Order/Origin:</strong> the order in which CSS appears and where it comes from, whether
+                that is a browser style, CSS from a browser extension, or your authored CSS</li>
+            <li><strong>Selector Specificity:</strong> some CSS rules are weighted more heavily than others, especially
+                with the <code>!important</code> rule type</li>
+        </ol>
+        <h2>Want to learn more in depth You can go there : <a
+                href="https://www.codewithharry.com/tutorial/css-specificity/">Click Me Bro</a></h2>
+        <h1 class="yellow cred cpurple">Specificity Calculation</h1>
+        <p>To calculate specificity, assign a value to each part of the selector: </p>
+        <p>Want to know more Selectors go there: <a href="../Lecture 17/main.html">CSS Selectors</a></p>
+        <ol>
+            <li>Inline styles have the highest specificity (1000)</li>
+            <li>IDs have the next highest specificity (100)</li>
+            <li>Classes Selectors, attributes Selectors, and pseudo-classes have the next specificity (10)</li>
+            <li>Elements Selectors and pseudo-elements have the next specificity (1)</li>
+            <li>Universal Selectors have the loowest specificity (0)</li>
+        </ol>
+        <h3><strong>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal
+                Selector</strong></h3>
+        <p>Then, add up the values of all the parts in the selector.</p>
+        <p>Here is an example </p>
+        <pre>
+            <code>&lt;h1 id="title" class="h1"&gt;CodeWithHarry&lt;/h1&gt;</code>
+        </pre>
+        <p>Here, the specificity value will be 111 because ID has a specificity of 100, the class has a specificity of
+            10, and the h1 element has a specificity of 1.</p>
+        <p>In the case of a specificity tie, the rule that appears last in the CSS is applied.</p>
+        <h1>Importance</h1>
+        <p>The !important flag in CSS is used to give a particular style rule the highest level of importance,
+            overriding any other competing styles. When you add !important to a CSS rule, it will take precedence over
+            other rules affecting the same element, regardless of their specificity. For example, if you have:</p>
+        <pre>
+            <code>
+                    p {
+                        color: red !important;
+                    }
+                
+                    p {
+                        color: blue;
+                    }
+            </code>
+        </pre>
+        <p>The text in the &lt;p&gt; element will be red, not blue, because the !important flag makes that rule more
+            important.</p>
+        <p>an <code>!important</code> at the end of a CSS value gets a specificity score of 10,000 points. This is the
+            highest specificity that one individual item can get.</p>
+        <p>However, it's generally best to use !important sparingly, as it can make debugging and maintaining your
+            stylesheets more complicated. It can override styles in ways that are hard to trace, leading to unexpected
+            results.</p>
+        <h2>Quick Quiz</h2>
+        <pre>
+            <code> a.harryclass.rohan-class[href]:hover {
+                color: red;
+                }</code>
+        </pre>
+        <h3>Solution</h3>
+        <p>To calculate the specificity value of the selector <code>a.harryclass.rohan-class[href]:hover</code>, you can
+            break down its components:</p>
+        <ul>
+            <li>Element selectors: a contributes 1 point.</li>
+            <li>Class selectors: .harryclass and .rohan-class each contributes 10 points, totaling 20 points.</li>
+            <li>Attribute selector: [href] contributes 10 points.</li>
+            <li>seudo-class: :hover adds another 10 points.</li>
+        </ul>
+        <p>Add up all these values:</p>
+        <p>1 (element) + 20 (classes) + 10 (attribute) + 10 (pseudo-class) = 41.
+            So, the specificity value of the selector <code>a.harryclass.rohan-class[href]:hover</code> will be 41.</p>
+    </div>
+
+    <div id="specificity">
+        <h2>Inline Styles/Inline Property: <a href="./inlinestyle.html" target="_blank">Click me Bro</a></h2>
+        <h2>Id Selector Styles: <a href="./idselector.html" target="_blank">Click me Bro</a></h2>
+        <h2>Class and Attribute Selectors: <a href="./classattribute.html" target="_blank">Click me Bro</a></h2>
+        <h2>Element Selector: <a href="./element.html" target="_blank">Click me Bro</a></h2>
+        <h2>Universal Selector: <a href="./universal.html" target="_blank">Click me Bro</a></h2>
+        <h2>!Importance Property: <a href="./importance.html" target="_blank">Click me Bro</a></h2>
+    </div>
+</body>
+
+</html>

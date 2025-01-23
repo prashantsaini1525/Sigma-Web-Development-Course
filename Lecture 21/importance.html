@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!importance Property</title>
+    <style>
+        p {
+            color: blue;
+            font-size: 20px;
+            background-color: aqua;
+        }
+
+        p {
+            color: red !important;
+            font-size: 25px !important;
+            background-color: yellow !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="h1">CodeWithHarry</p>
+    <p>in Above Paragraph we used 2-p elements in which we are used !important property and in which we apply simple styles without important. so do you think why we used important proprty?</p>
+    <p>Actually we used !important property to tell the the css this is the important style and in css wherever we put important than the css specificity value will be "10000" wihc is more than any css selectors properties or inline property.</p>
+    <p>Universal Selector * Specificity Value (0)</p>
+    <p>Element Selector h1 Specificity Value (1)</p>
+    <p>Class Selector .h1,p Specificity Value (10) </p>
+    <p>Id Selector #title Specificity Value (100) </p>
+    <p>Inline Style Specificity Value (1000) </p>
+    <p>!importance Property Specificity Value (10,000)</p>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Style</title>
+    <style>
+        * {
+            color: gray;
+        }
+
+        #title {
+            color: red;
+            background-color: yellow;
+        }
+
+        .h1 {
+            color: blue;
+        }
+
+        h1 {
+            color: pink;
+        }
+        
+        p {
+            color: blue;
+            background-color: lightgreen;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title" class="h1" style="color: aqua; background-color: blueviolet;">Hey this is me and who are you?</h1>
+    <p> Above you can see this i applied inline and id property style but apply only inline style because inline style has more specificity value than id.</p>
+    <p>Universal Selector * Specificity Value (0)</p>
+    <p>Element Selector h1 Specificity Value (1)</p>
+    <p>Class Selector .h1,p Specificity Value (10) </p>
+    <p>Id Selector #title Specificity Value (100) </p>
+    <p>Inline Style Specificity Value (1000) </p>
+</body>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* The Specificity of this selector is 0 */
+        * {
+            color: gray;
+        }
+        
+        /* The Specificity of this selector is 10 */
+        .h1 {
+            color: black;
+            background-color: brown;
+        }
+
+        /* The Specificity of this selector is 10 */
+        .cred {
+            color: red;
+            background-color: purple;
+        }
+
+        /* The Specificity of this selector is 10 */
+        .cpurple {
+            color: purple;
+            background-color: crimson;
+        }
+
+        /* The Specificity of this selector is 10 */
+        [data-x=a] {
+            color: aqua;
+            background-color: red;
+        }
+        
+        /* The Specificity of this selector is h1 is 1 and .cpurple is : 10 Total = 1+10=11*/
+        /* h1.cpurple {
+            color: white;
+            background-color: gold;
+        } */
+
+        /* The Specificity of this selector is 1 */
+        p {
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            background-color: maroon;
+        }
+
+        /* The Specificity of this selector is 1 */
+        strong {
+            color: black;
+            background-color: yellow;
+            font-weight: bold;
+            font-size: 25px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h1 cred cpurple" data-x="a">CodeWithHarry</h1>
+    <p>In above we applied class and Attribute styles but if you see in this here is applied only attribute selector properties. Umm... Do you think Why? </p>
+    <p>So basically when those selectors have same specificity value so the order in which your CSS rules appear, that will be execuate from the last css style means which css property have applied in the last that will be execuate in your html page.</p>
+    <p><strong>Note:</strong> So whenever you see same specificity value selectors you have to remember the order of the css </p>
+    <p>Universal Selector specificity Value is (0)</p>
+    <p>Class Selector And Attribute Selector .h1 specificity Value is (1)</p>
+</body>
+</html>
