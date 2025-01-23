@@ -55,7 +55,7 @@ Below is the detailed record of the lectures and exercises I have completed:
 | 18/01/2025 | Lecture 18      | CSS Box Model - Margin, Padding & Borders                |
 | 19/01/2025 | Lecture 19      | CSS Fonts, Text & Color Properties                       |
 | 20/01/2025 | Lecture 20      | Exercise 2 - CSS Challenge                               |
-| 21/01/2025 | Lecture 21      | CSS Specificity & Cascade                                |
+| 23/01/2025 | Lecture 21      | CSS Specificity & Cascade                                |
 | 23/01/2025 | Lecture 22      | CSS Sizing Units - px,rem,em,vh,vw,% & more              |
 
 ---
