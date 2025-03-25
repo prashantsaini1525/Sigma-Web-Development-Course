@@ -14,6 +14,12 @@ Feel free to explore the repository, provide feedback, and learn with me as I bu
 4. [YouTube Playlist](#youtube-playlist)
 5. [How to Use](#how-to-use)
 6. [Future Goals](#future-goals)
+7. [About me](#about-me)
+8. [FAQs](#faqs)
+9. [Project Updates](#project-updates)
+10. [Connect with me](#-connect-with-me)
+11. [Contributing](#contributing)
+12. [License](#license)
 
 ---
 
@@ -119,7 +125,7 @@ I update this repository daily with notes and code from the course. For the late
 
 ---
 
-## 📫 Let's Connect
+## 📫 Connect with me
 
 <p align="center">
   <a href="https://prashant-pi.vercel.app/" target="_blank">
