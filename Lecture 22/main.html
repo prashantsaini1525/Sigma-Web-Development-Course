@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CSS Sizing Units - px,rem,em,vh,vw,% & more</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing Units - px,rem,em,vh,vw,% & more</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 12px;
+        }
+        .box {
+            border: 2px solid black;
+            width: 1743px;
+            /*1k resolution*/
+            height: 821px;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .box1 {
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            /* font-size: 20px; */ /*So basically in this the default font size of font is 16px by default browser.*/
+            background-color: aquamarine;
+        }
+
+        .container1 {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+        } 
+
+        .container p {
+            font-size: 2em; /*em means jitna font size isko milne wala tha uska 2 guna kr do */
+        } 
+
+        .container1 p {
+            font-size: 3rem; /*rem ka matlab jo iske root element ka font size hai uska 2 guna kr do matlab kisi bhi element ka font size rem se bhdane k liye jo bhi dont size select kra hai root element mein uska rem se mulitply kr do ex: 1rem,2rem,3rem etc .*/
+        } 
+
+        #prop {
+            box-sizing: border-box;
+            margin: 23px auto;
+            padding: 25px;
+            height: 100vh;
+            width: 80vw;
+            border: 2px solid black;
+            background-color: aquamarine;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="box">This is a Box</div>
+
+    <div class="box1">This is a Box</div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quidem
+            blanditiis veniam aliquam, ipsum eveniet provident ratione aut quo culpa
+            similique? Velit molestiae possimus expedita. Culpa ipsa corrupti eaque
+            numquam!
+        </p>
+    </div>
+
+    <div class="container1">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quidem
+            blanditiis veniam aliquam, ipsum eveniet provident ratione aut quo culpa
+            similique? Velit molestiae possimus expedita. Culpa ipsa corrupti eaque
+            numquam!
+        </p>
+    </div>
+
+    <div id="prop">
+        <h1>Width and height in px</h1>
+        <p>In this you can set width and height with px and target the appropraite screen size but when the user which does not have that approprirate size of screen so the content will be exlpode in that screen.</p>
+        <h1>Width and height in vw and vh</h1>
+        <p>In this you can set width and height like this 100vh or 100vw means whenever you set in vh the height automatically adjust on the appropraite screen height size of display and when you set vw the width automatically adjust on the appropraite screen width, so inshort whenever user open you website the width and height automatically adjust basis on that device width and height.</p>
+        <h1>Font size property em</h1>
+        <p>Basically this em property will increase font size in times means if you see the default size of font size is 16px but when you apply font-size = 2em that font-size automatically multiply by 2 times means the font size will be 32px.</p><br>
+        <p>MEANS WHICH FONT SIZE You get from the default screen font size can be multiply bye 2 times by inherit. yae font size ok inherit krke uska size bhda deta hai.  </p>
+        <h1>Font size property rem</h1>
+        <p>Fonts properties are inerit properties. basically jo bhi font-size aap rakhoge woh pahle html phir head phir body and phir baaki element ko milegi.</p><br>
+        <p>rem ka matlab jo iske root element ka font size hai uska 2 guna kr do matlab kisi bhi element ka font size rem se bhdane k liye jo bhi dont size select kra hai root element mein uska rem se mulitply kr do ex: 1rem,2rem,3rem etc.</p>
+    </div>
 </body>
+
 </html>

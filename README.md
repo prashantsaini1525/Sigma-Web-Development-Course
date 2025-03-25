@@ -11,8 +11,9 @@ Feel free to explore the repository, provide feedback, and learn with me as I bu
 1. [Course Overview](#course-overview)
 2. [Lecture Progress](#lecture-progress)
 3. [Additional Resources](#additional-resources)
-4. [How to Use](#how-to-use)
-5. [Future Goals](#future-goals)
+4. [YouTube Playlist](#youtube-playlist)
+5. [How to Use](#how-to-use)
+6. [Future Goals](#future-goals)
 
 ---
 
@@ -67,6 +68,12 @@ Below is the detailed record of the lectures and exercises I have completed:
 
 ---
 
+## YouTube Playlist
+
+Watch all the video lectures in one place! Check out the [YouTube Playlist](https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=4sEel9cpkY8YaBEm) curated for this course.  
+
+---
+
 ## How to Use
 
 1. Clone this repository to your local machine:
@@ -76,10 +83,98 @@ Below is the detailed record of the lectures and exercises I have completed:
 2. Navigate through the folders, where each lecture is organized as Lecture 01, Lecture 02, etc.
 3. Open the HTML or CSS files in your browser or text editor to view and edit.
 
+---
 
 ## Future Goals
 
-1. Dive deeper into CSS Frameworks like Bootstrap and TailwindCSS.
+1. Dive deeper into CSS frameworks like Bootstrap and TailwindCSS.
 2. Begin learning JavaScript and implementing interactive elements.
-3. Complete real-world projects to solidify concepts.
-4. Build a portfolio website using the skills learned.
+3. Work on real-world projects to solidify my understanding.
+4. Build a personal portfolio website using the skills I’ve learned.
+
+---
+
+## About Me
+
+Hi, I'm **Prashant Saini** – an enthusiastic learner and aspiring web developer. I'm following the **Code With Harry** YouTube channel to master web development. In this repository, I share my daily notes, coding exercises, and projects as I progress through the course. My goal is to learn, practice, and eventually build projects that showcase my growth in HTML, CSS, and beyond.
+
+---
+
+## FAQs
+
+**Q: Who is this repository for?**  
+*A:* It's for beginners and anyone interested in tracking my learning journey through the Code With Harry web development course.
+
+**Q: What technologies are covered?**  
+*A:* The course currently covers HTML, CSS, SEO, and Core Web Vitals, with JavaScript coming soon.
+
+**Q: Can I contribute?**  
+*A:* Absolutely! If you have suggestions or improvements, please see the Contributing section in the main repository.
+
+---
+
+## Project Updates
+
+I update this repository daily with notes and code from the course. For the latest video lectures, check out the [YouTube Playlist](https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=4sEel9cpkY8YaBEm).  
+
+---
+
+## 📫 Let's Connect
+
+<p align="center">
+  <a href="https://prashant-pi.vercel.app/" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="Portfolio" width="30" height="30"/>
+  </a>
+  <a href="https://www.linkedin.com/in/prashant-saini" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/0077B5/linkedin.png" alt="LinkedIn" width="30" height="30"/>
+  </a>
+  <a href="https://x.com/Prashan58889893" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/1DA1F2/twitter.png" alt="Twitter" width="30" height="30"/>
+  </a>
+  <a href="https://github.com/prashantsaini1525" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" width="30" height="30"/>
+  </a>
+  <a href="mailto:Prashant.sain.3150@gmail.com" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/FF0000/email.png" alt="Email" width="30" height="30"/>
+  </a>
+  <a href="https://instagram.com/prashant_saini_1525" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/E4405F/instagram-new.png" alt="Instagram" width="30" height="30"/>
+  </a>
+  <a href="https://www.youtube.com/@prashant_saini_1525" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/FF0000/youtube-play.png" alt="YouTube" width="30" height="30"/>
+  </a>
+  <a href="https://medium.com/@prashant_ps" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/000000/medium-logo.png" alt="Medium" width="30" height="30"/>
+  </a>
+  <a href="https://wa.me/9557745536" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp" width="30" height="30"/>
+  </a>
+  <a href="https://leetcode.com/u/prashantsainii/" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/leetcode.svg" alt="LeetCode" width="30" height="30"/>
+  </a>
+  <a href="https://www.hackerrank.com/profile/Prashant_saini_1" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/hackerrank.svg" alt="HackerRank" width="30" height="30"/>
+  </a>
+</p>
+
+---
+
+## Contributing
+
+Contributions are welcome! To contribute:
+1. Fork this repository.
+2. Create a new branch with your changes.
+3. Submit a pull request with a clear description of your modifications.
+
+Your contributions help improve this learning resource for everyone!
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Happy learning and best of luck mastering WEB DEVELOPMENT!  
+— Prashant Saini
