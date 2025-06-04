@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Sizing Units - px,rem,em,vh,vw,% & more</title>
+    <title>CSS Sizing Units – px, rem, em, vh, vw, %, vmin</title>
     <style>
         * {
             margin: 0;
@@ -15,10 +15,11 @@
         html {
             font-size: 12px;
         }
+
         .box {
             border: 2px solid black;
             width: 1743px;
-            /*1k resolution*/
+            /* for a 1K resolution screen */
             height: 821px;
             margin: auto;
             background-color: aquamarine;
@@ -38,7 +39,7 @@
             width: 80vw;
             height: 80vh;
             margin: 23px auto;
-            /* font-size: 20px; */ /*So basically in this the default font size of font is 16px by default browser.*/
+            /* By default, browsers use 16px for 1rem */
             background-color: aquamarine;
         }
 
@@ -49,15 +50,26 @@
             height: 80vh;
             margin: 23px auto;
             background-color: aquamarine;
-        } 
+        }
+
+        .container2 {
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            /* width: 100vh; */
+            width: 100vmin;
+            /* 100vmin equals 100% of the smaller viewport dimension (on a laptop, that’s 100vh) */
+        }
 
         .container p {
-            font-size: 2em; /*em means jitna font size isko milne wala tha uska 2 guna kr do */
-        } 
+            font-size: 2em;
+            /* em means “2 times the font size this element would inherit.” */
+        }
 
         .container1 p {
-            font-size: 3rem; /*rem ka matlab jo iske root element ka font size hai uska 2 guna kr do matlab kisi bhi element ka font size rem se bhdane k liye jo bhi dont size select kra hai root element mein uska rem se mulitply kr do ex: 1rem,2rem,3rem etc .*/
-        } 
+            font-size: 3rem;
+            /* rem means “3 times the root element’s font size.” For example, if html is 12px, 1rem = 12px. */
+        }
 
         #prop {
             box-sizing: border-box;
@@ -68,6 +80,54 @@
             border: 2px solid black;
             background-color: aquamarine;
             font-size: 1.5rem;
+            overflow-y: auto;
+        }
+
+        /* New styles for improved notes UI */
+        .note-section {
+            background-color: #fefae0;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffd60a;
+            border-radius: 4px;
+        }
+
+        .note-section h2 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .note-section p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .note-section ul {
+            margin-left: 20px;
+            list-style-type: disc;
+            margin-bottom: 10px;
+        }
+
+        .note-section code {
+            background-color: #e0e0e0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        .note-section pre {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+            margin-bottom: 10px;
+        }
+
+        .note-hinglish {
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -79,33 +139,134 @@
 
     <div class="container">
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quidem
-            blanditiis veniam aliquam, ipsum eveniet provident ratione aut quo culpa
-            similique? Velit molestiae possimus expedita. Culpa ipsa corrupti eaque
-            numquam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quidem blanditiis veniam aliquam,
+            ipsum eveniet provident ratione aut quo culpa similique? Velit molestiae possimus expedita. Culpa
+            ipsa corrupti eaque numquam!
         </p>
     </div>
 
     <div class="container1">
         <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quidem
-            blanditiis veniam aliquam, ipsum eveniet provident ratione aut quo culpa
-            similique? Velit molestiae possimus expedita. Culpa ipsa corrupti eaque
-            numquam!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quidem blanditiis veniam aliquam,
+            ipsum eveniet provident ratione aut quo culpa similique? Velit molestiae possimus expedita. Culpa
+            ipsa corrupti eaque numquam!
+        </p>
+    </div>
+
+    <div class="container2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officia voluptates adipisci facilis ea
+            rerum modi molestiae neque sapiente, iste voluptate, quos fugit cum eveniet quisquam ad illum
+            magnam nemo quas. Nobis consequuntur nemo temporibus nostrum asperiores, commodi maiores quibusdam
+            labore tempore. Corrupti nobis facilis in dicta ad ullam magnam. Libero fuga ut cum explicabo amet.
         </p>
     </div>
 
     <div id="prop">
-        <h1>Width and height in px</h1>
-        <p>In this you can set width and height with px and target the appropraite screen size but when the user which does not have that approprirate size of screen so the content will be exlpode in that screen.</p>
-        <h1>Width and height in vw and vh</h1>
-        <p>In this you can set width and height like this 100vh or 100vw means whenever you set in vh the height automatically adjust on the appropraite screen height size of display and when you set vw the width automatically adjust on the appropraite screen width, so inshort whenever user open you website the width and height automatically adjust basis on that device width and height.</p>
-        <h1>Font size property em</h1>
-        <p>Basically this em property will increase font size in times means if you see the default size of font size is 16px but when you apply font-size = 2em that font-size automatically multiply by 2 times means the font size will be 32px.</p><br>
-        <p>MEANS WHICH FONT SIZE You get from the default screen font size can be multiply bye 2 times by inherit. yae font size ok inherit krke uska size bhda deta hai.  </p>
-        <h1>Font size property rem</h1>
-        <p>Fonts properties are inerit properties. basically jo bhi font-size aap rakhoge woh pahle html phir head phir body and phir baaki element ko milegi.</p><br>
-        <p>rem ka matlab jo iske root element ka font size hai uska 2 guna kr do matlab kisi bhi element ka font size rem se bhdane k liye jo bhi dont size select kra hai root element mein uska rem se mulitply kr do ex: 1rem,2rem,3rem etc.</p>
+        <div class="note-section">
+            <h2>Width and Height in px</h2>
+            <p>
+                When you set width and height using pixels (<code>px</code>), you target a specific screen size
+                exactly. If someone views the page on a screen that isn’t exactly that size, the layout can break
+                or overflow.
+            </p>
+            <p class="note-hinglish">
+                Hinglish: Jab hum <code>px</code> use karke width/height set karte hain, to hum ek fixed size
+                target kar rahe hote hain. Agar user ki screen us exact size se match nahi karti, to page ka layout
+                toot sakta hai ya scroll bar aa sakta hai.
+            </p>
+        </div>
+
+        <div class="note-section">
+            <h2>Width and Height in vw &amp; vh</h2>
+            <p>
+                Using viewport units—<code>vw</code> (viewport width) and <code>vh</code> (viewport height)—lets
+                elements automatically adapt to the user’s screen. For example, <code>100vh</code> means “take up
+                100% of the viewport’s height.” Likewise, <code>100vw</code> means “take up 100% of the viewport’s
+                width.” This ensures that as the browser window changes size, the element scales accordingly.
+            </p>
+            <p class="note-hinglish">
+                Hinglish: <code>vw</code> aur <code>vh</code> use karne ka matlab hai page element screen ke
+                hisab se adjust ho jayega. <code>100vh</code> ka matlab hai poori screen height le lo, aur <code>100vw</code> ka matlab hai poori screen width. Jaise hi screen size badlegi, element apne aap resize ho jayega.
+            </p>
+        </div>
+
+        <div class="note-section">
+            <h2>Font Size with em</h2>
+            <p>
+                The <code>em</code> unit is relative to the font size that the element would normally inherit. If
+                the browser’s default font-size is 16px, setting <code>font-size: 2em;</code> makes the text 32px.
+                It essentially multiplies the inherited size by the given factor.
+            </p>
+            <pre><code>
+1em = 16px
+2em = 32px
+0.5em = 8px
+            </code></pre>
+            <p class="note-hinglish">
+                Hinglish: <code>em</code> unit element ke inherited font size par depend karta hai. Agar default font-size 16px hai aur aap <code>font-size: 2em;</code> likhte ho, to text 32px ho jayega (16px × 2). Isi tarah, <code>0.5em</code> ka matlab hai aadha size (16px × 0.5 = 8px).
+            </p>
+        </div>
+
+        <div class="note-section">
+            <h2>Font Size with rem</h2>
+            <p>
+                The <code>rem</code> unit is always relative to the root (<code>html</code>) element’s font size.
+                If you set <code>html { font-size: 12px; }</code>, then <code>1rem = 12px</code>, no matter
+                where you use it in the document. This makes it easier to maintain consistent sizing throughout
+                the page.
+            </p>
+            <pre><code>
+1rem = 12px
+2rem = 24px
+3rem = 36px
+            </code></pre>
+            <p class="note-hinglish">
+                Hinglish: <code>rem</code> hamesha root element (<code>html</code>) ke font size par depend karta hai. Agar aapne <code>html { font-size: 12px; }</code> set kiya hai, to <code>1rem = 12px</code>, chahe kahin bhi use karo. Isse aapko pure page me consistent font sizing milti hai.
+            </p>
+        </div>
+
+        <div class="note-section">
+            <h2>Width and Height in vmin</h2>
+            <p>
+                The <code>vmin</code> unit stands for “viewport minimum.” It uses whichever viewport dimension
+                (width or height) is smaller. For instance:
+            </p>
+            <ul>
+                <li>
+                    <strong>Phone in portrait mode:</strong> The viewport height is larger than its width, so
+                    <code>1vmin</code> equals 1% of the viewport width. Thus, <code>100vmin</code> = 100% of
+                    viewport width.
+                    <p class="note-hinglish">
+                        Hinglish: Phone portrait me height zyada hoti hai aur width kam, to <code>vmin</code> width (chhota side) pe base karega. Matlab <code>100vmin</code> = 100% of width.
+                    </p>
+                </li>
+                <li>
+                    <strong>Phone in landscape mode:</strong> The viewport width is larger, so <code>1vmin</code>
+                    equals 1% of the viewport height. Thus, <code>100vmin</code> = 100% of viewport height.
+                    <p class="note-hinglish">
+                        Hinglish: Landscape me width zyada aur height kam, to <code>vmin</code> height (chhota side) pe base karega. Matlab <code>100vmin</code> = 100% of height.
+                    </p>
+                </li>
+                <li>
+                    <strong>Laptop or desktop:</strong> Typically, screens are wider than they are tall, so
+                    <code>vmin</code> equals a percentage of the viewport height. If your window is perfectly
+                    square (width = height), then 100vmin is the full width and full height.
+                    <p class="note-hinglish">
+                        Hinglish: Laptop/desktop me aksar width zyada hoti hai, to <code>vmin</code> height pe base karega (chhota side). Agar window square hai, to <code>100vmin</code> dono (width aur height) le lega.
+                    </p>
+                </li>
+            </ul>
+            <p>
+                Using <code>vmin</code> is a great way to create elements that maintain a consistent shape (for
+                example, a perfect square) across all devices. If you want a box that’s always half the size of
+                the smaller viewport dimension, you can simply write <code>width: 50vmin; height: 50vmin;</code>,
+                and it will scale appropriately on both phones and laptops.
+            </p>
+            <p class="note-hinglish">
+                Hinglish: <code>vmin</code> se aap square element ya koi aisa element bana sakte ho jo chhote ya bade screen pe hamesha same shape aur ratio maintain kare. Agar aap <code>50vmin</code> set karte ho, to box hamesha chhote viewport dimension (width ya height, jo bhi chhota hai) ka 50% lega. Mobile ho ya laptop, element automatically adjust ho jayega.
+            </p>
+        </div>
     </div>
 </body>
 

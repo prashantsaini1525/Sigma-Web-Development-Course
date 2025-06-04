@@ -1,0 +1,231 @@
+/* ======================================================
+   assets/css/style.css — Enhanced Styles for Dashboard + Notes
+   ====================================================== */
+
+/* 1. RESET & BASE STYLES -------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #1a1a1a;
+    line-height: 1.6;
+    padding-top: 80px; /* For fixed header space */
+}
+
+/* 2. CONTAINER UTILITY ---------------------------------------------------- */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 3. HEADER --------------------------------------------------------------- */
+.site-header {
+    background: linear-gradient(135deg, #1a73e8, #3c8fd9);
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+}
+
+.header-content h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.header-content .subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* 4. INTRO SECTION -------------------------------------------------------- */
+.intro {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* 5. SEARCH BAR ----------------------------------------------------------- */
+.search-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#search {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#search:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}
+
+/* 6. LECTURE GRID & CARDS ------------------------------------------------- */
+.lecture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.lecture-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.lecture-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lecture-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
+.card-content {
+    padding: 1.5rem 1rem;
+}
+
+.lecture-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.lecture-card .lecture-title {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.3;
+}
+
+/* 7. FOOTER --------------------------------------------------------------- */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* 8. NOTE SECTION FOR INDIVIDUAL LECTURES --------------------------------- */
+.lecture-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.note-section {
+    background-color: #ffffff;
+    border-left: 4px solid #1a73e8;
+    padding: 1.5rem 1.25rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.note-section ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.note-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* 9. HINGLISH NOTE BLOCK -------------------------------------------------- */
+.note-hinglish {
+    background-color: #f0f4ff;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+/* 10. SUBHEADINGS FOR NOTES ------------------------------------------------ */
+.subheading {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.75rem;
+    color: #1a1a1a;
+    border-bottom: 2px solid #d1e3ff;
+    padding-bottom: 0.3rem;
+}
+
+.lecture-container p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.lecture-container a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lecture-container a:hover {
+    text-decoration: underline;
+}
+
+/* 11. RESPONSIVE ADJUSTMENTS ---------------------------------------------- */
+@media (max-width: 600px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .lecture-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1rem;
+    }
+
+    #search {
+        max-width: 100%;
+    }
+
+    .lecture-container {
+        padding: 1.5rem 1rem;
+    }
+}
