@@ -1,0 +1,485 @@
+<!-- File: Sigma-web-development/Lecture 17/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 17 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+    <link rel="stylesheet" href="lecture17.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 17 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- Universal Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Universal Selector (<code>*</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Universal selector sabhi HTML elements ko target karta hai.</li>
+                    <li><strong>Use-case:</strong> Base styling apply karna jaisa margin/padding reset, sabke liye ek
+                        consistent foundation.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Quick reset, sabhi elements ek jaisa style follow karte hain.</li>
+                    <li><strong>Cons:</strong> Agar heavy rules rakhe, performance impact ho sakta hai, aur unwanted
+                        overrides ho sakte hain.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Universal Selector (<code>*</code>) se hum sabhi elements ko ek saath style kar sakte
+                        hain, jaise sabki margin aur padding reset karna. Yeh ek consistent base provide karta hai puro
+                        page ke liye.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Universal Selector</h2>
+                    <iframe class="selector-iframe" src="./universal selector/index.html"
+                        title="Universal Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./universal selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Universal Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Element (Type) Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Element (Type) Selector</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Element selector ek specific HTML tag ko target karta hai (e.g.,
+                        <code>p</code>, <code>h1</code>).</li>
+                    <li><strong>Use-case:</strong> Sabhi paragraphs ko ek jaisa style dena—jaise font-size ya color set
+                        karna.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+h1 {
+    color: blueviolet;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Simple aur straightforward. Direct tags pe style apply hoti hai.</li>
+                    <li><strong>Cons:</strong> Agar same tag baar-baar use ho, overlapping rules ho sakte hain aur
+                        maintenance tough ho sakti hai.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Element Selector (jaise <code>h1</code> ya <code>p</code>) direct har us tag ko style
+                        karta hai. Agar sabhi paragraphs ko ek jaisa look dena ho, tab yeh best hai. Lekin agar aapko
+                        kuch specific paragraphs hi target karne hain, toh class ya ID better rehta hai.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Element Selector</h2>
+                    <iframe class="selector-iframe" src="./element selector/index.html"
+                        title="Element Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./element selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Element Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Class Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Class Selector (<code>.classname</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Class selector ek ya adhik elements ko group karke style apply
+                        karta hai.</li>
+                    <li><strong>Use-case:</strong> Alag-alag tags ko ek jaisa style dena—jaise kuch headings aur
+                        paragraphs.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+.note {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 4px solid #1a73e8;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Flexible, reuse across different elements.</li>
+                    <li><strong>Cons:</strong> Agar class names descriptive nahi, CSS maintain karna mushkil ho sakta
+                        hai.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Class Selector (<code>.classname</code>) se aap same style multiple HTML elements pe
+                        laga sakte hain bina code duplicate kiye. Yeh ek consistent design pattern bana deta hai.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Class Selector</h2>
+                    <iframe class="selector-iframe" src="./class selector/index.html"
+                        title="Class Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./class selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Class Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- ID Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 ID Selector (<code>#idname</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> ID selector sirf ek unique element ko target karta hai jiski
+                        <code>id</code> same ho.</li>
+                    <li><strong>Use-case:</strong> Ek page ka specific heading ya section uniquely style karna.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+#header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> High specificity, direct unique element pe apply hota hai.</li>
+                    <li><strong>Cons:</strong> Sirf ek element pe lagta hai. Agar multiple elements ko style karna ho,
+                        class better hoti hai.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: ID Selector (<code>#idname</code>) ek unique element ko target karta hai. Agar aapke
+                        page mein koi special header hai jise alag style karna hai, toh ID best hai. Yaad rahe, ek ID
+                        sirf ek bar use ho.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: ID Selector</h2>
+                    <iframe class="selector-iframe" src="./id selector/index.html" title="ID Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./id selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open ID Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Group Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Group Selector</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Group selector ek saath multiple selectors ko ek rule mein combine
+                        karta hai (comma-separated).</li>
+                    <li><strong>Use-case:</strong> Kai elements ko same style dena, jaise headings aur paragraphs.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+h1, p, .highlight {
+    color: #1a73e8;
+    background-color: #e8f0fe;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Code DRY rehta hai, fewer lines of CSS.</li>
+                    <li><strong>Cons:</strong> Agar selectors bahut zyada ho, readability hurt ho sakti hai.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Group Selector (<code>h1, p, .highlight</code>) se aap same styling multiple elements
+                        pe apply kar sakte hain ek hi rule se. Yeh CSS ko concise aur maintainable banata hai.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Group Selector</h2>
+                    <iframe class="selector-iframe" src="./group selector/index.html"
+                        title="Group Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./group selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Group Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Attribute Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Attribute Selector (<code>[type="text"]</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Attribute selector un elements ko target karta hai jinmein
+                        specified attribute/value pair hota hai.</li>
+                    <li><strong>Use-case:</strong> Form inputs ko style karna based on <code>type</code>, ya specific
+                        links jinke <code>href</code> patterns match karein.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+input[type="text"] {
+    border: 2px solid #1a73e8;
+    padding: 8px;
+    width: 200px;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Precise targeting bina extra classes ke.</li>
+                    <li><strong>Cons:</strong> Complex selectors performance impact daal sakte hain agar nested ho.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Attribute Selector (<code>[type="text"]</code>) se aap sirf woh inputs style kar sakte
+                        hain jinke <code>type="text"</code> hai, bina class add kiye. Yeh form styling ko bahut aasan
+                        banata hai.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Attribute Selector</h2>
+                    <iframe class="selector-iframe" src="./attribute selector/index.html"
+                        title="Attribute Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./attribute selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Attribute Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Child Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Child Selector (<code>parent &gt; child</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Child selector sirf direct children ko target karta hai, nested
+                        descendants ignore karta hai.</li>
+                    <li><strong>Use-case:</strong> Immediate child elements ko style karna without affecting deeper
+                        nested elements.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+ul > li {
+    list-style-type: circle;
+    color: #1a73e8;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Precise control, avoids unintended nested styling.</li>
+                    <li><strong>Cons:</strong> Multiple levels ke liye alag-alag selectors likhne padhenge.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Child Selector (<code>parent &gt; child</code>) se aap sirf direct child elements ko
+                        style kar sakte hain. Maan lo ek <code>ul</code> ke andar <code>li</code> hai, nested
+                        <code>li</code> ko ignore karega.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Child Selector</h2>
+                    <iframe class="selector-iframe" src="./child selector/index.html"
+                        title="Child Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./child selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Child Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Descendant Selector -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Descendant Selector (<code>ancestor descendant</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Descendant selector nested elements ko bhi include karke target
+                        karta hai, chahe wo kisi bhi level par ho.</li>
+                    <li><strong>Use-case:</strong> Pura nested structure ke andar sab matching elements ko style karna.
+                    </li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+nav a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Flexible, deep nesting handle karta hai.</li>
+                    <li><strong>Cons:</strong> Large DOM me slow ho sakta hai; specificity issues ho sakte hain.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Descendant Selector (<code>ancestor descendant</code>) se aap container ke andar jitne
+                        bhi elements match karte hain, un sabko style kar sakte hain. Chahe wo bahut nested ho.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Descendant Selector</h2>
+                    <iframe class="selector-iframe" src="./descendant selector/index.html"
+                        title="Descendant Selector Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./descendant selector/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Descendant Selector Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Pseudo-classes -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Pseudo-classes
+                    (<code>:hover, :first-child, :last-child, :visited, :link</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Pseudo-classes elements ko unki state ya position ke basis par
+                        style karti hain (hover, first-child, etc.).</li>
+                    <li><strong>Use-case:</strong> Interactive styling, jaisa hover effect, list-item ki special
+                        styling, link states.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+a:hover {
+    background-color: yellow;
+    color: red;
+}
+li:first-child {
+    font-weight: bold;
+    color: blue;
+}
+li:last-child {
+    font-style: italic;
+    color: green;
+}
+a:visited {
+    color: purple;
+}
+a:link {
+    color: blue;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Bina JS ke small interactions implement kar sakte hain.</li>
+                    <li><strong>Cons:</strong> Kuch pseudo-classes older browsers me support nahi karte (compatibility
+                        check zaroori hai).</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Pseudo-classes (<code>:hover</code>, <code>:first-child</code>,
+                        <code>:last-child</code>, <code>:visited</code>, <code>:link</code>) se aap dynamic aur
+                        position-based styling kar sakte hain. Jaise hover pe button ki styling change ho.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Pseudo-classes</h2>
+                    <iframe class="selector-iframe" src="./pseudo-classes/index.html"
+                        title="Pseudo-classes Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./pseudo-classes/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Pseudo-classes Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Pseudo-elements -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">🔹 Pseudo-elements (<code>::before, ::after</code>)</h2>
+                <ul>
+                    <li><strong>Definition:</strong> Pseudo-elements page ke specific parts (jaise first letter) ko
+                        style karte hain ya extra content insert karte hain.</li>
+                    <li><strong>Use-case:</strong> Decorative content (like icons), first letter styling, bina HTML
+                        modify kiye extra elements add karna.</li>
+                    <li><strong>Syntax:</strong>
+                        <pre>
+p::first-letter {
+    font-size: 2rem;
+    color: #1a73e8;
+}
+div::after {
+    content: "✨";
+    color: gold;
+}
+            </pre>
+                    </li>
+                    <li><strong>Pros:</strong> Bina HTML change kiye content aur styling add kar sakte hain.</li>
+                    <li><strong>Cons:</strong> Complex pseudo-element combinations maintain karna thoda tricky ho sakta
+                        hai.</li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Pseudo-elements (<code>::before</code>, <code>::after</code>) se aap bina HTML modify
+                        kiye extra content insert kar sakte hain, jaisa paragraph ke pehle bulb icon add karna ya div ke
+                        baad sparkle emoji.
+                    </p>
+                </div>
+                <section class="live-preview note-spacing">
+                    <h2 class="subheading">💻 Live Code Preview: Pseudo-elements</h2>
+                    <iframe class="selector-iframe" src="./pseudo-elements/index.html"
+                        title="Pseudo-elements Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./pseudo-elements/index.html" target="_blank" rel="noopener noreferrer">
+                            here to open Pseudo-elements Demo
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Combined Selectors: main.html Preview -->
+            <section class="note-section note-spacing">
+                <h2 class="subheading">📑 Combined Selectors (main.html)</h2>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Agar aap chaahte hain ki ek hi page par sab selectors (Universal, Element, Class, ID,
+                        Group, Attribute, Child, Descendant, Pseudo-classes, Pseudo-elements) ek saath dekhen, tab aap
+                        niche diye gaye combined demo ko dekh sakte hain.
+                    </p>
+                </div>
+                <section class="live-preview">
+                    <h2 class="subheading">💻 Live Code Preview: All Selectors in One</h2>
+                    <iframe class="selector-iframe" src="./main.html" title="Combined Selectors Demo"></iframe>
+                    <p class="iframe-note">
+                        If the iframe doesn’t load, click
+                        <a href="./main.html" target="_blank" rel="noopener noreferrer">
+                            here to open Combined Selectors Demo (main.html)
+                        </a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- Back to Dashboard Link -->
+            <p class="back-link">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

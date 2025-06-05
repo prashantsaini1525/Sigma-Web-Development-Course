@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selectors Masterclass </title>
-    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Masterclass</title>
+    <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
@@ -36,49 +36,51 @@
         <p><strong>Usage:</strong> Useful for applying a basic style to everything.</p>
         <p>The syntax of Universal Selector is as follows:</p>
         <pre>
-            <code>
-                * {
-                    property : value;
-                }
-            </code>
-            <code>
-                &lt;!DOCTYPE html&gt;
-                &lt;html lang="en"&gt;
-                &lt;head&gt;
-                    &lt;meta charset="UTF-8"&gt;
-                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                    &lt;title&gt;Universal Selector&lt;/title&gt;
-                    &lt;link rel="stylesheet" href="./style.css"&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;div&gt;
-                        &lt;h1&gt;HI, THIS IS PRASHANT SAINI&lt;/h1&gt;
-                        &lt;p&gt;I'm a upcoming developer&lt;/p&gt;
-                    &lt;/div&gt;
+<code>
+* {
+    property : value;
+}
+</code>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Universal Selector&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;h1&gt;HI, THIS IS PRASHANT SAINI&lt;/h1&gt;
+        &lt;p&gt;I'm a upcoming developer&lt;/p&gt;
+    &lt;/div&gt;
 
-                    &lt;span&gt;
-                        &lt;h1&gt;HI, If you are here so you are on right platform.&lt;/h1&gt;
-                        &lt;p&gt;Welocme back hero!!&lt;/p&gt;
-                        &lt;p&gt;So, As you see this page here i applied "Universal Selector (*)" properties which are applicable for all the body in html page.&lt;/p&gt;
-                    &lt;/span&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-            </code>
-            <code>
-                * {
-                    margin: 0;
-                    padding: 0;
-                    background-color: rebeccapurple;
-                    color: yellowgreen;
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                    margin: 50px;
-                }
-            </code>
-        </pre>
+    &lt;span&gt;
+        &lt;h1&gt;HI, If you are here so you are on right platform.&lt;/h1&gt;
+        &lt;p&gt;Welocme back hero!!&lt;/p&gt;
+        &lt;p&gt;So, As you see this page here i applied "Universal Selector (*)" properties which are applicable for all the body in html page.&lt;/p&gt;
+    &lt;/span&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+<code>
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+    color: yellowgreen;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+</code>
+    </pre>
         <p><strong>Note</strong>: Irrespective of the tag, the style will be applied to all the elements and tags.</p>
-        <h2>Implementation of Universal Selector: <a href="./Universal Selector/index.html" target="_blank">Click on me
-                to See</a></h2>
+        <h2>
+            Implementation of Universal Selector:
+            <a href="./Universal Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="element">
@@ -87,158 +89,169 @@
             the &lt;p&gt; tags; in this case, the element selector will be the best choice.</p>
         <p><strong>What it does:</strong> Selects all elements of a specific type.</p>
         <p><strong>Usage:</strong> Targets tags directly (like paragraphs or headings).</p>
-        <p>The syntax of Universal Selector is as follows:</p>
+        <p>The syntax of Element Selector is as follows:</p>
         <pre>
-            <code>
-                &lt;!DOCTYPE html&gt;
-                &lt;html lang="en">
-                &lt;head>
-                    &lt;meta charset="UTF-8">
-                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    &lt;title>Element Selector (Type Selector)&lt;/title>
-                    &lt;link rel="stylesheet" href="./style.css">
-                &lt;/head>
-                &lt;body style="background-color: bisque; margin: 50px;">
-                    &lt;h1>HI, THIS IS PRASHANT SAINI&lt;/h1>
-                        &lt;p>I'm a upcoming developer&lt;/p>
-                        &lt;h2>HI, If you are here so you are on right platform.&lt;/h2>
-                        &lt;p>Welocme back hero!!&lt;/p>
-                        &lt;h3>I'm also a Software Developer and learning or enhancing my skills everyday.&lt;/h3>
-                        &lt;h4>So, Why we use different different headings in this html page because we target specific element or targets tags directly (like paragraphs or headings)&lt;/h4>
-                        &lt;p>So, As you see this page here i applied &lt;strong>Element Selector (Type Selector) &lt;mark>(e.g., p, h1, div)&lt;/mark>&lt;/strong>&lt;/mark> properties which are applicable for which  elements or targets tags we select and target in stylesheet.&lt;/p>
-                &lt;/body>
-                &lt;/html>
-            </code>
-            <code>
-                h1 {
-                    color: blueviolet;
-                    background-color: red;
-                }
-                
-                h2 {
-                    color: orange;
-                    background-color: green;
-                }
-                
-                h3 {
-                    color: yellow;
-                    background-color: blue;
-                }
-                
-                h4 {
-                    color: pink;
-                    background-color: black;
-                }
-                
-                p {
-                    color: darkcyan;
-                    text-align: center;
-                    background-color: yellow;
-                    font-size: 20px;
-                }
-            </code>
-        </pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Element Selector (Type Selector)&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;HI, THIS IS PRASHANT SAINI&lt;/h1&gt;
+    &lt;p&gt;I'm a upcoming developer&lt;/p&gt;
+    &lt;h2&gt;HI, If you are here so you are on right platform.&lt;/h2&gt;
+    &lt;p&gt;Welocme back hero!!&lt;/p&gt;
+    &lt;h3&gt;I'm also a Software Developer and learning or enhancing my skills everyday.&lt;/h3&gt;
+    &lt;h4&gt;So, Why we use different different headings in this html page because we target specific element or targets tags directly (like paragraphs or headings)&lt;/h4&gt;
+    &lt;p&gt;So, As you see this page here i applied &lt;strong&gt;Element Selector (Type Selector) &lt;mark&gt;(e.g., p, h1, div)&lt;/mark&gt;&lt;/strong&gt; properties which are applicable for those elements in the stylesheet.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+<code>
+h1 {
+    color: blueviolet;
+    background-color: red;
+}
+
+h2 {
+    color: orange;
+    background-color: green;
+}
+
+h3 {
+    color: yellow;
+    background-color: blue;
+}
+
+h4 {
+    color: pink;
+    background-color: black;
+}
+
+p {
+    color: darkcyan;
+    text-align: center;
+    background-color: yellow;
+    font-size: 20px;
+}
+</code>
+    </pre>
         <p><strong>Note</strong>: Element selector is not recommended as the same tag can be used multiple times in the
             document. So, overlapping rules can occur in the stylesheet.</p>
-        <h2>Implementation of Element Selector (Type Selector): <a href="./Element Selector/index.html"
-                target="_blank">Click on me to See</a></h2>
+        <h2>
+            Implementation of Element Selector (Type Selector):
+            <a href="./Element Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="class">
-        <h1>Class Selector <mark><strong> (.classname)</strong></mark></h1>
-        <p>The class selector does the same job as the id selector, a class selector helps group various types of
-            elements. Suppose, we want to give a custom style to a specific group of elements. In this case, the class
+        <h1>Class Selector <mark><strong>(.classname)</strong></mark></h1>
+        <p>The class selector does the same job as the id selector; a class selector helps group various types of
+            elements. Suppose we want to give a custom style to a specific group of elements. In this case, the class
             selector is the best option.</p>
         <p>It is written with the period <strong>"."</strong> character followed by the class name in the style sheet.
         </p>
         <p><strong>What it does:</strong> Targets elements with a specific class.</p>
-        <p><strong>Usage:</strong> Add class="name" to an element, then style it using
-            <mark><strong>"."</strong></mark>.
+        <p><strong>Usage:</strong> Add <code>class="name"</code> to an element, then style it using <code>.name</code>.
         </p>
         <p>The syntax of Class Selector is as follows:</p>
 
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of
-            Class Selector you can click on given link below.</p>
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of Class Selector you can click on the link
+            below.
+        </p>
         <p><strong>Note</strong>: The class selector helps in grouping two or more elements.</p>
-        <h2>Implementation of Class Selector <mark><strong> (.classname)</strong></mark>: <a
-                href="./Class Selector/index.html" target="_blank">Click on me to See</a></h2>
+        <h2>
+            Implementation of Class Selector <mark><strong>(.classname)</strong></mark>:
+            <a href="./Class Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="id">
-        <h1> ID Selector <mark><strong>(#idname)</strong></mark></h1>
-        <p>The ID selector targets the elements based on the specific ID. It is written with the hash “#” character
+        <h1>ID Selector <mark><strong>(#idname)</strong></mark></h1>
+        <p>The ID selector targets elements based on the specific ID. It is written with the hash “#” character
             followed by the ID name in the style sheet.</p>
-        <p>It is written with the period <strong>"#"</strong> character followed by the class name in the style sheet.
-        </p>
         <p><strong>What it does:</strong> Selects a specific element with a unique ID.</p>
-        <p><strong>Usage: </strong>Add <mark><strong>id="name"</strong></mark> to an element, then style it using
-            <mark><strong>"#"</strong></mark>.
-        </p>
+        <p><strong>Usage:</strong> Add <code>id="name"</code> to an element, then style it using <code>#name</code>.</p>
         <p>The syntax of ID Selector is as follows:</p>
 
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of
-            ID Selector you can click on given link below.</p>
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of ID Selector you can click on the link
+            below.
+        </p>
         <p><strong>Note</strong>: In the style block, the selector <mark><strong>#title</strong></mark>, will only
             target the HTML element having an ID of "title".</p>
-        <h2>Implementation of ID Selector <mark><strong> (#idname)</strong></mark>: <a href="./Id Selector/index.html"
-                target="_blank">Click on me to See</a></h2>
+        <h2>
+            Implementation of ID Selector <mark><strong>(#idname)</strong></mark>:
+            <a href="./Id Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="group">
-        <h1> Group Selector <mark><strong> (e.g., h1, p, .classname)</strong></mark></h1>
-        <p>The group selector is used to minimise the code. <mark><strong>Commas ","</strong></mark> are used to
-            separate each selector in a grouping. This reduces the number of lines of code. The code also looks clean.
+        <h1>Group Selector <mark><strong>(e.g., h1, p, .classname)</strong></mark></h1>
+        <p>The group selector is used to minimize the code. <mark><strong>Commas ","</strong></mark> are used to
+            separate each selector in a grouping. This reduces the number of lines of code, and the code looks cleaner.
         </p>
-        <p>It is written with the <mark><strong>Commas ","</strong></mark> character followed by the every element or
-            tag or class or id in the style sheet.
-        </p>
+        <p>It is written with the <mark><strong>comma ","</strong></mark> character followed by each element, tag,
+            class, or ID in the stylesheet.</p>
         <p><strong>What it does:</strong> Styles multiple elements at once.</p>
         <p><strong>Usage:</strong> Separate selectors with a comma.</p>
         <p>The syntax of Group Selector is as follows:</p>
 
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of Group Selector you can click on given link below.</p>
-        <p><strong>Note</strong>: In the style block, the group selector <mark><strong> (e.g., h1, p,
-                    .classname)</strong></mark>, will target any element,tag,class,id etc. in CSS.</p>
-        <h2>Implementation of Group Selector <mark><strong> (e.g., h1, p, .classname)</strong></mark>: <a
-                href="./Group Selector/index.html" target="_blank">Click on me to See</a></h2>
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of Group Selector you can click on the link
+            below.
+        </p>
+        <p><strong>Note</strong>: In the style block, the group selector <mark><strong>(e.g., h1, p,
+                    .classname)</strong></mark>,
+            will target any element, tag, class, ID, etc., in CSS.</p>
+        <h2>
+            Implementation of Group Selector <mark><strong>(e.g., h1, p, .classname)</strong></mark>:
+            <a href="./Group Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="attribute">
-        <h1> Attribute Selector <mark><strong> (e.g., [type="text"])</strong></mark></h1>
+        <h1>Attribute Selector <mark><strong>(e.g., [type="text"])</strong></mark></h1>
         <p>The Attribute Selector is used to style HTML elements based on their attributes and values. It helps target
             specific elements with certain attributes, like <mark><strong>type, href, or src</strong></mark>.</p>
-        <p>It is written in square brackets <mark><strong>"[ ]"</strong></mark> in the style sheet, followed by the
-            attribute and its value (if needed).
-        </p>
+        <p>It is written in square brackets <mark><strong>"[ ]"</strong></mark> in the stylesheet, followed by the
+            attribute and its value (if needed).</p>
         <p><strong>What it does:</strong> Targets elements based on their attributes.</p>
         <p><strong>Usage:</strong> Style specific input types or elements with specific attributes.</p>
-        <h2>So, Why we use Attribue Selector?</h2>
+        <h2>So, Why do we use Attribute Selector?</h2>
         <p><strong>Saves time:</strong> No need to write extra classes for styling.</p>
-        <p><strong>Flexible: </strong> Targets elements with specific properties like type, href, src, etc.</p>
+        <p><strong>Flexible:</strong> Targets elements with specific properties like type, href, src, etc.</p>
         <p><strong>Clean code:</strong> Keeps HTML simple and easy to read.</p>
         <p>The syntax of Attribute Selector is as follows:</p>
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of
-            Attribute Selector you can click on given link below.</p>
-        <p><strong>Note</strong>: The attribute selector <mark><strong> (e.g., [type="text"])</strong></mark> will
-            target any element with <mark><strong> (e.g., [type="text"])</strong></mark> in CSS.</p>
-        <h2>Implementation of Attribute Selector <mark><strong> (e.g., [type="text"])</strong></mark>: <a
-                href="./Attribute Selector/index.html" target="_blank">Click on me to See</a></h2>
+
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of Attribute Selector you can click on the
+            link
+            below.
+        </p>
+        <p><strong>Note</strong>: The attribute selector <mark><strong>(e.g., [type="text"])</strong></mark> will
+            target any element with <mark><strong>(e.g., [type="text"])</strong></mark> in CSS.</p>
+        <h2>
+            Implementation of Attribute Selector <mark><strong>(e.g., [type="text"])</strong></mark>:
+            <a href="./Attribute Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="child">
-        <h1> Child Selector <mark><strong> (e.g., element > child)</strong></mark></h1>
+        <h1>Child Selector <mark><strong>(e.g., element &gt; child)</strong></mark></h1>
         <p>The Child Selector is used to style direct children of an element. It only selects the first level of
             children, not nested elements deeper inside.</p>
-        <p>It is written using the <mark><strong>">"</strong></mark> symbol between the parent and child in the style
-            sheet.
+        <p>It is written using the <mark><strong>">"</strong></mark> symbol between the parent and child in the
+            stylesheet.
         </p>
         <p><strong>What it does:</strong> Targets only the direct child elements of a parent.</p>
         <p><strong>Usage:</strong> Style elements that are directly inside a parent container.</p>
@@ -248,23 +261,25 @@
         <p><strong>Clean code:</strong> Keeps styles specific and avoids conflicts.</p>
         <p>The syntax of Child Selector is as follows:</p>
 
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of
-            Child Selector you can click on given link below.</p>
-        <p><strong>Note</strong>: The Child selector <mark><strong> (element > child)</strong></mark> will not affect
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of Child Selector you can click on the link
+            below.
+        </p>
+        <p><strong>Note</strong>: The Child selector <mark><strong>(element &gt; child)</strong></mark> will not affect
             any nested elements inside the child.</p>
-        <h2>Implementation of Child Selector <mark><strong> (element > child)</strong></mark>: <a
-                href="./Child Selector/index.html" target="_blank">Click on me to See</a></h2>
+        <h2>
+            Implementation of Child Selector <mark><strong>(element &gt; child)</strong></mark>:
+            <a href="./Child Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="descendant">
-        <h1> Descendant Selector <mark><strong> (e.g., ancestor descendant)</strong></mark></h1>
-        <p>The Descendant Selector is used to style all elements inside a parent, no matter how deeply nested they are.
-        </p>
+        <h1>Descendant Selector <mark><strong>(e.g., ancestor descendant)</strong></mark></h1>
+        <p>The Descendant Selector is used to style all elements inside a parent, no matter how deeply nested they
+            are.</p>
         <p>It is written by simply putting a <mark><strong>"space"</strong></mark> between the parent and the target in
-            the style sheet.
-        </p>
+            the stylesheet.</p>
         <p><strong>What it does:</strong> Targets all matching elements inside the specified parent.</p>
         <p><strong>Usage:</strong> Style all nested elements within a parent container.</p>
         <h2>So, Why do we use the Descendant Selector?</h2>
@@ -273,51 +288,61 @@
         <p><strong>Saves time:</strong> Reduces the need for multiple individual selectors.</p>
         <p>The syntax of Descendant Selector is as follows:</p>
 
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of
-            Descendant Selector you can click on given link below.</p>
-        <p><strong>Note</strong>: The Descendant selector <mark><strong> (ancestor descendant) </strong></mark> will
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of Descendant Selector you can click on the
+            link
+            below.
+        </p>
+        <p><strong>Note</strong>: The Descendant selector <mark><strong>(ancestor descendant)</strong></mark> will
             style every matching element inside the specified parent, even if they are deeply nested.</p>
-        <h2>Implementation of Descendant Selector <mark><strong> (ancestor descendant)</strong></mark>: <a
-                href="./Descendant Selector/index.html" target="_blank">Click on me to See</a></h2>
+        <h2>
+            Implementation of Descendant Selector <mark><strong>(ancestor descendant)</strong></mark>:
+            <a href="./Descendant Selector/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
 
     <section id="pseudo-classes">
-        <h1> Pseudo-classes <mark><strong> (e.g., :hover, :first-child, :last-child) </strong></mark></h1>
-        <p>The Pseudo-classes are used to style elements in a specific state or position.
-        </p>
-        <p>It is written with a colon <mark><strong>":"</strong></mark> followed by the pseudo-class name.
-        </p>
-        <p><strong>What it does:</strong> Applies styles based on an element's state or position (e.g., when a user hovers over it or it's the first child).</p>
+        <h1>Pseudo-classes <mark><strong>(e.g., :hover, :first-child, :last-child)</strong></mark></h1>
+        <p>The Pseudo-classes are used to style elements in a specific state or position.</p>
+        <p>It is written with a colon <mark><strong>":"</strong></mark> followed by the pseudo-class name.</p>
+        <p><strong>What it does:</strong> Applies styles based on an element's state or position (e.g., when a user
+            hovers
+            over it or it's the first child).</p>
         <p><strong>Usage:</strong> Style elements based on interactions or structure.</p>
         <h2>So, Why do we use Pseudo-classes?</h2>
         <p><strong>Interactive designs:</strong> React to user actions like hovering or focusing.</p>
-        <p><strong>Specific targeting:</strong>  Style elements based on their position (e.g., first or last child)</p>
-        <p><strong>Clean code:</strong>  Avoids adding extra classes or IDs for specific states.</p>
+        <p><strong>Specific targeting:</strong> Style elements based on their position (e.g., first or last child).</p>
+        <p><strong>Clean code:</strong> Avoids adding extra classes or IDs for specific states.</p>
         <h2>Common Pseudo-classes:</h2>
         <p><mark><strong>:hover</strong></mark>: Styles an element when hovered over.</p>
         <p><mark><strong>:first-child</strong></mark>: Styles the first child of a parent.</p>
         <p><mark><strong>:last-child</strong></mark>: Styles the last child of a parent.</p>
-        <p>The syntax of  Pseudo-classes is as follows:</p>
+        <p>The syntax of Pseudo-classes is as follows:</p>
 
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of  Pseudo-classes you can click on given link below.</p>
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of Pseudo-classes you can click on the link
+            below.
+        </p>
 
-        <p><strong>Note</strong>: Pseudo-classes like <mark><strong>:hover</strong></mark> OR <mark><strong>:first-child</strong></mark> help make designs more dynamic and user-friendly.</p>
-        <h2>Implementation of Pseudo-classes <mark><strong>:hover</strong></mark> OR
-            <mark><strong> :first-child </strong></mark> OR <mark><strong> :last-child </strong></mark>: <a href="./Pseudo-classes/index.html" target="_blank">Click on me
-                to See</a></h2>
+        <p><strong>Note</strong>: Pseudo-classes like <mark><strong>:hover</strong></mark> or
+            <mark><strong>:first-child</strong></mark> help make designs more dynamic and user-friendly.
+        </p>
+        <h2>
+            Implementation of Pseudo-classes <mark><strong>:hover</strong></mark>,
+            <mark><strong>:first-child</strong></mark>,
+            or <mark><strong>:last-child</strong></mark>:
+            <a href="./Pseudo-classes/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
-    
+
     <section id="pseudo-elements">
-        <h1> Pseudo-elements <mark><strong> (e.g., ::before, ::after)</strong></mark></h1>
+        <h1>Pseudo-elements <mark><strong>(e.g., ::before, ::after)</strong></mark></h1>
         <p>The Pseudo-elements are used to style specific parts of an element, such as adding extra content or styling
-            the first letter.
-        </p>
-        <p>It is written with double colons <mark><strong>"::"</strong></mark> followed by the pseudo-element name.
-        </p>
+            the
+            first letter.</p>
+        <p>It is written with double colons <mark><strong>"::"</strong></mark> followed by the pseudo-element name.</p>
         <p><strong>What it does:</strong> Targets and styles specific parts of an element.</p>
         <p><strong>Usage:</strong> Add decorative content or style specific parts of text (e.g., the first letter).</p>
         <h2>So, Why do we use Pseudo-elements?</h2>
@@ -329,16 +354,21 @@
         <p><mark><strong>::after</strong></mark>: Adds content after the element.</p>
         <p>The syntax of Pseudo-elements is as follows:</p>
 
-        <p style="background-color: red; font-size: 20px;">Hey there, Actually I did not put code here because as we
-            move to other Selectors the html css code will consume too much space that's why if you want to see syntax
-            of Pseudo-elements you can click on given link below.</p>
-        <p><strong>Note</strong>: Pseudo-elements like <mark><strong>::before</strong></mark> OR <mark><strong>::after</strong></mark> are great for adding
-            decorative content or improving designs.</p>
-        <h2>Implementation of Pseudo-elements <mark><strong>::before</strong></mark> OR
-            <mark><strong> ::after </strong></mark> : <a href="./Pseudo-elements/index.html" target="_blank">Click on me
-                to See</a></h2>
+        <p style="background-color: red; font-size: 20px;">
+            Hey there, Actually I did not put code here because as we move to other Selectors the html css code will
+            consume too much space—that’s why if you want to see the syntax of Pseudo-elements you can click on the link
+            below.
+        </p>
+        <p><strong>Note</strong>: Pseudo-elements like <mark><strong>::before</strong></mark> or
+            <mark><strong>::after</strong></mark> are great for adding decorative content or improving designs.
+        </p>
+        <h2>
+            Implementation of Pseudo-elements <mark><strong>::before</strong></mark> or
+            <mark><strong>::after</strong></mark>:
+            <a href="./Pseudo-elements/index.html" target="_blank">Click on me to See</a>
+        </h2>
     </section>
-    
+
 </body>
 
 </html>
