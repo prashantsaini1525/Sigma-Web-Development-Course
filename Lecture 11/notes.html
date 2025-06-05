@@ -1,0 +1,174 @@
+<!-- File: Sigma-web-development/Lecture 11/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lecture 11 – Notes</title>
+
+  <!-- Global layout + notes styling -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+  <!-- ======== HEADER ======== -->
+  <header class="site-header">
+    <div class="container header-content">
+      <h1>Sigma Web Development</h1>
+      <p class="subtitle">CodeWithPrashant – Lecture 11 Notes &amp; Resources</p>
+    </div>
+  </header>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main>
+    <div class="container lecture-container">
+
+      <!-- ―――――――― 1) WRITTEN NOTES ―――――――― -->
+      <section class="note-section">
+        <h2 class="subheading">📒 Notes for Lecture 11: Semantic Tags in HTML</h2>
+
+        <ul>
+          <li>
+            <strong><code>&lt;header&gt;</code> Tag:</strong> Represents the page’s header, often containing navigation.
+            <ul>
+              <li>Example in HTML:  
+                <code>&lt;header&gt;
+  &lt;nav&gt;…&lt;/nav&gt;
+&lt;/header&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong><code>&lt;nav&gt;</code> Tag:</strong> Defines a navigation section (menus or links).
+            <ul>
+              <li>Example:  
+                <code>&lt;nav&gt;
+  &lt;ul&gt;&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;…&lt;/ul&gt;
+&lt;/nav&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong><code>&lt;main&gt;</code> Tag:</strong> Wraps core content of the page.
+            <ul>
+              <li>Example:  
+                <code>&lt;main&gt;
+  &lt;section id="home"&gt;…&lt;/section&gt;
+  &lt;section id="about"&gt;…&lt;/section&gt;
+&lt;/main&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong><code>&lt;section&gt;</code> Tag:</strong> Groups related content into thematic blocks.
+            <ul>
+              <li>Example:  
+                <code>&lt;section id="services"&gt;
+  &lt;h1&gt;Services&lt;/h1&gt;
+  &lt;p&gt;…&lt;/p&gt;
+&lt;/section&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong><code>&lt;article&gt;</code> Tag:</strong> Denotes a self-contained piece of content (e.g., a blog post).
+            <ul>
+              <li>Example:  
+                <code>&lt;article&gt;
+  &lt;h3&gt;Article 0: Lorem&lt;/h3&gt;
+  &lt;p&gt;…&lt;/p&gt;
+&lt;/article&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong><code>&lt;aside&gt;</code> Tag:</strong> Contains content tangentially related to main content (sidebars).
+            <ul>
+              <li>Example:  
+                <code>&lt;aside&gt;
+  &lt;h3&gt;Related Articles&lt;/h3&gt;
+  &lt;ul&gt;&lt;li&gt;&lt;a href="#"&gt;…&lt;/a&gt;&lt;/li&gt;…&lt;/ul&gt;
+&lt;/aside&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong><code>&lt;footer&gt;</code> Tag:</strong> Represents the page footer (copyright, contact).
+            <ul>
+              <li>Example:  
+                <code>&lt;footer&gt;Copyright CWP | 2025. All rights reserved&lt;/footer&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Other Semantic Tags:</strong>
+            <ul>
+              <li><code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> for images with captions.</li>
+              <li><code>&lt;details&gt;</code> and <code>&lt;dialog&gt;</code> for collapsible sections and modals.</li>
+              <li><code>&lt;mark&gt;</code> to highlight text.</li>
+              <li><code>&lt;time&gt;</code> to represent dates or times.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Hinglish explanation -->
+        <div class="note-hinglish">
+          <p>
+            Hinglish: Lecture 11 mein humne semantic tags use karne ka tarika dekha.  
+            <code>&lt;header&gt;</code> mein navigation rakhte hain, <code>&lt;main&gt;</code> mein core content,  
+            <code>&lt;section&gt;</code> aur <code>&lt;article&gt;</code> se related content group hota hai.  
+            <code>&lt;aside&gt;</code> sidebars ke liye hota hai, aur <code>&lt;footer&gt;</code> page ke niche ka section manage karta hai.  
+            In tags se SEO improve hota hai aur code readability bhi achi rehti hai.
+          </p>
+        </div>
+      </section>
+
+      <!-- ―――――――― 2) LIVE CODE PREVIEW ―――――――― -->
+      <section class="live-preview">
+        <h2 class="subheading">💻 Live Code Preview</h2>
+        <iframe src="index.html" title="Lecture 11 Demo"
+          style="width: 100%; height: 550px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+        <p style="text-align: center; margin-top: 0.5rem;">
+          If the iframe doesn’t load, click  
+          <a href="index.html" target="_blank">here to open Lecture 11 Demo in a new tab</a>.
+        </p>
+      </section>
+
+      <!-- ――――――――――――――――――――――――――――――――――――― -->
+      <!-- 3) COMPREHENSIVE SEMANTIC GUIDE ――――――――――――――――――――――――――――――――――――― -->
+      <section class="note-section">
+        <h2 class="subheading">📄 Semantic Tags Reference (semantic.txt)</h2>
+        <pre><code>
+When to Use Each Semantic Tag?
+Here’s a logical order for using semantic tags in a webpage:
+
+Start with &lt;header&gt;: Add the title, logo, and navigation.
+Use &lt;main&gt;: Structure the core content with &lt;section&gt; and &lt;article&gt;.
+Include &lt;aside&gt;: Add sidebars or related links.
+Add &lt;footer&gt;: Include closing details like copyright or contact info.
+Use &lt;nav&gt; and &lt;figure&gt; inside appropriate sections.
+Use &lt;details&gt;, &lt;mark&gt;, &lt;time&gt;, etc., as needed.
+
+
+What are Semantic Tags?
+Semantic tags add meaning to your HTML. They tell both the browser and the developer what kind of content is being presented.
+
+Here are some of the key semantic tags you must know about:
+
+&lth1&gt;: Used to represent the top section of a web page, often containing headings, logos, and navigation.
+
+&lt;nav&gt;: Signifies a navigation menu on a web page.
+
+&lt;article&gt;: Indicates a self-contained piece of content, such as a blog post or news article.
+
+&lt;section&gt;: Represents a thematic grouping of content on a web page.
+
+&lt;aside&gt;: Typically used for sidebars or content that is tangentially related to the main content.
+
+&lt;footer&gt;: Represents the footer of a web page, usually containing copyright information and contact details.
+
+&lt;figure&gt; and &lt;figcaption&gt;: Used for embedding images, diagrams, or charts, along with a caption.
+
+&l

@@ -1,0 +1,215 @@
+<!-- File: Sigma-web-development/Lecture 12/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 12 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 12 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- 1) YOUR WRITTEN NOTES -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 12: Pure HTML Media Player</h2>
+
+                <ul>
+                    <li>
+                        <strong>Navigation Structure:</strong>
+                        <ul>
+                            <li>
+                                Used a semantic <code>&lt;header&gt;</code> with <code>&lt;nav&gt;</code> containing a
+                                list of links:
+                                <pre><code>&lt;header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#audio"&gt;Audio&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#video"&gt;Video&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Home Section:</strong>
+                        <ul>
+                            <li>
+                                Wrapped in <code>&lt;section id="home"&gt;</code> with:
+                                <pre><code>&lt;section id="home"&gt;
+  &lt;h1&gt;Hello,&lt;/h1&gt;
+  &lt;h2&gt;This is a Simple HTML Based Media Player&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.…&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Audio Section (<code>&lt;section id="audio"&gt;</code>):</strong>
+                        <ul>
+                            <li>Contains three <code>&lt;div&gt;</code> blocks with IDs: <code>funny</code>,
+                                <code>scary</code>, <code>suspense</code>.
+                            </li>
+                            <li>Each block embeds audio files using:
+                                <pre><code>&lt;audio src="./Assests/Audios/Squid Game/favorite.mp3" controls preload="metadata"&gt;&lt;/audio&gt;</code></pre>
+                            </li>
+                            <li><code>controls</code> adds play/pause/volume UI; <code>preload="metadata"</code> loads
+                                metadata only.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Video Section (<code>&lt;section id="video"&gt;</code>):</strong>
+                        <ul>
+                            <li>Header: <code>&lt;h1 class="headline"&gt;Video Section&lt;/h1&gt;</code>.</li>
+                            <li>Three nested <code>&lt;div&gt;</code> blocks: <code>harry</code>, <code>dhruv</code>,
+                                <code>itech</code>.
+                            </li>
+                            <li>Each embeds six YouTube iframes, each sized <code>width="230" height="150"</code>.
+                                Example:
+                                <pre><code>&lt;iframe width="230" height="150"
+  src="https://www.youtube.com/embed/kqU2O7Kw_c8?si=INJqN5zt2lE71uH5"
+  title="YouTube video player" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>About Section (<code>&lt;section id="about"&gt;</code>):</strong>
+                        <ul>
+                            <li>Uses a Flex container to align an image and text side by side:
+                                <pre><code>&lt;div class="info"&gt;
+  &lt;img src="./Assests/Images/image.jpg" alt="Logo" class="logo"&gt;
+  &lt;div class="text"&gt;
+    &lt;h2&gt;Information About Us&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet,…&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </li>
+                            <li>Image styled to <code>max-width: 20%</code> with rounded corners; text block width at
+                                <code>60%</code>.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Contact Section (<code>&lt;section id="contact"&gt;</code>):</strong>
+                        <ul>
+                            <li>Contains a form with fields:
+                                <ul>
+                                    <li>Name (<code>type="text"</code>) – required</li>
+                                    <li>Email (<code>type="email"</code>, <code>pattern</code> for email format) –
+                                        required</li>
+                                    <li>City (<code>pattern="[A-Za-z\s]+"</code>) – required</li>
+                                    <li>Phone Number (<code>pattern="\d{12}"</code>) – required</li>
+                                    <li>Pincode (<code>pattern="\d{6}"</code>) – required</li>
+                                    <li>Message (<code>&lt;textarea&gt;</code>) – required</li>
+                                </ul>
+                            </li>
+                            <li>Submit button: <code>&lt;input type="submit" value="Submit"&gt;</code>.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Footer:</strong>
+                        <ul>
+                            <li>Simple footer with copyright and portfolio link:
+                                <pre><code>&lt;footer&gt;
+  &copy; 2025 All rights reserved. Designed by 
+  &lt;a href="https://prashant-saini-22.vercel.app/" target="_blank"&gt;Prashant Saini&lt;/a&gt;
+&lt;/footer&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>CSS Styling (<code>style.css</code>):</strong>
+                        <ul>
+                            <li>Sticky <code>nav</code> bar with dark background, white text, and purple hover.</li>
+                            <li>Heading colors: <code>h1 { color: darkslateblue; }</code>,
+                                <code>h2 { color: #4f1d1d; }</code>.
+                            </li>
+                            <li>Each section has <code>min-height: 100vh;</code> for full viewport coverage.</li>
+                            <li>Section backgrounds:
+                                <ul>
+                                    <li><code>#home { background-color: aqua; }</code></li>
+                                    <li><code>#audio { background-color: lightcoral; }</code></li>
+                                    <li><code>#video { background-color: gray; }</code></li>
+                                    <li><code>#about { background-color: lightblue; }</code></li>
+                                    <li><code>#contact { background-color: lightcyan; }</code></li>
+                                </ul>
+                            </li>
+                            <li><code>.info { display: flex; align-items: center; gap: 40px; }</code> for About layout.
+                            </li>
+                            <li><code>.logo { max-width: 20%; border-radius: 10px; }</code> for the About image.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Hinglish explanation -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 12 mein humne ek pure HTML media player banaya jahan 6 audio aur 6 video files
+                        display hui.
+                        Header mein <code>nav</code> se sections (Home, Audio, Video, About, Contact) create kiye.
+                        Audio section mein teen categories (Squid Game Ringtones, Scary, Funny) me
+                        <code>&lt;audio&gt;</code> tag se files embed ki.
+                        Video section mein teen categories (Code With Harry, Dhruv Rathi, I Tech World) me YouTube
+                        iframes embed kiye.
+                        About section mein ek image ke saath text side-by-side align kiya, using Flexbox.
+                        Contact form mein required fields aur patterns se validation set ki.
+                        Har section ko alag background color aur styling di gayi CSS file mein.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 2) LIVE CODE PREVIEW – Media Player (index.html) -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview – Media Player Demo</h2>
+                <iframe src="index.html" title="Lecture 12 Demo"
+                    style="width: 100%; height: 700px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click<br />
+                    <a href="index.html" target="_blank">here to open Media Player Demo in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- 3) BACK TO DASHBOARD LINK -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

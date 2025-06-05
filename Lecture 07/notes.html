@@ -1,0 +1,115 @@
+<!-- File: Sigma-web-development/Lecture 07/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 07 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 07 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 1) YOUR WRITTEN NOTES -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 07: HTML Forms</h2>
+
+                <ul>
+                    <li>
+                        <strong>Form Element:</strong> Use <code>&lt;form action="post"&gt;</code> to wrap inputs and
+                        controls.
+                    </li>
+                    <li>
+                        <strong>Text Input:</strong>
+                        <code>&lt;input type="text" id="username" name="username" placeholder="Enter Your Name" autofocus&gt;</code>
+                        – “autofocus” places cursor on load.
+                    </li>
+                    <li>
+                        <strong>Radio Buttons:</strong>
+                        <code>&lt;input type="radio" id="male" name="gender" value="male"&gt;</code>
+                        and
+                        <code>&lt;input type="radio" id="female" name="gender" value="female"&gt;</code>
+                        – only one can be selected per “name”.
+                    </li>
+                    <li>
+                        <strong>Checkbox:</strong>
+                        <code>&lt;input type="checkbox" id="subscribe" name="subscribe" value="yes"&gt;</code>
+                        – user can toggle on/off.
+                    </li>
+                    <li>
+                        <strong>Textarea:</strong>
+                        <code>&lt;textarea id="comment" name="comment" rows="4" cols="50"&gt;&lt;/textarea&gt;</code>
+                        – multiline text input.
+                    </li>
+                    <li>
+                        <strong>Select Dropdown:</strong>
+                        <code>&lt;select name="fruits"&gt;</code> with
+                        <code>&lt;option value="apple"&gt;Apple&lt;/option&gt;</code>, etc.
+                    </li>
+                    <li>
+                        <strong>External Link:</strong>
+                        <code>&lt;a style="text-decoration: none;" href="https://www.codewithharry.com/tutorial/html-forms/" target="_blank"&gt;HTML FORMS&lt;/a&gt;</code>
+                    </li>
+                </ul>
+
+                <!-- Hinglish explanation -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 07 mein humne <code>&lt;form&gt;</code> ke andar text input, radio buttons,
+                        checkbox, textarea
+                        aur select dropdown ka use dekha. “autofocus” se form load hote hi cursor text field me rahega.
+                        Radio buttons me ek hi option select hota hai; checkbox toggle hota hai.
+                        Textarea multiline input deta hai, aur select dropdown se ek option choose karte hain.
+                        Ek external link bhi add kiya “HTML FORMS” tutorial ke liye.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 2) LIVE CODE PREVIEW -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview</h2>
+                <iframe src="index.html" title="Lecture 07 Demo"
+                    style="width: 100%; height: 450px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click
+                    <a href="index.html" target="_blank">here to open Lecture 07 Form Demo in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 3) BACK TO DASHBOARD LINK -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

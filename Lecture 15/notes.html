@@ -1,0 +1,187 @@
+<!-- File: Sigma-web-development/Lecture 15/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lecture 15 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+    <link rel="stylesheet" href="./lecture15.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header" role="banner">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 15 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main role="main">
+        <div class="container lecture-container">
+            <!-- Notes Section -->
+            <section class="note-section" aria-labelledby="lecture15-heading">
+                <h2 id="lecture15-heading" class="subheading">🎨 Notes for Lecture 15: Inline, Internal & External CSS
+                </h2>
+
+                <h3>🧩 Introduction</h3>
+                <p>There are three primary ways to apply CSS to HTML elements:</p>
+                <ul>
+                    <li>Inline CSS</li>
+                    <li>Internal CSS</li>
+                    <li>External CSS</li>
+                </ul>
+
+                <h3>🟠 Inline CSS</h3>
+                <p><strong>Definition:</strong> Inline CSS ek specific element ke andar directly likha jata hai using
+                    the
+                    <code>style=""</code> attribute.
+                </p>
+                <pre><code>&lt;h2 style="color: antiquewhite; background-color: brown;"&gt;About Me&lt;/h2&gt;</code></pre>
+                <p><mark>Note:</mark> Inline CSS chhote HTML edits ke liye theek hai, but big projects me ye recommend
+                    nahi kiya jata because maintain karna difficult hota hai.</p>
+                <p><strong>My Short Note:</strong> Not recommended for large projects. Editing every element manually is
+                    time-consuming.</p>
+
+                <h3>🟡 Internal CSS</h3>
+                <p><strong>Definition:</strong> Internal CSS ek hi HTML page ke multiple elements ko style karne ke liye
+                    use hoti hai. Ye <code>&lt;style&gt;</code> tag ke andar hoti hai jo <code>&lt;head&gt;</code>
+                    section me likhte hain.</p>
+                <pre><code>&lt;style&gt;
+#internal h1 {
+  color: skyblue;
+  background-color: darkcyan;
+}
+&lt;/style&gt;</code></pre>
+                <p><mark>Note:</mark> Internal CSS better hoti hai as compared to inline CSS. Ye ek page pe centralized
+                    styling provide karti hai. Lekin multiple pages ke liye external CSS zyada better hoti hai.</p>
+                <p><strong>My Short Note:</strong> Easier to manage than inline. Still limited for large projects.</p>
+
+                <h3>🟢 External CSS</h3>
+                <p><strong>Definition:</strong> External CSS ek alag file hoti hai (e.g., <code>style.css</code>) jisko
+                    <code>&lt;link&gt;</code> tag se HTML page ke <code>&lt;head&gt;</code> section me attach karte
+                    hain.
+                </p>
+                <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                <pre><code>/* style.css content */
+#external h1 {
+  color: red;
+  background-color: blue;
+}</code></pre>
+                <p><mark>Note:</mark> Ye technique large scale projects ke liye sabse best hoti hai. Aap ek CSS file me
+                    changes karke multiple HTML files me design update kar sakte ho.</p>
+                <p><strong>My Short Note:</strong> Best for maintaining reusable styles across multiple pages. Clean and
+                    centralized.</p>
+
+                <h3>⚖️ CSS Priority Order (Precedence)</h3>
+                <p><strong>Order:</strong> Inline &gt; Internal &gt; External</p>
+                <p>Agar same element par tino tarah se style apply ho raha ho, to <strong>Inline CSS</strong> sabse
+                    pehle apply hoti hai, uske baad <strong>Internal</strong>, aur last me <strong>External</strong>.
+                </p>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>CSS Method</th>
+                                <th>Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inline CSS</td>
+                                <td>🔥 Highest</td>
+                            </tr>
+                            <tr>
+                                <td>Internal CSS</td>
+                                <td>🔼 Medium</td>
+                            </tr>
+                            <tr>
+                                <td>External CSS</td>
+                                <td>🔽 Lowest</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>📌 Final Summary</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>CSS Type</th>
+                                <th>Used In</th>
+                                <th>Best For</th>
+                                <th>Maintainability</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Inline</td>
+                                <td>Inside element</td>
+                                <td>Quick fixes</td>
+                                <td>❌ Hard</td>
+                            </tr>
+                            <tr>
+                                <td>Internal</td>
+                                <td>&lt;head&gt; tag</td>
+                                <td>Single-page sites</td>
+                                <td>⚠️ Okay</td>
+                            </tr>
+                            <tr>
+                                <td>External</td>
+                                <td>Separate CSS file</td>
+                                <td>All project files</td>
+                                <td>✅ Best</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Hinglish Explanation Block -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Is lecture mein humne CSS ke teen tareeke dekhe — Inline, Internal, aur External CSS.
+                        Inline CSS
+                        ek element ke andar directly likhi jati hai <code>style=""</code> attribute se. Internal CSS ek
+                        page ke
+                        &lt;head&gt; mein &lt;style&gt; tag ke andar hoti hai, aur External CSS alag file hoti hai jise
+                        &lt;link&gt; ke zariye attach karte hain. Inline CSS ki priority sabse zyada hoti hai, fir
+                        Internal,
+                        fir External. Large projects mein External CSS best hoti hai maintain karne ke liye.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Live Preview -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview</h2>
+                <iframe src="index.html" title="Lecture 15 Demo"></iframe>
+                <p>If the iframe doesn’t load, click<br />
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">here to open Lecture 15 Demo in a new
+                        tab</a>.
+                </p>
+            </section>
+
+            <!-- Back to Dashboard -->
+            <p>
+                <a href="../index.html" aria-label="Back to Lecture Dashboard">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

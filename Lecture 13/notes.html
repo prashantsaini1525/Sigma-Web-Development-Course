@@ -1,0 +1,257 @@
+<!-- File: Sigma-web-development/Lecture 13/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 13 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 13 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+            <!-- 1) YOUR WRITTEN NOTES -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 13: Entities, Code, Pre, Canvas &amp; Quotations</h2>
+
+                <!-- Entities in HTML -->
+                <h3>Entities in HTML</h3>
+                <p>
+                    HTML entities are special character codes used to display symbols that either have special meaning
+                    in HTML or are not directly printable on the keyboard. For example:
+                </p>
+                <ul>
+                    <li><code>&amp;copy;</code> renders as © (copyright symbol)</li>
+                    <li><code>&amp;reg;</code> renders as ® (registered trademark)</li>
+                    <li><code>&amp;deg;</code> renders as ° (degree symbol)</li>
+                </ul>
+                <p>
+                    If you need to insert the actual “&lt;” or “&gt;” characters in the browser, you write:
+                </p>
+                <ul>
+                    <li><code>&amp;lt;</code> renders as &lt;</li>
+                    <li><code>&amp;gt;</code> renders as &gt;</li>
+                    <li><code>&amp;amp;</code> renders as &amp;</li>
+                    <li><code>&amp;nbsp;</code> renders as a non-breaking space</li>
+                </ul>
+                <p>
+                    In HTML, you can also use numeric (hex) references like <code>&#x00A9;</code> for © or
+                    <code>&#x00B0;</code> for °—both work exactly the same as named entities.
+                </p>
+
+                <!-- How to use Entities -->
+                <h3>How to Use Entities</h3>
+                <p>
+                    Whenever you want to display a character that would otherwise be interpreted as HTML or is not
+                    easily typed, use its entity code. For example:
+                </p>
+                <ul>
+                    <li><code>&amp;lt; &lt;</code> – shows the “less-than” sign</li>
+                    <li><code>&amp;gt; &gt;</code> – shows the “greater-than” sign</li>
+                    <li><code>&amp;amp; &amp;</code> – shows the ampersand</li>
+                    <li><code>&amp;nbsp; (non-breaking space)</code> – prevents line breaks at that point</li>
+                    <li><code>&amp;copy; ©</code> – shows the copyright symbol</li>
+                </ul>
+
+                <!-- Code tag in HTML -->
+                <h3><code>&lt;code&gt;</code> Tag in HTML</h3>
+                <p>
+                    The <code>&lt;code&gt;</code> tag is used for displaying inline code snippets. It typically renders
+                    text in a monospace font so that any HTML or programming code stands out clearly.
+                </p>
+                <p>Example:</p>
+                <pre><code>&lt;code&gt;&lt;html&gt;&lt;body&gt;Hello, World!&lt;/body&gt;&lt;/html&gt;&lt;/code&gt;</code></pre>
+                <p>
+                    Notice how the “&lt;” and “&gt;” characters are escaped as entities (<code>&amp;lt;</code>,
+                    <code>&amp;gt;</code>) inside the code block.
+                </p>
+
+                <!-- Pre tag in HTML -->
+                <h3><code>&lt;pre&gt;</code> Tag in HTML</h3>
+                <p>
+                    The <code>&lt;pre&gt;</code> tag preserves both spaces and line breaks exactly as they appear in
+                    your source code. It’s commonly used for:
+                </p>
+                <ul>
+                    <li>Displaying blocks of code</li>
+                    <li>Showing formatted text where whitespace matters</li>
+                </ul>
+                <p>Example:</p>
+                <pre><code>
+A preformatted text block
+    preserves indentation
+and line breaks exactly
+        </code></pre>
+
+                <!-- Pre + Code -->
+                <h3>Combining <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code></h3>
+                <p>
+                    When you want to display a multi-line code snippet with both syntax highlighting and preserved
+                    formatting, wrap the code inside both tags:
+                </p>
+                <pre><code>&lt;pre&gt;
+  &lt;code&gt;
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Heading 1&lt;/h1&gt;
+      &lt;h2&gt;Heading 2&lt;/h2&gt;
+      &lt;p&gt;Paragraph&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;</code></pre>
+
+                <!-- Boilerplate code example -->
+                <h3>HTML Boilerplate Example</h3>
+                <p>Here’s a minimal HTML5 boilerplate structure:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;&lt;/header&gt;
+  &lt;main&gt;&lt;/main&gt;
+  &lt;footer&gt;&lt;/footer&gt;
+  &lt;h1&gt;&lt;/h1&gt;
+  &lt;h2&gt;&lt;/h2&gt;
+  &lt;h3&gt;&lt;/h3&gt;
+  &lt;h4&gt;&lt;/h4&gt;
+  &lt;h5&gt;&lt;/h5&gt;
+  &lt;h6&gt;&lt;/h6&gt;
+  &lt;p&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>
+                    To explore more miscellaneous tags, check out these links:
+                </p>
+                <ul>
+                    <li><a href="https://www.codewithharry.com/tutorial/html-code-tags/" target="_blank">Code Tag</a>
+                    </li>
+                    <li><a href="https://www.codewithharry.com/tutorial/html-global-attributes/" target="_blank">Global
+                            Attributes</a></li>
+                    <li><a href="https://www.codewithharry.com/tutorial/html-obselete-tags/" target="_blank">Obsolete
+                            HTML Tags</a></li>
+                    <li><a href="https://www.codewithharry.com/tutorial/html-charcter-sets/" target="_blank">Character
+                            Sets</a></li>
+                    <li><a href="https://www.codewithharry.com/tutorial/html-semantic-tags/" target="_blank">Many More
+                            Tags</a></li>
+                </ul>
+
+                <!-- Why Use Canvas -->
+                <h3><code>&lt;canvas&gt;</code> Element</h3>
+                <p>
+                    The <code>&lt;canvas&gt;</code> element provides a drawable area on which you can create
+                    graphics—such as shapes, charts, and animations—using JavaScript. Common use cases:
+                </p>
+                <ul>
+                    <li><strong>Graphics:</strong> Drawing custom shapes and graphs.</li>
+                    <li><strong>Dynamic Content:</strong> Redrawing visuals in real time (e.g., games, data plots).</li>
+                    <li><strong>Interactivity:</strong> Although JavaScript is required for interactivity,
+                        <code>&lt;canvas&gt;</code> is the HTML foundation.
+                    </li>
+                </ul>
+                <p>Example inclusion:</p>
+                <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code></pre>
+
+                <!-- HTML Quotation Tag -->
+                <h3>HTML Quotation Tags</h3>
+                <p>
+                    Quotations in HTML can be marked up semantically using:
+                </p>
+                <ul>
+                    <li>
+                        <code>&lt;blockquote&gt;</code> (block-level quotes, usually multi-line). Example:
+                        <pre><code>&lt;blockquote cite="https://example.com"&gt;
+  This is a long quote from an external source.
+&lt;/blockquote&gt;</code></pre>
+                    </li>
+                    <li>
+                        <code>&lt;q&gt;</code> (inline quotes, shorter phrases). Example:
+                        <pre><code>The philosopher said, &lt;q cite="https://example.com"&gt;The unexamined life is not worth living.&lt;/q&gt;</code></pre>
+                    </li>
+                </ul>
+                <p>
+                    Both tags support a <code>cite</code> attribute to specify the source URL. Styling these tags with
+                    CSS can improve readability and accessibility.
+                </p>
+
+                <!-- Here is your added Hinglish explanation, exactly as you gave, no changes -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 13 mein humne HTML ke special tags aur entities ke baare mein padha. Entities
+                        jaise
+                        <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;amp;</code>, <code>&amp;copy;</code> ka
+                        use kiya jata hai
+                        special characters dikhane ke liye jo normally HTML mein kaam karte hain. Fir humne
+                        <code>&lt;code&gt;</code> tag dekha
+                        jo inline code ko monospace font mein show karta hai, aur <code>&lt;pre&gt;</code> tag jo
+                        formatting ko preserve karta hai
+                        jaise line breaks aur spaces.
+                    </p>
+                    <p>
+                        Humne dono ko combine karke multi-line formatted code display kiya using
+                        <code>&lt;pre&gt;&lt;code&gt;...&lt;/code&gt;&lt;/pre&gt;</code>. Fir
+                        <code>&lt;canvas&gt;</code> tag dekha jo ek drawable
+                        area provide karta hai JavaScript ke through graphics banane ke liye – jaise games, graphs ya
+                        dynamic visuals.
+                    </p>
+                    <p>
+                        Aakhir mein, quotation tags <code>&lt;blockquote&gt;</code> aur <code>&lt;q&gt;</code> use kiye
+                        jate hain long aur
+                        short quotes ke liye respectively, jisme <code>cite</code> attribute bhi hota hai jahan se quote
+                        liya gaya hai.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- 2) LIVE CODE PREVIEW – Lecture 13 Demo (index.html) -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview</h2>
+                <iframe src="index.html" title="Lecture 13 Demo"
+                    style="width: 100%; height: 700px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click<br />
+                    <a href="index.html" target="_blank">here to open Lecture 13 Demo in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- 3) BACK TO DASHBOARD LINK -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

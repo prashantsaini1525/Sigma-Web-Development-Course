@@ -1,0 +1,181 @@
+<!-- File: Sigma-web-development/Lecture 08/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 08 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 08 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- 1) YOUR WRITTEN NOTES -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 08: Block vs Inline &amp; Form Quiz</h2>
+
+                <ul>
+                    <li>
+                        <strong>Block vs Inline Elements:</strong>
+                        <ul>
+                            <li><code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;main&gt;</code> are block
+                                elements (start on a new line, take full width).</li>
+                            <li><code>&lt;a&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;abbr&gt;</code> are inline
+                                elements (remain in flow with surrounding text).</li>
+                            <li><code>&lt;img&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code> default
+                                to inline.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>HTML Example (<code>index.html</code>):</strong>
+                        Displays paragraphs, links, block vs inline, image, form label/input, and
+                        <code>&lt;main&gt;</code>.
+                    </li>
+                    <li>
+                        <strong>Form Validation Quiz (<code>quiz.html</code>):</strong>
+                        <ul>
+                            <li>Uses <code>&lt;form method="post"&gt;</code> with inputs for name, email
+                                (pattern-check), city (alphabet-only), pincode (6 digits).</li>
+                            <li>Button: <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Comprehensive List of Elements (<code>Comprehensive List.txt</code>):</strong>
+                        A reference of block vs inline tags (full list shown below).
+                    </li>
+                    <li>
+                        <strong>CSS Styling (<code>style.css</code>):</strong>
+                        Background colors applied to various elements (paragraphs, links, divs, spans, abbr, etc.).
+                    </li>
+                </ul>
+
+                <!-- Hinglish explanation -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 08 mein humne “block” aur “inline” elements ka difference dekha.
+                        Block elements jaise <code>&lt;div&gt;</code> new line se start hote hain aur pura width lete
+                        hain;
+                        inline elements jaise <code>&lt;a&gt;</code>, <code>&lt;span&gt;</code> text ke flow mein hi
+                        rehte hain.
+                        Phir ek form quiz banaya jismein inputs pe <code>required</code> aur <code>pattern</code> se
+                        validation ki.
+                        Aur sab elements ke liye alag background colors set kiye CSS file mein.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 2) LIVE CODE PREVIEW – Block vs Inline (index.html) -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview – Block vs Inline</h2>
+                <iframe src="index.html" title="Lecture 08 Block vs Inline Demo"
+                    style="width: 100%; height: 450px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click
+                    <a href="index.html" target="_blank">here to open Block vs Inline Demo in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- 3) LIVE CODE PREVIEW – Form Quiz (quiz.html) -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview – Form Quiz</h2>
+                <iframe src="quiz.html" title="Lecture 08 Form Quiz Demo"
+                    style="width: 100%; height: 450px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click
+                    <a href="quiz.html" target="_blank">here to open Form Quiz Demo in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- 4) COMPREHENSIVE LIST (cleanly formatted) -->
+            <section class="note-section">
+                <h2 class="subheading">📄 Comprehensive List of HTML Elements</h2>
+                <pre><code>
+Block Elements (Most Commonly Used First)
+&lt;div&gt;: A generic container for flow content.
+&lt;p&gt;: Paragraph.
+&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;: Headings.
+&lt;ul&gt;: Unordered list.
+&lt;ol&gt;: Ordered list.
+&lt;li&gt;: List item.
+&lt;form&gt;: A section containing form controls.
+&lt;table&gt;: Table.
+&lt;section&gt;: A standalone section of a document.
+&lt;header&gt;: A container for introductory content or a set of navigational links.
+&lt;footer&gt;: Footer of a section or page.
+&lt;nav&gt;: A section of a page that contains navigation links.
+&lt;article&gt;: A self-contained composition in a document.
+&lt;aside&gt;: A section of a page that contains information indirectly related to the main content.
+&lt;main&gt;: The main content of a document.
+&lt;fieldset&gt;: A set of form controls grouped under a common name.
+&lt;blockquote&gt;: A block of text that is a quotation from another source.
+&lt;pre&gt;: Preformatted text.
+&lt;canvas&gt;: A container used to draw graphics via JavaScript.
+&lt;dl&gt;: Description list.
+&lt;dt&gt;: Term in a description list.
+&lt;dd&gt;: Description in a description list.
+&lt;figure&gt;: Any content that is referenced from the main content.
+&lt;figcaption&gt;: A caption for a &lt;figure&gt; element.
+&lt;address&gt;: Contact information for the author or owner of the document.
+&lt;hr&gt;: A thematic break or a horizontal rule.
+&lt;tfoot&gt;: Footer of a table.
+
+Inline Elements (Most Commonly Used First)
+&lt;a&gt;: Anchor or hyperlink.
+&lt;img&gt;: Image.
+&lt;span&gt;: Generic inline container.
+&lt;input&gt;: Input field.
+&lt;label&gt;: Label for a form element.
+&lt;strong&gt;: Strong emphasis.
+&lt;em&gt;: Emphasized text.
+&lt;br&gt;: Line break.
+&lt;code&gt;: Code snippet.
+&lt;b&gt;: Bold text.
+&lt;i&gt;: Italic text.
+&lt;u&gt;: Underlined text.
+&lt;small&gt;: Smaller text.
+&lt;sub&gt;: Subscript.
+&lt;sup&gt;: Superscript.
+&lt;mark&gt;: Marked or highlighted text.
+&lt;q&gt;: Short inline quotation.
+&lt;cite&gt;: Citation.
+&lt;kbd&gt;: Keyboard input.
+&lt;samp&gt;: Sample output.
+&lt;var&gt;: Variable in a mathematical expression or programming context.
+&lt;time&gt;: Time.
+&lt;abbr&gt;: Abbreviation.
+&lt;data&gt;: Machine-readable translation of content.
+&lt;acronym&gt;: Acronym (Not supported in HTML5).
+        </code></pre>
+            </section>
+
+            <!-- 5) BACK TO DASHBOARD LINK -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

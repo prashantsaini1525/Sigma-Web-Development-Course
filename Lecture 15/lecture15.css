@@ -1,0 +1,62 @@
+/* File: Sigma-web-development/Lecture 15/lecture15.css */
+
+/* Tables styling scoped only inside the notes section */
+.note-section .table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.note-section table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.note-section thead tr {
+    background-color: #333;
+    color: #fff;
+}
+
+.note-section th,
+.note-section td {
+    border: 1px solid #666;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+/* Zebra striping rows */
+.note-section tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Live Preview iframe styling */
+.live-preview iframe {
+    width: 100%;
+    height: 700px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Center the note under iframe */
+.live-preview p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* Back to dashboard link spacing */
+.lecture-container>p {
+    margin-top: 2rem;
+}
+
+/* Optional: Add spacing between notes subsections */
+.note-section h3 {
+    margin-top: 1.5rem;
+}
+
+/* Strong text emphasis */
+.note-section strong {
+    font-weight: 600;
+}
