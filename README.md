@@ -134,7 +134,7 @@ I update this repository daily with notes and code from the course. For the late
   <a href="https://www.linkedin.com/in/prashant-saini" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/0077B5/linkedin.png" alt="LinkedIn" width="30" height="30"/>
   </a>
-  <a href="https://x.com/Prashan58889893" target="_blank">
+  <a href="https://x.com/prashant2_saini" target="_blank">
     <img src="https://img.icons8.com/ios-filled/50/1DA1F2/twitter.png" alt="Twitter" width="30" height="30"/>
   </a>
   <a href="https://github.com/prashantsaini1525" target="_blank">
