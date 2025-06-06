@@ -142,6 +142,19 @@ body {
     line-height: 1.3;
 }
 
+/* ───────────────────────────────────────────── */
+/* 6.a. TOPIC STYLING UNDER EACH CARD TITLE      */
+/* ───────────────────────────────────────────── */
+.lecture-topic {
+    font-size: 0.95rem;
+    color: #555;
+    /* slightly muted, so it’s not as bold as the card title */
+    margin: 0.25rem 0 0.75rem;
+    /* small gap above/below for breathing room */
+    line-height: 1.3;
+}
+
+
 /* 7. FOOTER --------------------------------------------------------------- */
 footer {
     background-color: #fff;
