@@ -19,7 +19,8 @@ body {
     background-color: #f7f9fc;
     color: #1a1a1a;
     line-height: 1.6;
-    padding-top: 80px; /* For fixed header space */
+    padding-top: 80px;
+    /* For fixed header space */
 }
 
 /* 2. CONTAINER UTILITY ---------------------------------------------------- */
@@ -63,6 +64,8 @@ body {
 
 /* 4. INTRO SECTION -------------------------------------------------------- */
 .intro {
+    margin-top: 25px;
+    /* 60px for the header + 20px extra spacing */
     margin-bottom: 1.5rem;
     text-align: center;
 }
