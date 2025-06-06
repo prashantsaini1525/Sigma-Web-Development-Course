@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 22 – CSS Sizing Units</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 22 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 1) YOUR WRITTEN NOTES -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 22: CSS Sizing Units – px, rem, em, vh, vw, %, vmin</h2>
+                <ul>
+                    <li>
+                        <strong>Pixels (<code>px</code>):</strong> Fixed size unit. Doesn't scale with screen. Example:
+                        <code>width: 800px;</code>
+                        <p class="note-hinglish">Hinglish: Ye ek fixed value hai, screen chhoti ho ya badi – element ka
+                            size same rahega.</p>
+                    </li>
+
+                    <li>
+                        <strong>Viewport Width/Height (<code>vw</code>, <code>vh</code>):</strong> Relative to the size
+                        of the browser window.
+                        <code>100vw</code> means 100% of viewport width. <code>100vh</code> means 100% of height.
+                        <p class="note-hinglish">Hinglish: <code>vw</code>/<code>vh</code> browser window ke hisaab se
+                            size adjust karte hain.</p>
+                    </li>
+
+                    <li>
+                        <strong><code>em</code> unit:</strong> Relative to the font-size of the parent. If parent is
+                        16px, then <code>2em</code> = 32px.
+                        <pre><code>1em = 16px
+2em = 32px
+0.5em = 8px</code></pre>
+                        <p class="note-hinglish">Hinglish: Ye parent font-size ka multiply hota hai.</p>
+                    </li>
+
+                    <li>
+                        <strong><code>rem</code> unit:</strong> Relative to the <code>html</code> root font-size.
+                        If <code>html { font-size: 12px }</code> then <code>2rem</code> = 24px everywhere.
+                        <pre><code>1rem = 12px
+2rem = 24px
+3rem = 36px</code></pre>
+                        <p class="note-hinglish">Hinglish: Ye root element se fix hota hai. Poore document me same
+                            rahega.</p>
+                    </li>
+
+                    <li>
+                        <strong><code>vmin</code> unit:</strong> Minimum of <code>vw</code> and <code>vh</code>.
+                        <code>100vmin</code> means 100% of smaller screen dimension.
+                        <p class="note-hinglish">Hinglish: Jo screen ka chhota side hoga (width ya height), uska percent
+                            leta hai.</p>
+                    </li>
+
+                    <li>
+                        <strong><code>%</code> unit:</strong> Relative to parent element. Example:
+                        <code>width: 80%;</code> will take 80% of parent width.
+                        <p class="note-hinglish">Hinglish: Parent ke size ka kitna percent lena hai, ye decide karta
+                            hai.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 2) LIVE CODE PREVIEW -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview</h2>
+                <iframe src="main.html" title="Lecture 22 Demo"
+                    style="width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click
+                    <a href="main.html" target="_blank">here to open Lecture 22 code in a new tab</a>.
+                </p>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 3) BACK TO DASHBOARD LINK -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>
