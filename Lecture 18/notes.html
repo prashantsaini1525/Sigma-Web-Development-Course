@@ -1,0 +1,131 @@
+<!-- File: Sigma-web-development/Lecture 18/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lecture 18 – Notes</title>
+
+  <!-- Global layout + notes styling -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+  <!-- ======== HEADER ======== -->
+  <header class="site-header">
+    <div class="container header-content">
+      <h1>Sigma Web Development</h1>
+      <p class="subtitle">CodeWithPrashant – Lecture 18 Notes &amp; Resources</p>
+    </div>
+  </header>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main>
+    <div class="container lecture-container">
+
+      <!-- ――――――――――――――――――――――――――――――――――――― -->
+      <!-- 1) YOUR WRITTEN NOTES -->
+      <!-- ――――――――――――――――――――――――――――――――――――― -->
+      <section class="note-section">
+        <h2 class="subheading">📒 Notes for Lecture 18: CSS Box Model</h2>
+
+        <ul>
+          <li>
+            <strong>Box Model Structure:</strong>
+            <ul>
+              <li>Every HTML element is a rectangular box consisting of:
+                <strong>Content → Padding → Border → Margin</strong>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Padding:</strong>
+            <ul>
+              <li>Space between content and border</li>
+              <li>Defined using the <code>padding</code> property</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Border:</strong>
+            <ul>
+              <li>Wraps around the padding and content</li>
+              <li>Customizable with <code>border</code> property</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Margin:</strong>
+            <ul>
+              <li>Space outside the element’s border</li>
+              <li>Controls spacing between elements</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Box Sizing:</strong>
+            <ul>
+              <li><code>box-sizing: border-box;</code> includes padding and border in total width/height</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Margin Collapse:</strong>
+            <ul>
+              <li>Vertical margins of adjacent elements may collapse into a single margin</li>
+              <li>Happens between siblings, nested elements, and empty blocks</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Dimension Calculation:</strong>
+            <ul>
+              <li>
+                <strong>Total Width =</strong> width + left/right padding + left/right border + left/right margin
+              </li>
+              <li>
+                <strong>Total Height =</strong> height + top/bottom padding + top/bottom border + top/bottom margin
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Hinglish explanation -->
+        <div class="note-hinglish">
+          <p>
+            Hinglish: Is lecture mein humne CSS Box Model ka structure samjha – content, padding, border aur margin.
+            <code>box-sizing: border-box</code> use karke hum total width/height mein padding aur border ko include karte hain.
+            Margin collapse ka matlab hota hai jab do elements ke vertical margins combine ho jaate hain instead of adding.
+            Overall yeh model help karta hai layout ka size aur spacing control karne mein.
+          </p>
+        </div>
+      </section>
+
+      <!-- ――――――――――――――――――――――――――――――――――――― -->
+      <!-- 2) LIVE CODE PREVIEW -->
+      <!-- ――――――――――――――――――――――――――――――――――――― -->
+      <section class="live-preview">
+        <h2 class="subheading">💻 Live Code Preview</h2>
+        <iframe src="index.html" title="Lecture 18 Demo"
+          style="width: 100%; height: 450px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+        <p style="text-align: center; margin-top: 0.5rem;">
+          If the iframe doesn’t load, click
+          <a href="index.html" target="_blank">here to open Lecture 18 Demo in a new tab</a>.
+        </p>
+      </section>
+
+      <!-- ――――――――――――――――――――――――――――――――――――― -->
+      <!-- 3) BACK TO DASHBOARD LINK -->
+      <!-- ――――――――――――――――――――――――――――――――――――― -->
+      <p style="margin-top: 2rem;">
+        <a href="../index.html">← Back to Lecture Dashboard</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+    </div>
+  </footer>
+</body>
+
+</html>

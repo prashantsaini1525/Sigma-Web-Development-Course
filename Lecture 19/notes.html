@@ -1,0 +1,316 @@
+<!-- File: Sigma-web-development/Lecture 19/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 19 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 19 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 1) COLORS NOTES -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 19 (Part 1): CSS Color Properties</h2>
+
+                <ul>
+                    <li>
+                        <strong>Color Representations:</strong>
+                        <ul>
+                            <li><code>Hexadecimal</code> (e.g., <code>#FF0000</code> for red)</li>
+                            <li><code>RGB</code> (e.g., <code>rgb(255, 0, 0)</code>)</li>
+                            <li><code>RGBA</code> (e.g., <code>rgba(255, 0, 0, 0.5)</code> – alpha is opacity)</li>
+                            <li><code>HSL</code> (e.g., <code>hsl(0, 100%, 50%)</code> for pure red)</li>
+                            <li><code>HSLA</code> (e.g., <code>hsla(0, 100%, 50%, 0.5)</code>)</li>
+                            <li><code>CMYK</code> (e.g., <code>cmyk(0, 100%, 100%, 0)</code> – though less common in CSS)</li>
+                            <li>Named colors (e.g., <code>red, blue, green, white, black, yellow, purple</code>)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Popular Named Colors:</strong>
+                        <ul>
+                            <li><code>Red:</code> <code>#FF0000</code></li>
+                            <li><code>Green:</code> <code>#00FF00</code></li>
+                            <li><code>Blue:</code> <code>#0000FF</code></li>
+                            <li><code>Black:</code> <code>#000000</code></li>
+                            <li><code>White:</code> <code>#FFFFFF</code></li>
+                            <li><code>Yellow:</code> <code>#FFFF00</code></li>
+                            <li><code>Purple:</code> <code>#800080</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Additional Examples:</strong>
+                        <ul>
+                            <li><code>Orange:</code> <code>#FFA500</code></li>
+                            <li><code>Gray:</code> <code>#808080</code></li>
+                            <li><code>Maroon:</code> <code>#800000</code></li>
+                            <li><code>Teal:</code> <code>#008080</code></li>
+                            <li><code>Indigo:</code> <code>#4B0082</code></li>
+                            <li><code>Aqua:</code> <code>#00FFFF</code></li>
+                            <li><code>Pink:</code> <code>#FFC0CB</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>HTML Structure Highlights (colors.html):</strong>
+                        <ul>
+                            <li>Multiple <code>&lt;h2&gt;</code> links to external “Learn More” resources</li>
+                            <li>Each color‐type list resides inside a <code>&lt;div class="same"&gt;</code> block</li>
+                            <li>Ordered lists (<code>&lt;ol&gt;</code>) enumerate each representation and each named color</li>
+                            <li>The main container <code>&lt;div id="colors"&gt;</code> wraps everything with a border</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>CSS Highlights (style.css in colors folder):</strong>
+                        <ul>
+                            <li>Reset (<code>* { margin:0; padding:0; }</code>)</li>
+                            <li><code>#colors</code> gets a <code>border: 4px solid blueviolet;</code> and full‐height</li>
+                            <li>Headings inside <code>#colors</code> are centered with backgrounds</li>
+                            <li>Each <code>&lt;div&gt;</code> under <code>#colors</code> is 50vh tall, light‐blue background, and black border</li>
+                            <li>Generic <code>div</code> selector applies green background, black border, padding, margin</li>
+                            <li><code>h3</code> blocks have darkslategray background, white text</li>
+                            <li>Each list item ID (#one, #two, … #twentyone) sets its text color and <code>font-weight: bold;</code></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Hinglish explanation -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 19 Part 1 mein humne CSS mein color kaise represent karte hain, ye dekha:
+                        Hex (jaise <code>#FF0000</code>), RGB (<code>rgb(255,0,0)</code>), RGBA (alpha ke saath),
+                        HSL, HSLA, CMYK (CSS3 mein itna common nahi), aur named colors (jaise
+                        <code>red, blue, green</code>). Phir “Popular color names” aur kuch aur examples (jaise
+                        <code>orange, gray, maroon</code>) list kiye. HTML file mein har list ek <code>div.same</code>
+                        ke andar hai, aur CSS file mein har <code>div</code> aur <code>h3, ol, div#colors</code> ke liye
+                        styling di gayi. Har <code>li</code> ke ID ke through alag‐alag text color aur bold weight set hua
+                        hai. Yeh sab color fundamentals samajhne mein madad karta hai.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 2) LIVE PREVIEW – CSS Colors Demo -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview – CSS Colors Demo</h2>
+                <iframe src="colors/colors.html" title="CSS Colors Demo"
+                    style="width: 100%; height: 450px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click<br />
+                    <a href="colors/colors.html" target="_blank" rel="noopener noreferrer">here to open Colors Demo in a new
+                        tab</a>.
+                </p>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 3) FONTS & TEXT PROPERTIES NOTES -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 19 (Part 2): CSS Fonts &amp; Text Properties</h2>
+
+                <ul>
+                    <li>
+                        <strong>Google Fonts Import:</strong>
+                        <ul>
+                            <li>
+                                Inlined <code>@import url(...)</code> for “Poppins”, “Playwrite VN”, and “Macondo” families
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Table of Font Examples:</strong>
+                        <ul>
+                            <li>
+                                <code>&lt;table&gt;</code> with <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code> and
+                                <code>&lt;tbody&gt;</code>
+                            </li>
+                            <li>
+                                Demonstrates different <code>font-family</code>, <code>font-style</code> (normal/italic),
+                                and multiple <code>font-weight</code> values (100–900) for “Poppins”
+                            </li>
+                            <li>
+                                Also shows “Playwrite VN” at various weights and “Macondo” normal
+                            </li>
+                            <li>
+                                Each <code>&lt;td id="one"&gt;…</code> is styled via CSS to reflect the correct font
+                                weight+style
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Font‐Size Examples:</strong>
+                        <ul>
+                            <li>
+                                Five <code>&lt;p id="a"&gt;…</code> tags under <code>#fontprop</code> demonstrate sizes 18px,
+                                20px, 22px, 24px, 26px, each with a different text color
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Line‐Height Examples:</strong>
+                        <ul>
+                            <li>
+                                Under <code>#lineheight</code>, five <code>&lt;p&gt;</code> tags show line-height values
+                                1.5–2.3 at various font sizes
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Letter‐Spacing:</strong>
+                        <ul>
+                            <li>
+                                Under <code>#letterspacing</code>, five <code>&lt;p&gt;</code> tags illustrating
+                                letter-spacing 1–5px
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Text Decoration:</strong>
+                        <ul>
+                            <li>
+                                Under <code>#textdecoration</code>: <code>underline, overline, line-through</code> in
+                                various combinations and different font sizes
+                            </li>
+                            <li>
+                                Under <code>#textcol</code>: changing decoration line‐color (red, blue, green, etc.)
+                            </li>
+                            <li>
+                                Under <code>#textdeco</code>: different text-decoration‐style values
+                                (<code>solid, none, double, dotted, dashed, wavy, inherit, initial</code>)
+                            </li>
+                            <li>
+                                Under <code>#textlinethick</code>: various <code>text-decoration-thickness</code> values
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Text Transform &amp; Alignment:</strong>
+                        <ul>
+                            <li>
+                                Under <code>#texttransform</code>: <code>uppercase, lowercase, capitalize,
+                                none, full-width, full-size-kana</code>
+                            </li>
+                            <li>
+                                Under <code>#textalign</code>: <code>left, right, center, justify, start</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Text Indent &amp; Shadow:</strong>
+                        <ul>
+                            <li><code>#textindent</code> shows indent values 50–250px</li>
+                            <li><code>#textshadow</code> shows increasing shadow offsets (1px–5px blur)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Text Overflow &amp; Word‐Break:</strong>
+                        <ul>
+                            <li>
+                                Under <code>#textoverflow</code>, demonstrates <code>text-overflow:
+                                ellipsis/clip/initial/break-word/unset</code>
+                            </li>
+                            <li>
+                                Under <code>#break</code>, shows <code>word-break:
+                                normal/break-word/keep-all/break-all/inherit/initial/unset</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Line Break &amp; Emphasis:</strong>
+                        <ul>
+                            <li>
+                                Under <code>#textlinebreak</code>: <code>line-break: normal/strict/anywhere/loose/unset</code>
+                            </li>
+                            <li>
+                                Under <code>#textemphasis</code>: <code>text-emphasis:
+                                underline/overline/line-through/none/filled</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Text Justify, Orientation &amp; Direction:</strong>
+                        <ul>
+                            <li>
+                                <code>#textjustify</code> shows <code>text-justify:
+                                left/right/center/justify/distribute</code>
+                            </li>
+                            <li>
+                                <code>#textorientation</code> shows <code>writing-mode:
+                                horizontal-tb/vertical-rl/vertical-lr/sideways-rl/sideways-lr</code>
+                            </li>
+                            <li>
+                                <code>#textdirection</code> shows <code>direction:
+                                ltr/rtl/lro/rlo/ttb</code>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Hinglish explanation -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 19 Part 2 mein humne fonts aur text properties fundamentals dekhe. Pehle
+                        “Poppins”, “Playwrite VN” aur “Macondo” Google Fonts ko import kiya. Table mein har ek
+                        <code>font-weight</code> (100–900) aur <code>font-style</code> (normal/italic) show kiya for
+                        “Poppins”; saath hi “Playwrite VN” aur “Macondo” families bhi dekhaye. Phir <code>#fontprop</code>
+                        ke andar alag‐alag <code>font-size</code> values (18px–26px) aur colors bataye. Uske baad
+                        line‐height, letter‐spacing, text‐decoration (underline/overline/line‐through combinations) aur
+                        decoration‐color, decoration‐style, decoration‐thickness ka demo diya. Finally, text‐transform
+                        (uppercase, lowercase, etc.), text‐align (left, right, center, justify), text‐indent, text‐shadow,
+                        text‐overflow, word‐break, line‐break, text‐emphasis, text‐justify, writing‐mode, aur
+                        direction properties explain kiye. Har section ek <code>div</code> ke andar hai jisko CSS file
+                        mein border aur styling di gayi.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 4) LIVE PREVIEW – CSS Fonts & Text Demo -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview – CSS Fonts &amp; Text Demo</h2>
+                <iframe src="fonts/fonts.html" title="CSS Fonts & Text Demo"
+                    style="width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click<br />
+                    <a href="fonts/fonts.html" target="_blank" rel="noopener noreferrer">here to open Fonts & Text Demo in a new
+                        tab</a>.
+                </p>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 5) BACK TO DASHBOARD LINK -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

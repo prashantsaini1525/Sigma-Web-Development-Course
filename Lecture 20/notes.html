@@ -1,0 +1,142 @@
+<!-- File: Sigma-web-development/Lecture 20/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 20 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 20 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 1) YOUR WRITTEN NOTES -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 20: CSS Challenge – Styling Specific Paragraphs</h2>
+
+                <ul>
+                    <li>
+                        <strong>HTML Structure:</strong>
+                        <ul>
+                            <li>Five <code>&lt;div class="para"&gt;</code> blocks, each containing:</li>
+                            <ul>
+                                <li>An <code>&lt;h1&gt;</code> heading (“Here is the First/Second/… div”)</li>
+                                <li>Five <code>&lt;p&gt;</code> paragraphs with placeholder lorem text</li>
+                            </ul>
+                            <li>Do not modify the given HTML: only apply CSS rules</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>CSS Objective:</strong>
+                        <ul>
+                            <li>In each <code>&lt;div&gt;</code>, the first <code>&lt;p&gt;</code> must have:
+                                <code>background-color: yellow;</code> and <code>color: red;</code>
+                            </li>
+                            <li>All other paragraphs in that same <code>&lt;div&gt;</code> must have:
+                                <code>background-color: blue;</code> and <code>color: white;</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Key Selectors Used:</strong>
+                        <ul>
+                            <li><code>div p:first-of-type</code> – targets the very first <code>&lt;p&gt;</code> inside
+                                any <code>&lt;div&gt;</code></li>
+                            <li><code>div p:not(:first-of-type)</code> – targets all <code>&lt;p&gt;</code> elements
+                                except the first one within the same <code>&lt;div&gt;</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>CSS Rules (style.css):</strong>
+                        <ul>
+                            <li>
+                                <code>* { margin:0; padding:0; box-sizing:border-box; }</code> – reset
+                            </li>
+                            <li>
+                                <code>div { border: 2px solid black; padding: 20px; margin-bottom: 20px; min-height: 100vh; }</code>
+                            </li>
+                            <li>
+                                <code>div h1 { text-align: center; background-color: aqua; margin-bottom: 50px; }</code>
+                            </li>
+                            <li>
+                                <code>div p:first-of-type { font-size: 20px; line-height: 1.5; background-color: yellow; color: red; margin-bottom: 10px; }</code>
+                            </li>
+                            <li>
+                                <code>div p:not(:first-of-type) { background-color: blue; color: white; line-height: 1.5; font-size: 20px; }</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Outcome:</strong>
+                        <ul>
+                            <li>Every <code>&lt;div&gt;</code> block’s first paragraph stands out with yellow/red
+                                styling</li>
+                            <li>Subsequent paragraphs share a uniform blue/white look for consistency</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Hinglish explanation -->
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 20 mein humne ek simple CSS challenge solve kiya jahan humein har ek
+                        <code>&lt;div&gt;</code> ke andar
+                        pehli <code>&lt;p&gt;</code> ko alag style dena tha (background yellow, text red) aur baaki sab
+                        <code>&lt;p&gt;</code> ko dusri style deni thi
+                        (background blue, text white). CSS mein humne <code>:first-of-type</code> selector use karke
+                        pehli paragraph ko target kiya
+                        aur <code>:not(:first-of-type)</code> se baaki sab paragraphs style kiye. HTML structure bilkul
+                        change nahi ki—sirf CSS apply kiya.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 2) LIVE CODE PREVIEW – CSS Challenge Demo -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview – CSS Challenge Demo</h2>
+                <iframe src="index.html" title="Lecture 20 Demo"
+                    style="width: 100%; height: 450px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                <p style="text-align: center; margin-top: 0.5rem;">
+                    If the iframe doesn’t load, click<br />
+                    <a href="index.html" target="_blank" rel="noopener noreferrer">here to open Lecture 20 Demo in a new
+                        tab</a>.
+                </p>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 3) BACK TO DASHBOARD LINK -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

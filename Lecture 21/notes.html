@@ -1,0 +1,314 @@
+<!-- File: Sigma-web-development/Lecture 21/notes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 21 – Notes</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 21 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 1) OVERALL LECTURE NOTES -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes for Lecture 21: CSS Specificity Deep Dive</h2>
+                <p>In this lecture, we’ll learn how CSS specificity determines which rules win when multiple selectors
+                    target the same element. We’ll cover:</p>
+                <ul>
+                    <li>The specificity ranking: inline &gt; ID &gt; class/attribute/pseudo-class &gt;
+                        element/pseudo-element &gt; universal.</li>
+                    <li>How equal-specificity rules resolve based on order of appearance.</li>
+                    <li>Using <code>!important</code> to override even inline styles.</li>
+                    <li>Practical demos across six HTML files to see each case in action:</li>
+                    <ul>
+                        <li><code>element.html</code> – Element vs. universal selector.</li>
+                        <li><code>classattribute.html</code> – Class selectors vs. attribute selector with equal
+                            specificity.</li>
+                        <li><code>idselector.html</code> – ID vs. class vs. element selectors.</li>
+                        <li><code>importance.html</code> – <code>!important</code> overriding all specificity.</li>
+                        <li><code>inline.html</code> – Inline style overriding ID, class, and element.</li>
+                        <li><code>universal.html</code> – Universal selector vs. element selector.</li>
+                    </ul>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: Lecture 21 mein hum CSS specificity ko detail mein dekhenge. Yeh teach karega ke agar
+                        ek element
+                        par multiple selectors apply ho rahe hain, toh kaunsa rule baad mein apply hoga. Specificity
+                        ranking yeh hogi:
+                        inline styles sabse zyada (1000), uske baad ID selectors (100), phir
+                        classes/attributes/pseudo-classes (10),
+                        phir element/pseudo-elements (1), aur sabse kam universal selector (0). Agar do rules ki
+                        specificity barabar ho,
+                        toh jo rule CSS file mein last likha hoga, woh apply hoga. <code>!important</code> use karke aap
+                        in sab ko override
+                        kar sakte ho. Hum chhe demo files ke through har case ko practically dekhenge.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 2) element.html -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h3 class="subheading">1. <code>element.html</code></h3>
+                <ul>
+                    <li><strong>English Explanation:</strong>
+                        In <code>element.html</code>, two rules target the same <code>h1</code>. The universal selector
+                        <code>* { color: gray; }</code> applies gray to all elements, but the element selector
+                        <code>h1 { color: tomato; background-color: black; }</code> has higher specificity (0,0,0,1)
+                        than the universal selector (0,0,0,0). Therefore, headings render in tomato on black, overriding
+                        gray.
+                    </li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: <code>element.html</code> mein humne ek universal selector (<code>*</code>) aur ek
+                        element selector (<code>h1</code>) dekha. Universal selector sab elements ko gray declare karta
+                        hai (specificity 0,0,0,0), par element selector (<code>h1</code>) ki specificity (0,0,0,1) zyada
+                        hoti hai. Isliye <code>h1</code> tomato on black dikhega, gray nahin.
+                    </p>
+                </div>
+                <section class="live-preview">
+                    <h4 class="subheading">💻 Live Preview: <code>element.html</code></h4>
+                    <iframe src="./element.html" title="Element vs Universal Demo"
+                        style="width: 100%; height: 300px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                    <p style="text-align: center; margin-top: 0.5rem;">
+                        If the iframe doesn’t load, click
+                        <a href="./element.html" target="_blank" rel="noopener noreferrer">here to open
+                            element.html in a new tab</a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 3) classattribute.html -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h3 class="subheading">2. <code>classattribute.html</code></h3>
+                <ul>
+                    <li><strong>English Explanation:</strong>
+                        In <code>classattribute.html</code>, three class selectors (<code>.h1</code>,
+                        <code>.cred</code>, <code>.cpurple</code>) and one attribute selector
+                        (<code>[data-x="a"]</code>) all have the same specificity (0,0,1,0). When specificity ties, the
+                        rule declared last wins. Here, the attribute selector is last in the stylesheet, so its
+                        <code>color: aqua; background-color: red;</code> styling overrides the earlier class-based
+                        colors.
+                    </li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: <code>classattribute.html</code> mein teen class selectors (<code>.h1</code>,
+                        <code>.cred</code>, <code>.cpurple</code>) aur ek attribute selector (<code>[data-x="a"]</code>)
+                        ki specificity sab (0,0,1,0) hai. Jab specificity same ho, sabse last likha gaya rule apply hota
+                        hai. Yahan attribute selector sabse last hai, isliye aqua/red styling class selectors ko
+                        override karta hai.
+                    </p>
+                </div>
+                <section class="live-preview">
+                    <h4 class="subheading">💻 Live Preview: <code>classattribute.html</code></h4>
+                    <iframe src="./classattribute.html" title="Class & Attribute Demo"
+                        style="width: 100%; height: 300px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                    <p style="text-align: center; margin-top: 0.5rem;">
+                        If the iframe doesn’t load, click
+                        <a href="./classattribute.html" target="_blank" rel="noopener noreferrer">here to open
+                            classattribute.html in a new tab</a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 4) idselector.html -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h3 class="subheading">3. <code>idselector.html</code></h3>
+                <ul>
+                    <li><strong>English Explanation:</strong>
+                        In <code>idselector.html</code>, several selectors compete:
+                        <ul>
+                            <li>Universal (<code>* { color: gray; }</code>, specificity 0,0,0,0)</li>
+                            <li>Element (<code>h1 { color: pink; }</code>, specificity 0,0,0,1)</li>
+                            <li>Class (<code>.h1 { color: blue; }</code>, specificity 0,0,1,0)</li>
+                            <li>ID (<code>#title { color: red; }</code>, specificity 0,1,0,0)</li>
+                        </ul>
+                        ID selectors (0,1,0,0) outrank class (0,0,1,0) and element (0,0,0,1). Therefore, the heading
+                        renders red because the ID rule overrides the others.
+                    </li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: <code>idselector.html</code> mein multiple selectors hain: universal (<code>*</code>),
+                        element (<code>h1</code>), class (<code>.h1</code>), aur ID (<code>#title</code>). ID selector
+                        ki specificity (0,1,0,0) sabse zyada hoti hai, isliye ID rule red apply karta hai aur heading
+                        red dikhta hai.
+                    </p>
+                </div>
+                <section class="live-preview">
+                    <h4 class="subheading">💻 Live Preview: <code>idselector.html</code></h4>
+                    <iframe src="./idselector.html" title="ID vs Class vs Element Demo"
+                        style="width: 100%; height: 300px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                    <p style="text-align: center; margin-top: 0.5rem;">
+                        If the iframe doesn’t load, click
+                        <a href="./idselector.html" target="_blank" rel="noopener noreferrer">here to open
+                            idselector.html in a new tab</a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 5) importance.html -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h3 class="subheading">4. <code>importance.html</code></h3>
+                <ul>
+                    <li><strong>English Explanation:</strong>
+                        In <code>importance.html</code>, two <code>p</code> rules both target paragraphs. The second
+                        block uses <code>!important</code> on every property:
+                        <pre><code>p {
+    color: red !important;
+    font-size: 25px !important;
+    background-color: yellow !important;
+}</code></pre>
+                        This gives it effective specificity of 10,000, overriding the earlier rule
+                        <code>p { color: blue; }</code>. As a result, all paragraphs appear red on yellow, ignoring the
+                        first rule.
+                    </li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: <code>importance.html</code> mein do <code>p</code> selectors hain, par dusre rule
+                        mein har property pe <code>!important</code> use hua hai. <code>!important</code> ki specificity
+                        (10,000) sab selectors se zyada hai, isliye pehla rule (<code>color: blue</code>) override ho
+                        jaata hai aur sare paragraphs red on yellow dikhenge.
+                    </p>
+                </div>
+                <section class="live-preview">
+                    <h4 class="subheading">💻 Live Preview: <code>importance.html</code></h4>
+                    <iframe src="./importance.html" title="!important Demo"
+                        style="width: 100%; height: 300px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                    <p style="text-align: center; margin-top: 0.5rem;">
+                        If the iframe doesn’t load, click
+                        <a href="./importance.html" target="_blank" rel="noopener noreferrer">here to open
+                            importance.html in a new tab</a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 6) inline.html -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h3 class="subheading">5. <code>inline.html</code></h3>
+                <ul>
+                    <li><strong>English Explanation:</strong>
+                        In <code>inline.html</code>, several selectors compete:
+                        <ul>
+                            <li>Universal (<code>* { color: gray; }</code>, specificity 0,0,0,0)</li>
+                            <li>ID (<code>#title { color: red; background-color: yellow; }</code>, specificity 0,1,0,0)
+                            </li>
+                            <li>Class (<code>.h1 { color: blue; }</code>, specificity 0,0,1,0)</li>
+                            <li>Element (<code>h1 { color: pink; }</code>, specificity 0,0,0,1)</li>
+                        </ul>
+                        The <code>h1</code> tag also has an inline style attribute:
+                        <pre><code><h1 style="color: aqua; background-color: blueviolet;">…</code></pre>
+                        Inline style has specificity (1,0,0,0), which outranks the ID selector (0,1,0,0). Therefore, the
+                        heading appears aqua on blueviolet.
+                    </li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: <code>inline.html</code> mein universal, ID, class, aur element selectors hain, par
+                        inline style ki specificity (1,0,0,0) sabse zyada hoti hai (ID se bhi zyada). Isliye inline
+                        style (<code>color: aqua; background-color: blueviolet;</code>) apply hua, heading aqua on
+                        blueviolet dikhega.
+                    </p>
+                </div>
+                <section class="live-preview">
+                    <h4 class="subheading">💻 Live Preview: <code>inline.html</code></h4>
+                    <iframe src="./inlinestyle.html" title="Inline Styles Demo"
+                        style="width: 100%; height: 300px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                    <p style="text-align: center; margin-top: 0.5rem;">
+                        If the iframe doesn’t load, click
+                        <a href="./inlinestyle.html" target="_blank" rel="noopener noreferrer">here to open
+                            inline.html in a new tab</a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 7) universal.html -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <section class="note-section">
+                <h3 class="subheading">6. <code>universal.html</code></h3>
+                <ul>
+                    <li><strong>English Explanation:</strong>
+                        In <code>universal.html</code>, two rules compete:
+                        <ul>
+                            <li>Universal selector: <code>* { color: gray; background-color: blue; }</code> (specificity
+                                0,0,0,0)</li>
+                            <li>Paragraph selector:
+                                <code>p { color: white; background-color: black; font-size: 25px; }</code> (specificity
+                                0,0,0,1)
+                            </li>
+                        </ul>
+                        The paragraph selector (0,0,0,1) outranks universal (0,0,0,0), so paragraphs appear white on
+                        black. The <code>h1</code> has no specific rule, so it inherits the universal styling (gray on
+                        blue).
+                    </li>
+                </ul>
+                <div class="note-hinglish">
+                    <p>
+                        Hinglish: <code>universal.html</code> mein universal selector (<code>*</code>) aur paragraph
+                        selector (<code>p</code>) hain. Paragraph selector ki specificity (0,0,0,1) universal (0,0,0,0)
+                        se zyada hai, isliye paragraphs white on black ban gaye. <code>h1</code> par koi specific rule
+                        nahin hai, toh woh gray on blue dikhega (universal style).
+                    </p>
+                </div>
+                <section class="live-preview">
+                    <h4 class="subheading">💻 Live Preview: <code>universal.html</code></h4>
+                    <iframe src="./universal.html" title="Universal Selector Demo"
+                        style="width: 100%; height: 300px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
+                    <p style="text-align: center; margin-top: 0.5rem;">
+                        If the iframe doesn’t load, click
+                        <a href="./universal.html" target="_blank" rel="noopener noreferrer">here to open universal.html
+                            in a new tab</a>.
+                    </p>
+                </section>
+            </section>
+
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <!-- 8) BACK TO DASHBOARD LINK -->
+            <!-- ――――――――――――――――――――――――――――――――――――― -->
+            <p style="margin-top: 2rem;">
+                <a href="../index.html">← Back to Lecture Dashboard</a>
+            </p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>
