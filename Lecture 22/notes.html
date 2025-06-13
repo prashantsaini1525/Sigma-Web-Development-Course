@@ -9,6 +9,83 @@
     <!-- Global layout + notes styling -->
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/notes.css" />
+
+    <!-- Per-lecture styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            /* 1rem = 16px */
+        }
+
+        .note-theory {
+            font-style: italic;
+            margin: 0.25rem 0 0.5rem 0;
+        }
+
+        .demo-text {
+            text-align: center;
+            font-family: sans-serif;
+            line-height: 1.2;
+            margin: 0.5rem auto;
+        }
+
+        .box-px {
+            border: 2px solid #000;
+            width: 200px;
+            height: 100px;
+            background-color: #ace;
+        }
+
+        .box-rem {
+            border: 2px solid #c84;
+            width: 12rem;
+            height: 6rem;
+            background-color: #cea;
+        }
+
+        .box-em {
+            font-size: 20px;
+            border: 2px solid #48c;
+            width: 10em;
+            height: 5em;
+            background-color: #eac;
+        }
+
+        .box-percent {
+            border: 2px solid #4a4;
+            width: 50%;
+            height: 20%;
+            padding: 0.5rem;
+            background-color: #aac;
+        }
+
+        .box-vw {
+            border: 2px solid #f84;
+            width: 25vw;
+            height: 10vw;
+            background-color: #aff;
+        }
+
+        .box-vh {
+            border: 2px solid #84f;
+            width: 30vh;
+            height: 30vh;
+            background-color: #faf;
+        }
+
+        .box-vmin {
+            border: 2px solid #484;
+            width: 30vmin;
+            height: 30vmin;
+            background-color: #fea;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,86 +100,81 @@
     <!-- ======== MAIN CONTENT ======== -->
     <main>
         <div class="container lecture-container">
-
-            <!-- ――――――――――――――――――――――――――――――――――――― -->
-            <!-- 1) YOUR WRITTEN NOTES -->
-            <!-- ――――――――――――――――――――――――――――――――――――― -->
             <section class="note-section">
-                <h2 class="subheading">📒 Notes for Lecture 22: CSS Sizing Units – px, rem, em, vh, vw, %, vmin</h2>
+                <h2 class="subheading">📒 Notes & Demo: CSS Sizing Units</h2>
                 <ul>
                     <li>
-                        <strong>Pixels (<code>px</code>):</strong> Fixed size unit. Doesn't scale with screen. Example:
-                        <code>width: 800px;</code>
-                        <p class="note-hinglish">Hinglish: Ye ek fixed value hai, screen chhoti ho ya badi – element ka
-                            size same rahega.</p>
+                        <h3>1. Pixels (<code>px</code>)</h3>
+                        <p class="note-theory">Fixed, absolute unit; exact control over element size.</p>
+                        <code>width: 200px; height: 100px;</code>
+                        <p class="note-hinglish">Fixed unit, screen chhota ya bada – size same rahega.</p>
+                        <div class="box-px demo-text">200px × 100px</div>
                     </li>
-
                     <li>
-                        <strong>Viewport Width/Height (<code>vw</code>, <code>vh</code>):</strong> Relative to the size
-                        of the browser window.
-                        <code>100vw</code> means 100% of viewport width. <code>100vh</code> means 100% of height.
-                        <p class="note-hinglish">Hinglish: <code>vw</code>/<code>vh</code> browser window ke hisaab se
-                            size adjust karte hain.</p>
+                        <h3>2. Root em (<code>rem</code>)</h3>
+                        <p class="note-theory">Relative to root (<code>html</code>) font-size; consistent scaling.</p>
+                        <code>width: 12rem; height: 6rem; /* 1rem = 16px */</code>
+                        <p class="note-hinglish">Sab me consistent—1rem = root font-size.</p>
+                        <div class="box-rem demo-text">12rem × 6rem</div>
                     </li>
-
                     <li>
-                        <strong><code>em</code> unit:</strong> Relative to the font-size of the parent. If parent is
-                        16px, then <code>2em</code> = 32px.
-                        <pre><code>1em = 16px
-2em = 32px
-0.5em = 8px</code></pre>
-                        <p class="note-hinglish">Hinglish: Ye parent font-size ka multiply hota hai.</p>
+                        <h3>3. EM (<code>em</code>)</h3>
+                        <p class="note-theory">Relative to parent font-size; useful for component-based scaling.</p>
+                        <code>font-size:20px; width:10em; height:5em;</code>
+                        <p class="note-hinglish">Parent ke font-size se multiply hota hai.</p>
+                        <div class="box-em demo-text">10em × 5em</div>
                     </li>
-
                     <li>
-                        <strong><code>rem</code> unit:</strong> Relative to the <code>html</code> root font-size.
-                        If <code>html { font-size: 12px }</code> then <code>2rem</code> = 24px everywhere.
-                        <pre><code>1rem = 12px
-2rem = 24px
-3rem = 36px</code></pre>
-                        <p class="note-hinglish">Hinglish: Ye root element se fix hota hai. Poore document me same
-                            rahega.</p>
+                        <h3>4. Percentage (<code>%</code>)</h3>
+                        <p class="note-theory">Relative to parent element’s dimensions; fluid layouts.</p>
+                        <code>width:50%; height:20%;</code>
+                        <p class="note-hinglish">Parent ke % me size define hota hai.</p>
+                        <div class="box-percent demo-text">50% × 20%</div>
                     </li>
-
                     <li>
-                        <strong><code>vmin</code> unit:</strong> Minimum of <code>vw</code> and <code>vh</code>.
-                        <code>100vmin</code> means 100% of smaller screen dimension.
-                        <p class="note-hinglish">Hinglish: Jo screen ka chhota side hoga (width ya height), uska percent
-                            leta hai.</p>
+                        <h3>5. Viewport Width (<code>vw</code>)</h3>
+                        <p class="note-theory">Percentage of viewport’s width; responsive to window size.</p>
+                        <code>width:25vw; height:10vw;</code>
+                        <p class="note-hinglish">Browser width ke hisaab se.</p>
+                        <div class="box-vw demo-text">25vw × 10vw</div>
                     </li>
-
                     <li>
-                        <strong><code>%</code> unit:</strong> Relative to parent element. Example:
-                        <code>width: 80%;</code> will take 80% of parent width.
-                        <p class="note-hinglish">Hinglish: Parent ke size ka kitna percent lena hai, ye decide karta
-                            hai.</p>
+                        <h3>6. Viewport Height (<code>vh</code>)</h3>
+                        <p class="note-theory">Percentage of viewport’s height; useful for full-screen sections.</p>
+                        <code>width:30vh; height:30vh;</code>
+                        <p class="note-hinglish">Browser height ke hisaab se.</p>
+                        <div class="box-vh demo-text">30vh × 30vh</div>
+                    </li>
+                    <li>
+                        <h3>7. Viewport Minimum (<code>vmin</code>)</h3>
+                        <p class="note-theory">Based on smaller of viewport width/height; maintains aspect ratio.</p>
+                        <code>width:30vmin; height:30vmin;</code>
+                        <p class="note-hinglish">Screen ka chhota side use hota hai.</p>
+                        <div class="box-vmin demo-text">30vmin × 30vmin</div>
+                    </li>
+                    <li>
+                        <h3>8. More Units</h3>
+                        <p class="note-theory">Other CSS units include <code>vmax</code>, <code>ch</code>,
+                            <code>ex</code>, and more.</p>
+                        <p>Explore on <a href="https://www.w3schools.com/cssref/css_units.php" target="_blank">CSS Units
+                                Reference</a>.</p>
                     </li>
                 </ul>
             </section>
 
-            <!-- ――――――――――――――――――――――――――――――――――――― -->
-            <!-- 2) LIVE CODE PREVIEW -->
-            <!-- ――――――――――――――――――――――――――――――――――――― -->
             <section class="live-preview">
                 <h2 class="subheading">💻 Live Code Preview</h2>
                 <iframe src="main.html" title="Lecture 22 Demo"
-                    style="width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 4px;"></iframe>
-                <p style="text-align: center; margin-top: 0.5rem;">
-                    If the iframe doesn’t load, click
-                    <a href="main.html" target="_blank">here to open Lecture 22 code in a new tab</a>.
+                    style="width:100%; height:500px; border:1px solid #ddd; border-radius:4px;"></iframe>
+                <p style="text-align:center; margin-top:0.5rem;">
+                    If iframe doesn’t load, <a href="main.html" target="_blank">open in new tab</a>.
                 </p>
             </section>
 
-            <!-- ――――――――――――――――――――――――――――――――――――― -->
-            <!-- 3) BACK TO DASHBOARD LINK -->
-            <!-- ――――――――――――――――――――――――――――――――――――― -->
-            <p style="margin-top: 2rem;">
-                <a href="../index.html">← Back to Lecture Dashboard</a>
-            </p>
+            <p style="margin-top:2rem;"><a href="../index.html">← Back to Lecture Dashboard</a></p>
         </div>
     </main>
 
-    <!-- ======== FOOTER ======== -->
     <footer>
         <div class="container">
             <p>© 2025 Prashant Saini | Designed for Sigma Web Development</p>
