@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 23 – CSS Display Property</title>
+
+    <!-- Global layout + notes styling -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/notes.css" />
+
+    <!-- Per‑lecture styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .note-theory {
+            font-style: italic;
+            margin: 0.25rem 0 0.5rem;
+        }
+
+        .note-hinglish {
+            margin-bottom: 0.75rem;
+            color: #555;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .demo-text {
+            text-align: center;
+            margin: 0.5rem auto;
+        }
+
+        .box-inline {
+            display: inline;
+            border: 2px solid #007bff;
+            padding: 0.5rem;
+            background: #cfe2ff;
+        }
+
+        .box-inline-block {
+            display: inline-block;
+            border: 2px solid #198754;
+            padding: 0.5rem;
+            width: 12rem;
+            background: #d1e7dd;
+        }
+
+        .box-block {
+            display: block;
+            border: 2px solid #fd7e14;
+            padding: 0.5rem;
+            width: 12rem;
+            background: #ffe5d0;
+        }
+
+        .box-none {
+            display: none;
+            border: 2px solid #dc3545;
+            padding: 0.5rem;
+            background: #f8d7da;
+        }
+
+        .box-hidden {
+            display: inline-block;
+            visibility: hidden;
+            border: 2px solid #6f42c1;
+            padding: 0.5rem;
+            width: 12rem;
+            background: #e6d5f8;
+        }
+
+        .note-ref {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .note-ref a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px solid #0066cc;
+        }
+
+        .note-ref a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======== HEADER ======== -->
+    <header class="site-header">
+        <div class="container header-content">
+            <h1>Sigma Web Development</h1>
+            <p class="subtitle">CodeWithPrashant – Lecture 23 Notes &amp; Resources</p>
+        </div>
+    </header>
+
+    <!-- ======== MAIN CONTENT ======== -->
+    <main>
+        <div class="container lecture-container">
+            <section class="note-section">
+                <h2 class="subheading">📒 Notes &amp; Demo: CSS Display Property</h2>
+                <p class="note-ref">
+                    🔗 Further reading:
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">
+                        MDN “display” property reference
+                    </a>
+                </p>
+                <ul>
+                    <li>
+                        <h3>1. <code>display: inline</code></h3>
+                        <p class="note-theory">Inline elements flow with text and ignore height/width.</p>
+                        <code>.box-inline { display: inline; }</code>
+                        <p class="note-hinglish">Ye element text ke saath line mein flow hota hai, width/height nahi
+                            leta.</p>
+                        <div class="box-inline demo-text">Inline A</div>
+                        <div class="box-inline demo-text">Inline B</div>
+                    </li>
+                    <li>
+                        <h3>2. <code>display: inline-block</code></h3>
+                        <p class="note-theory">Inline-block respects box properties and flows inline.</p>
+                        <code>.box-inline-block { display: inline-block; }</code>
+                        <p class="note-hinglish">Box model properties lagte hain, text ke saath inline flow.</p>
+                        <div class="box-inline-block demo-text">Inline-block A</div>
+                        <div class="box-inline-block demo-text">Inline-block B</div>
+                    </li>
+                    <li>
+                        <h3>3. <code>display: block</code></h3>
+                        <p class="note-theory">Block elements start on a new line and take full width by default.</p>
+                        <code>.box-block { display: block; }</code>
+                        <p class="note-hinglish">Har box new line pe shuru, default full width leta hai.</p>
+                        <div class="box-block demo-text">Block A</div>
+                        <div class="box-block demo-text">Block B</div>
+                    </li>
+                    <li>
+                        <h3>4. <code>display: none</code></h3>
+                        <p class="note-theory">Element is not rendered; takes no space in layout.</p>
+                        <code>.box-none { display: none; }</code>
+                        <p class="note-hinglish">Element totally hide ho jata hai, space bhi nahi leta.</p>
+                        <div class="box-none demo-text">You can't see me</div>
+                    </li>
+                    <li>
+                        <h3>5. <code>visibility: hidden</code></h3>
+                        <p class="note-theory">Element is invisible but still takes up space.</p>
+                        <code>.box-hidden { visibility: hidden; }</code>
+                        <p class="note-hinglish">Invisible hai par layout mein jagah ghire rakhta hai.</p>
+                        <div class="box-hidden demo-text">Hidden A</div>
+                        <div class="box-hidden demo-text">Hidden B</div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="live-preview">
+                <h2 class="subheading">💻 Live Code Preview</h2>
+                <iframe src="main.html" title="Lecture 23 Demo"
+                    style="width:100%; height:500px; border:1px solid #ddd; border-radius:4px;"></iframe>
+                <p style="text-align:center; margin-top:0.5rem;">
+                    If the iframe doesn’t load, <a href="main.html" target="_blank">open in new tab</a>.
+                </p>
+            </section>
+
+            <p style="margin-top:2rem;"><a href="../index.html">← Back to Lecture Dashboard</a></p>
+        </div>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Prashant Saini | Sigma Web Development</p>
+        </div>
+    </footer>
+</body>
+
+</html>

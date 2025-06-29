@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            margin: 40px 0 20px;
+            color: #333;
+        }
+
+        .demo-box {
+            border: 2px solid;
+            width: 344px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            font-size: 20px;
+            color: black;
+            background-color: lightblue;
+        }
+
+        /* INLINE EXAMPLE */
+        .inline-box {
+            display: inline;
+            border-color: blue;
+            /* Width, height, padding, and margin won't behave as expected */
+        }
+
+        /* INLINE-BLOCK EXAMPLE */
+        .inline-block-box {
+            display: inline-block;
+            border-color: green;
+        }
+
+        /* BLOCK EXAMPLE */
+        .block-box {
+            display: block;
+            border-color: orange;
+        }
+
+        /* NONE EXAMPLE */
+        .none-box {
+            display: none;
+            border-color: red;
+        }
+
+        /* VISIBILITY HIDDEN EXAMPLE */
+        .hidden-box {
+            display: inline-block;
+            visibility: hidden;
+            border-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- INLINE -->
+    <h2>Display: inline</h2>
+    <div class="demo-box inline-box">I am an inline box</div>
+    <div class="demo-box inline-box">Another inline box</div>
+    <span>Span A</span>
+    <span>Span B</span>
+
+    <!-- INLINE-BLOCK -->
+    <h2>Display: inline-block</h2>
+    <div class="demo-box inline-block-box">I am an inline-block box</div>
+    <div class="demo-box inline-block-box">Another inline-block box</div>
+
+    <!-- BLOCK -->
+    <h2>Display: block</h2>
+    <div class="demo-box block-box">I am a block box</div>
+    <div class="demo-box block-box">Another block box</div>
+
+    <!-- NONE -->
+    <h2>Display: none</h2>
+    <div class="demo-box none-box">You can't see me (display: none)</div>
+    <div class="demo-box none-box">Neither can you see me</div>
+
+    <!-- VISIBILITY: HIDDEN -->
+    <h2>Visibility: hidden</h2>
+    <div class="demo-box hidden-box">I’m hidden but I take up space</div>
+    <div class="demo-box hidden-box">Another invisible box</div>
+
+</body>
+
+</html>
