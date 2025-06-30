@@ -13,56 +13,157 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
         }
 
         h2 {
             margin: 40px 0 20px;
-            color: #333;
+            color: #212529;
+            font-size: 1.5rem;
+            border-left: 4px solid #0d6efd;
+            padding-left: 10px;
         }
 
-        .demo-box {
-            border: 2px solid;
+        /* -------------------------------------
+       1. DISPLAY: INLINE
+       💬 Inline elements behave like <span>
+       - They ignore width, height, margin-top/bottom.
+       - Padding left/right will work, but not vertically.
+    -------------------------------------- */
+        .inline-box {
+            display: inline;
+            width: 344px;
+            /* ❌ Ignored */
+            height: 100px;
+            /* ❌ Ignored */
+            padding: 20px;
+            /* ✔️ Horizontal works, vertical might overflow */
+            margin: 20px;
+            /* ❌ Top/Bottom ignored in flow */
+            font-size: 20px;
+            color: black;
+            background-color: lightblue;
+            border: 2px solid #0d6efd;
+            border-radius: 8px;
+        }
+
+        /* -------------------------------------
+       2. DISPLAY: INLINE-BLOCK
+       💬 Best of both worlds:
+       - Behaves inline BUT accepts width/height/padding/margin.
+       - Perfect for layout without breaking flow.
+    -------------------------------------- */
+        .inline-block-box {
+            display: inline-block;
+            width: 344px;
+            /* ✔️ Works */
+            height: 100px;
+            /* ✔️ Works */
+            padding: 20px;
+            /* ✔️ Works */
+            margin: 20px;
+            /* ✔️ All sides */
+            font-size: 20px;
+            color: black;
+            background-color: #d1e7dd;
+            border: 2px solid #198754;
+            border-radius: 8px;
+        }
+
+        /* -------------------------------------
+       3. DISPLAY: BLOCK
+       💬 Block-level element (like <div>)
+       - Starts from new line
+       - Takes full width by default
+       - Accepts all box properties
+    -------------------------------------- */
+        .block-box {
+            display: block;
+            width: 344px;
+            /* ✔️ Works */
+            height: 100px;
+            /* ✔️ Works */
+            padding: 20px;
+            /* ✔️ Works */
+            margin: 20px;
+            /* ✔️ All sides */
+            font-size: 20px;
+            color: black;
+            background-color: #ffe5d0;
+            border: 2px solid #fd7e14;
+            border-radius: 8px;
+        }
+
+        /* -------------------------------------
+       4. DISPLAY: NONE
+       💬 Element is completely removed:
+       - Not visible
+       - Doesn’t occupy space
+       - Acts like it's never in the DOM
+    -------------------------------------- */
+        .none-box {
+            display: none;
             width: 344px;
             height: 100px;
             padding: 20px;
             margin: 20px;
             font-size: 20px;
             color: black;
-            background-color: lightblue;
+            background-color: #f8d7da;
+            border: 2px solid #dc3545;
+            border-radius: 8px;
         }
 
-        /* INLINE EXAMPLE */
-        .inline-box {
-            display: inline;
-            border-color: blue;
-            /* Width, height, padding, and margin won't behave as expected */
-        }
-
-        /* INLINE-BLOCK EXAMPLE */
-        .inline-block-box {
-            display: inline-block;
-            border-color: green;
-        }
-
-        /* BLOCK EXAMPLE */
-        .block-box {
-            display: block;
-            border-color: orange;
-        }
-
-        /* NONE EXAMPLE */
-        .none-box {
-            display: none;
-            border-color: red;
-        }
-
-        /* VISIBILITY HIDDEN EXAMPLE */
+        /* -------------------------------------
+       5. VISIBILITY: HIDDEN
+       💬 Element is invisible but still takes space:
+       - Layout remains intact
+       - Only visibility is off
+    -------------------------------------- */
         .hidden-box {
             display: inline-block;
             visibility: hidden;
-            border-color: purple;
+            width: 344px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            font-size: 20px;
+            color: black;
+            background-color: #e6d5f8;
+            border: 2px solid #6f42c1;
+            border-radius: 8px;
+        }
+
+        /* Extra info boxes for iframe viewers */
+        .info-box {
+            background-color: #e9f7ff;
+            border-left: 6px solid #0dcaf0;
+            padding: 15px 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-box h4 {
+            margin-bottom: 8px;
+            color: #0c5460;
+            font-size: 1.1rem;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: #084c61;
+            line-height: 1.5;
+        }
+
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -71,30 +172,41 @@
 
     <!-- INLINE -->
     <h2>Display: inline</h2>
-    <div class="demo-box inline-box">I am an inline box</div>
-    <div class="demo-box inline-box">Another inline box</div>
+    <div class="inline-box">I am an inline box</div>
+    <div class="inline-box">Another inline box</div>
     <span>Span A</span>
     <span>Span B</span>
 
     <!-- INLINE-BLOCK -->
     <h2>Display: inline-block</h2>
-    <div class="demo-box inline-block-box">I am an inline-block box</div>
-    <div class="demo-box inline-block-box">Another inline-block box</div>
+    <div class="inline-block-box">I am an inline-block box</div>
+    <div class="inline-block-box">Another inline-block box</div>
 
     <!-- BLOCK -->
     <h2>Display: block</h2>
-    <div class="demo-box block-box">I am a block box</div>
-    <div class="demo-box block-box">Another block box</div>
+    <div class="block-box">I am a block box</div>
+    <div class="block-box">Another block box</div>
 
     <!-- NONE -->
     <h2>Display: none</h2>
-    <div class="demo-box none-box">You can't see me (display: none)</div>
-    <div class="demo-box none-box">Neither can you see me</div>
+    <div class="none-box">You can't see me (display: none)</div>
+    <div class="none-box">Neither can you see me</div>
 
     <!-- VISIBILITY: HIDDEN -->
     <h2>Visibility: hidden</h2>
-    <div class="demo-box hidden-box">I’m hidden but I take up space</div>
-    <div class="demo-box hidden-box">Another invisible box</div>
+    <div class="hidden-box">I’m hidden but I take up space</div>
+    <div class="hidden-box">Another invisible box</div>
+
+    <!-- EXPLANATION FOR USERS -->
+    <div class="info-box">
+        <h4>🧼 Where is <code>display: none</code>?</h4>
+        <p>This element is <strong>not rendered</strong> at all in the layout — it’s like it's not even in the code.</p>
+    </div>
+
+    <div class="info-box">
+        <h4>🫥 Where is <code>visibility: hidden</code>?</h4>
+        <p>This element <strong>exists in layout</strong> but is just invisible — it still takes space on the page.</p>
+    </div>
 
 </body>
 

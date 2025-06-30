@@ -1,3 +1,4 @@
+<!-- File: Sigma-web-development/Lecture 22/notes.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +21,6 @@
 
         html {
             font-size: 16px;
-            /* 1rem = 16px */
         }
 
         .note-theory {
@@ -107,59 +107,110 @@
                         <h3>1. Pixels (<code>px</code>)</h3>
                         <p class="note-theory">Fixed, absolute unit; exact control over element size.</p>
                         <code>width: 200px; height: 100px;</code>
-                        <p class="note-hinglish">Fixed unit, screen chhota ya bada – size same rahega.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: <code>px</code> ek fixed unit hai – screen chhoti ho ya badi, box ka size same
+                                rahega. Absolute control deta hai developer ko.</p>
+                        </div>
                         <div class="box-px demo-text">200px × 100px</div>
                     </li>
+
                     <li>
                         <h3>2. Root em (<code>rem</code>)</h3>
                         <p class="note-theory">Relative to root (<code>html</code>) font-size; consistent scaling.</p>
-                        <code>width: 12rem; height: 6rem; /* 1rem = 16px */</code>
-                        <p class="note-hinglish">Sab me consistent—1rem = root font-size.</p>
+                        <code>width: 12rem; height: 6rem;</code>
+                        <div class="note-hinglish">
+                            <p>Hinglish: <code>rem</code> root font-size ke hisaab se size leta hai. Agar root size 16px
+                                hai, to 1rem = 16px. Har jagah consistency rehti hai.</p>
+                        </div>
                         <div class="box-rem demo-text">12rem × 6rem</div>
                     </li>
+
                     <li>
                         <h3>3. EM (<code>em</code>)</h3>
                         <p class="note-theory">Relative to parent font-size; useful for component-based scaling.</p>
                         <code>font-size:20px; width:10em; height:5em;</code>
-                        <p class="note-hinglish">Parent ke font-size se multiply hota hai.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: <code>em</code> current element ya parent ke font-size ke basis par hota hai.
+                                Iska scale parent ke saath change hota hai.</p>
+                        </div>
                         <div class="box-em demo-text">10em × 5em</div>
                     </li>
+
                     <li>
                         <h3>4. Percentage (<code>%</code>)</h3>
                         <p class="note-theory">Relative to parent element’s dimensions; fluid layouts.</p>
                         <code>width:50%; height:20%;</code>
-                        <p class="note-hinglish">Parent ke % me size define hota hai.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: <code>%</code> value parent ke dimensions ka percent hoti hai. Responsive
+                                layouts ke liye best hai.</p>
+                        </div>
                         <div class="box-percent demo-text">50% × 20%</div>
                     </li>
+
                     <li>
                         <h3>5. Viewport Width (<code>vw</code>)</h3>
                         <p class="note-theory">Percentage of viewport’s width; responsive to window size.</p>
                         <code>width:25vw; height:10vw;</code>
-                        <p class="note-hinglish">Browser width ke hisaab se.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: <code>vw</code> ka matlab hota hai “viewport width.” 1vw = 1% of current
+                                browser width.</p>
+                        </div>
                         <div class="box-vw demo-text">25vw × 10vw</div>
                     </li>
+
                     <li>
                         <h3>6. Viewport Height (<code>vh</code>)</h3>
                         <p class="note-theory">Percentage of viewport’s height; useful for full-screen sections.</p>
                         <code>width:30vh; height:30vh;</code>
-                        <p class="note-hinglish">Browser height ke hisaab se.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: <code>vh</code> ka matlab hota hai “viewport height.” 1vh = 1% of browser ki
+                                height.</p>
+                        </div>
                         <div class="box-vh demo-text">30vh × 30vh</div>
                     </li>
+
                     <li>
                         <h3>7. Viewport Minimum (<code>vmin</code>)</h3>
                         <p class="note-theory">Based on smaller of viewport width/height; maintains aspect ratio.</p>
                         <code>width:30vmin; height:30vmin;</code>
-                        <p class="note-hinglish">Screen ka chhota side use hota hai.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: <code>vmin</code> viewport ke chhote dimension (width ya height) par based hota
+                                hai – jisse consistent aspect ratio bana rahta hai.</p>
+                        </div>
                         <div class="box-vmin demo-text">30vmin × 30vmin</div>
                     </li>
+
                     <li>
                         <h3>8. More Units</h3>
                         <p class="note-theory">Other CSS units include <code>vmax</code>, <code>ch</code>,
                             <code>ex</code>, and more.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: Aur bhi units hote hain jaise <code>vmax</code> (badi viewport side),
+                                <code>ch</code> (character width), <code>ex</code> (x-height of font) – ye sab explore
+                                karne layak hai!</p>
+                        </div>
                         <p>Explore on <a href="https://www.w3schools.com/cssref/css_units.php" target="_blank">CSS Units
                                 Reference</a>.</p>
                     </li>
                 </ul>
+
+                <!-- ✅ NEW Combined Hinglish Summary Block -->
+                <div class="note-hinglish" style="margin-top: 2rem;">
+                    <p><strong>Hinglish Summary:</strong> Lecture 22 mein maine CSS sizing units ke baare mein detail
+                        mein seekha. Har unit ka apna use-case hota hai:</p>
+                    <ul>
+                        <li><code>px</code>: Fixed sizing – jo kabhi change nahi hota.</li>
+                        <li><code>rem</code>: Root font-size based – consistency ke liye perfect.</li>
+                        <li><code>em</code>: Parent ke font-size pe dependent – flexible layout ke liye.</li>
+                        <li><code>%</code>: Parent ka percent – responsive layouts banane ke liye use hota hai.</li>
+                        <li><code>vw/vh</code>: Browser window ke size ke according – dynamic designs ke liye helpful.
+                        </li>
+                        <li><code>vmin</code>: Viewport ka chhota dimension consider karta hai – responsive aur
+                            proportional layout ke liye useful.</li>
+                    </ul>
+                    <p>Start mein confusing laga but jab practically browser resize karke dekha, tab actual behavior
+                        samajh aaya. Har beginner ko in sab units ko khud test karna chahiye for better clarity.</p>
+                </div>
             </section>
 
             <section class="live-preview">

@@ -1,3 +1,4 @@
+<!-- File: Sigma-web-development/Lecture 23/notes.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +29,7 @@
         }
 
         .note-hinglish {
-            margin-bottom: 0.75rem;
+            margin: 0.5rem 0 1rem;
             color: #555;
         }
 
@@ -124,43 +125,84 @@
                         <h3>1. <code>display: inline</code></h3>
                         <p class="note-theory">Inline elements flow with text and ignore height/width.</p>
                         <code>.box-inline { display: inline; }</code>
-                        <p class="note-hinglish">Ye element text ke saath line mein flow hota hai, width/height nahi
-                            leta.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: Ye element text ke saath line mein flow hota hai. Width/height ignore hota hai,
+                                sirf horizontal padding thoda dikh sakta hai.</p>
+                        </div>
                         <div class="box-inline demo-text">Inline A</div>
                         <div class="box-inline demo-text">Inline B</div>
                     </li>
+
                     <li>
                         <h3>2. <code>display: inline-block</code></h3>
                         <p class="note-theory">Inline-block respects box properties and flows inline.</p>
                         <code>.box-inline-block { display: inline-block; }</code>
-                        <p class="note-hinglish">Box model properties lagte hain, text ke saath inline flow.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: Inline ki tarah line mein aata hai, lekin width, height, padding/margin sab
+                                apply hote hain.</p>
+                        </div>
                         <div class="box-inline-block demo-text">Inline-block A</div>
                         <div class="box-inline-block demo-text">Inline-block B</div>
                     </li>
+
                     <li>
                         <h3>3. <code>display: block</code></h3>
                         <p class="note-theory">Block elements start on a new line and take full width by default.</p>
                         <code>.box-block { display: block; }</code>
-                        <p class="note-hinglish">Har box new line pe shuru, default full width leta hai.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: Har box new line se start hota hai, default full width leta hai, aur saari box
+                                properties support hoti hain.</p>
+                        </div>
                         <div class="box-block demo-text">Block A</div>
                         <div class="box-block demo-text">Block B</div>
                     </li>
+
                     <li>
                         <h3>4. <code>display: none</code></h3>
                         <p class="note-theory">Element is not rendered; takes no space in layout.</p>
                         <code>.box-none { display: none; }</code>
-                        <p class="note-hinglish">Element totally hide ho jata hai, space bhi nahi leta.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: Ye element bilkul page se hat jata hai — na dikhta hai, na space leta hai.</p>
+                        </div>
                         <div class="box-none demo-text">You can't see me</div>
                     </li>
+
                     <li>
                         <h3>5. <code>visibility: hidden</code></h3>
                         <p class="note-theory">Element is invisible but still takes up space.</p>
                         <code>.box-hidden { visibility: hidden; }</code>
-                        <p class="note-hinglish">Invisible hai par layout mein jagah ghire rakhta hai.</p>
+                        <div class="note-hinglish">
+                            <p>Hinglish: Ye invisible hai, par layout mein apni jagah bana ke rakhta hai. Invisible
+                                friend samjho jo wahan hai par nazar nahi aata.</p>
+                        </div>
                         <div class="box-hidden demo-text">Hidden A</div>
                         <div class="box-hidden demo-text">Hidden B</div>
                     </li>
                 </ul>
+
+                <!-- ✅ Combined Hinglish Summary Block (inside section) -->
+                <div class="note-hinglish" style="border-top:1px dashed #ccc; padding-top:1rem;">
+                    <h3 style="margin-bottom:0.5rem;">📦 Summary in Hinglish:</h3>
+                    <p>
+                        Aaj maine <strong>CSS Display Property</strong> ke 5 mukhya types dekhe: <code>inline</code>,
+                        <code>inline-block</code>, <code>block</code>, <code>none</code>, aur
+                        <code>visibility: hidden</code>.
+                    </p>
+                    <p>
+                        Mujhe sabse zyada confusion <code>inline</code> vs <code>inline-block</code> mein tha. Ab clear
+                        hua ki <code>inline</code> height/width ignore karta hai, jabki <code>inline-block</code> box
+                        model ke saare properties apply karta hai.
+                    </p>
+                    <p>
+                        <code>display: none</code> element ko pura hata deta hai, lekin <code>visibility: hidden</code>
+                        uski jagah chhod deta hai.
+                    </p>
+                    <p>
+                        Jab iframe mein practice ki, to invisible boxes tabhi samjhe agar explanation box dekha.
+                        Beginners ko suggestion hai: code khud run karo aur element inspector dekho — tab hi perfect
+                        samajh aata hai!
+                    </p>
+                </div>
             </section>
 
             <section class="live-preview">
